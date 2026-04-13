@@ -1,0 +1,13 @@
+fclass,estimated_speed_kmh,osm_sample_count,osm_weighted_mean,justification_type
+trunk,50,1,50.0,OSM_few_samples
+trunk_link,40,0,,inferred
+primary,70,126,67.5,OSM_weighted_mean
+primary_link,45,37,46.7,OSM_weighted_mean
+secondary,55,50,55.4,OSM_weighted_mean
+secondary_link,45,0,,inferred
+tertiary,50,18,49.6,OSM_weighted_mean
+tertiary_link,40,0,,inferred
+residential,50,32,51.3,OSM_weighted_mean
+living_street,15,0,,inferred
+unclassified,50,0,,inferred
+service,30,35,31.1,OSM_weighted_mean

@@ -1,0 +1,978 @@
+{
+  "vehicle_type": "truck",
+  "n_cameras": 28,
+  "total_observations": 63,
+  "total_independent": 35,
+  "cameras": [
+    {
+      "camera_id": "cam_a4",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "1936845009",
+          "518264005"
+        ],
+        [
+          "518264005",
+          "1936845018"
+        ],
+        [
+          "518264005",
+          "1942810209"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "observed_proportions": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "gate_indices_per_supergate": [
+        [
+          13,
+          14
+        ],
+        [
+          16
+        ],
+        [
+          15
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_b2",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1936887997",
+          "6852411673"
+        ],
+        [
+          "6852411673",
+          "1936887997"
+        ]
+      ],
+      "observed_counts": [
+        3.5,
+        0.0
+      ],
+      "observed_proportions": [
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          32,
+          34
+        ],
+        [
+          33
+        ]
+      ],
+      "total_count": 3.5
+    },
+    {
+      "camera_id": "cam_c2",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1448263566",
+          "1942292074"
+        ],
+        [
+          "1942292074",
+          "1942292058"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        1.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          38
+        ],
+        [
+          39
+        ]
+      ],
+      "total_count": 3.0
+    },
+    {
+      "camera_id": "cam_c5",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "3355824096",
+          "3355824094"
+        ],
+        [
+          "5841831224",
+          "3355824096"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        1.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          46,
+          49
+        ],
+        [
+          47,
+          48,
+          50
+        ]
+      ],
+      "total_count": 3.0
+    },
+    {
+      "camera_id": "cam_c10",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "7874298255",
+          "1936887991"
+        ],
+        [
+          "7874298255",
+          "4818810106"
+        ],
+        [
+          "9067078743",
+          "7874298255"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.5,
+        0.0
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          70,
+          71
+        ],
+        [
+          65,
+          66,
+          67
+        ],
+        [
+          68,
+          69
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_c11",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "10143282735",
+          "2492766000"
+        ],
+        [
+          "12328602709",
+          "2492766000"
+        ],
+        [
+          "2492766000",
+          "2168718339"
+        ]
+      ],
+      "observed_counts": [
+        0.5,
+        0.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.3333333333333333,
+        0.0,
+        0.6666666666666666
+      ],
+      "gate_indices_per_supergate": [
+        [
+          72,
+          73
+        ],
+        [
+          77
+        ],
+        [
+          74,
+          75,
+          76
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_d1",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1942292055",
+          "1448260320"
+        ],
+        [
+          "1942292055",
+          "1942292051"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          78,
+          79
+        ],
+        [
+          80,
+          81
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_e3",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "1942291748",
+          "518463863"
+        ],
+        [
+          "4051774595",
+          "518463863"
+        ],
+        [
+          "518463863",
+          "2917006396"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          101
+        ],
+        [
+          98,
+          99
+        ],
+        [
+          100
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_e6",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1420845489",
+          "1516025646"
+        ],
+        [
+          "2992379493",
+          "1420845489"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          109
+        ],
+        [
+          108
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_f5",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1449241548",
+          "1867326933"
+        ],
+        [
+          "5117524805",
+          "1449241548"
+        ]
+      ],
+      "observed_counts": [
+        0.5,
+        0.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          125,
+          126
+        ],
+        [
+          123,
+          124
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_f8",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "247812556",
+          "3120748687"
+        ],
+        [
+          "9004853901",
+          "247812556"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          134
+        ],
+        [
+          133
+        ]
+      ],
+      "total_count": 2.0
+    },
+    {
+      "camera_id": "cam_f9",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "1941289254",
+          "6735356641"
+        ],
+        [
+          "6735356641",
+          "2628861504"
+        ],
+        [
+          "6735356641",
+          "4336638117"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          135
+        ],
+        [
+          138,
+          140
+        ],
+        [
+          136,
+          137,
+          139
+        ]
+      ],
+      "total_count": 2.0
+    },
+    {
+      "camera_id": "cam_f16",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "9038173107",
+          "2168717813"
+        ],
+        [
+          "9038173107",
+          "7195542382"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        1.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          160,
+          161
+        ],
+        [
+          162,
+          163
+        ]
+      ],
+      "total_count": 3.0
+    },
+    {
+      "camera_id": "cam_f17",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "2169023988",
+          "2169023991"
+        ],
+        [
+          "2169023991",
+          "2169023988"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.5
+      ],
+      "observed_proportions": [
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "gate_indices_per_supergate": [
+        [
+          164
+        ],
+        [
+          165
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_f18",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "2027517119",
+          "5455610066"
+        ],
+        [
+          "3005526057",
+          "5455610066"
+        ],
+        [
+          "5455610066",
+          "3005526065"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          170,
+          171,
+          172
+        ],
+        [
+          176
+        ],
+        [
+          166,
+          167,
+          168,
+          169,
+          173,
+          174,
+          175
+        ]
+      ],
+      "total_count": 2.0
+    },
+    {
+      "camera_id": "cam_f20",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "247812506",
+          "3005526082"
+        ],
+        [
+          "3120748687",
+          "3005526082"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.5
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          181
+        ],
+        [
+          180
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_f22",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "2555569529",
+          "9038173103"
+        ],
+        [
+          "6695185573",
+          "9038173103"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        1.0
+      ],
+      "observed_proportions": [
+        0.6,
+        0.4
+      ],
+      "gate_indices_per_supergate": [
+        [
+          188
+        ],
+        [
+          189
+        ]
+      ],
+      "total_count": 2.5
+    },
+    {
+      "camera_id": "cam_g1",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "2879195259",
+          "6533196277"
+        ],
+        [
+          "6533196277",
+          "2879195259"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.0
+      ],
+      "observed_proportions": [
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          193,
+          194,
+          195,
+          196
+        ],
+        [
+          192
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_g5",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1846250221",
+          "2392981213"
+        ],
+        [
+          "1846250221",
+          "5299061597"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.0
+      ],
+      "observed_proportions": [
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          209
+        ],
+        [
+          210,
+          211
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_i11",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1515997023",
+          "1515996978"
+        ],
+        [
+          "3100109929",
+          "1515996978"
+        ]
+      ],
+      "observed_counts": [
+        0.5,
+        0.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          228
+        ],
+        [
+          227
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_l3",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "3296513997",
+          "3296513987"
+        ],
+        [
+          "3296513997",
+          "594811016"
+        ]
+      ],
+      "observed_counts": [
+        0.5,
+        0.5
+      ],
+      "observed_proportions": [
+        0.5,
+        0.5
+      ],
+      "gate_indices_per_supergate": [
+        [
+          250,
+          251
+        ],
+        [
+          252
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_m4",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1936910344",
+          "4064678350"
+        ],
+        [
+          "4064678348",
+          "4064678350"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.5
+      ],
+      "observed_proportions": [
+        0.6666666666666666,
+        0.3333333333333333
+      ],
+      "gate_indices_per_supergate": [
+        [
+          263
+        ],
+        [
+          262
+        ]
+      ],
+      "total_count": 1.5
+    },
+    {
+      "camera_id": "cam_m5",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "4835579428",
+          "1112039402"
+        ],
+        [
+          "518263788",
+          "4835579428"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        1.0
+      ],
+      "observed_proportions": [
+        0.6,
+        0.4
+      ],
+      "gate_indices_per_supergate": [
+        [
+          264
+        ],
+        [
+          265
+        ]
+      ],
+      "total_count": 2.5
+    },
+    {
+      "camera_id": "cam_m17",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "12214526358",
+          "8212253860"
+        ],
+        [
+          "8212253860",
+          "8086970950"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.0
+      ],
+      "observed_proportions": [
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          292
+        ],
+        [
+          293
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_o1",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "6625037060",
+          "5028054894"
+        ],
+        [
+          "6625037060",
+          "6073647793"
+        ]
+      ],
+      "observed_counts": [
+        1.0,
+        0.0
+      ],
+      "observed_proportions": [
+        1.0,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          297
+        ],
+        [
+          298
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_o7",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "10855460010",
+          "10855460017"
+        ],
+        [
+          "5548010396",
+          "10855460017"
+        ]
+      ],
+      "observed_counts": [
+        0.0,
+        1.0
+      ],
+      "observed_proportions": [
+        0.0,
+        1.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          323
+        ],
+        [
+          324,
+          325,
+          326
+        ]
+      ],
+      "total_count": 1.0
+    },
+    {
+      "camera_id": "cam_p2",
+      "n_supergates": 3,
+      "edge_keys": [
+        [
+          "1939558938",
+          "4835445199"
+        ],
+        [
+          "3109980755",
+          "4835445199"
+        ],
+        [
+          "4835445199",
+          "2185571653"
+        ]
+      ],
+      "observed_counts": [
+        1.5,
+        0.5,
+        0.0
+      ],
+      "observed_proportions": [
+        0.75,
+        0.25,
+        0.0
+      ],
+      "gate_indices_per_supergate": [
+        [
+          332
+        ],
+        [
+          331
+        ],
+        [
+          333,
+          334
+        ]
+      ],
+      "total_count": 2.0
+    },
+    {
+      "camera_id": "cam_p3",
+      "n_supergates": 2,
+      "edge_keys": [
+        [
+          "1936863901",
+          "1449241550"
+        ],
+        [
+          "2792179856",
+          "1936863901"
+        ]
+      ],
+      "observed_counts": [
+        0.5,
+        2.0
+      ],
+      "observed_proportions": [
+        0.2,
+        0.8
+      ],
+      "gate_indices_per_supergate": [
+        [
+          336
+        ],
+        [
+          335,
+          337
+        ]
+      ],
+      "total_count": 2.5
+    }
+  ]
+}

@@ -1,0 +1,6416 @@
+{
+  "vehicle_type": "car",
+  "matched_movements": 337,
+  "movements": [
+    {
+      "gate_index": 0,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_1",
+      "from_edge_id": "291345240#1",
+      "to_edge_id": "306158865#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 1,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_2",
+      "from_edge_id": "306158865#0",
+      "to_edge_id": "306158865#3",
+      "count": 0.0
+    },
+    {
+      "gate_index": 2,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_3",
+      "from_edge_id": "194911804#0",
+      "to_edge_id": "306158865#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 3,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_4",
+      "from_edge_id": "291345240#1",
+      "to_edge_id": "291345240#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 4,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_5",
+      "from_edge_id": "1319619924",
+      "to_edge_id": "981256937#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 5,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_6",
+      "from_edge_id": "306158865#0",
+      "to_edge_id": "291345240#1",
+      "count": 0.0
+    },
+    {
+      "gate_index": 6,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_7",
+      "from_edge_id": "306158865#0",
+      "to_edge_id": "1319619924",
+      "count": 0.0
+    },
+    {
+      "gate_index": 7,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_8",
+      "from_edge_id": "1319619924",
+      "to_edge_id": "306158865#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 8,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_1",
+      "from_edge_id": "704309242#5",
+      "to_edge_id": "1063571027#0",
+      "count": 2109.0
+    },
+    {
+      "gate_index": 9,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_2",
+      "from_edge_id": "629170948",
+      "to_edge_id": "206830706#1",
+      "count": 967.5
+    },
+    {
+      "gate_index": 10,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_3",
+      "from_edge_id": "704309242#5",
+      "to_edge_id": "629170948",
+      "count": 0.0
+    },
+    {
+      "gate_index": 11,
+      "camera_id": "cam_a3",
+      "gate_id": "gate_1",
+      "from_edge_id": "183556690",
+      "to_edge_id": "184017293",
+      "count": 170.5
+    },
+    {
+      "gate_index": 12,
+      "camera_id": "cam_a3",
+      "gate_id": "gate_2",
+      "from_edge_id": "241886461",
+      "to_edge_id": "184017293",
+      "count": 238.0
+    },
+    {
+      "gate_index": 13,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_1",
+      "from_edge_id": "554442874",
+      "to_edge_id": "709703877#2",
+      "count": 996.5
+    },
+    {
+      "gate_index": 14,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_2",
+      "from_edge_id": "554442874",
+      "to_edge_id": "629170948",
+      "count": 957.5
+    },
+    {
+      "gate_index": 15,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_3",
+      "from_edge_id": "709703878#1",
+      "to_edge_id": "183715801#1",
+      "count": 2572.5
+    },
+    {
+      "gate_index": 16,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_4",
+      "from_edge_id": "183317868",
+      "to_edge_id": "709703878#1",
+      "count": 626.0
+    },
+    {
+      "gate_index": 17,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_1",
+      "from_edge_id": "1164192971#2",
+      "to_edge_id": "772683243",
+      "count": 468.5
+    },
+    {
+      "gate_index": 18,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_2",
+      "from_edge_id": "1164192971#2",
+      "to_edge_id": "772683243",
+      "count": 57.5
+    },
+    {
+      "gate_index": 19,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_3",
+      "from_edge_id": "1164192971#2",
+      "to_edge_id": "1164192971#0",
+      "count": 1713.0
+    },
+    {
+      "gate_index": 20,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_4",
+      "from_edge_id": "486503023#0",
+      "to_edge_id": "976721426#1",
+      "count": 1685.0
+    },
+    {
+      "gate_index": 21,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_5",
+      "from_edge_id": "486503023#0",
+      "to_edge_id": "1164192971#0",
+      "count": 14.0
+    },
+    {
+      "gate_index": 22,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_6",
+      "from_edge_id": "486503023#0",
+      "to_edge_id": "976721426#1",
+      "count": 1614.0
+    },
+    {
+      "gate_index": 23,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_7",
+      "from_edge_id": "486503023#0",
+      "to_edge_id": "772683243",
+      "count": 18.0
+    },
+    {
+      "gate_index": 24,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_8",
+      "from_edge_id": "486503023#0",
+      "to_edge_id": "772683243",
+      "count": 3.0
+    },
+    {
+      "gate_index": 25,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_1",
+      "from_edge_id": "1147025899",
+      "to_edge_id": "411759665#0",
+      "count": 1680.5
+    },
+    {
+      "gate_index": 26,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_2",
+      "from_edge_id": "1147025899",
+      "to_edge_id": "328757078",
+      "count": 211.0
+    },
+    {
+      "gate_index": 27,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_3",
+      "from_edge_id": "1147025899",
+      "to_edge_id": "178489346",
+      "count": 121.0
+    },
+    {
+      "gate_index": 28,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_4",
+      "from_edge_id": "411759665#0",
+      "to_edge_id": "411759665#1",
+      "count": 1466.5
+    },
+    {
+      "gate_index": 29,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_5",
+      "from_edge_id": "411759665#0",
+      "to_edge_id": "1147025899",
+      "count": 548.5
+    },
+    {
+      "gate_index": 30,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_6",
+      "from_edge_id": "178489346",
+      "to_edge_id": "775492985",
+      "count": 44.5
+    },
+    {
+      "gate_index": 31,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_7",
+      "from_edge_id": "178489346",
+      "to_edge_id": "1147025899",
+      "count": 150.0
+    },
+    {
+      "gate_index": 32,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_1",
+      "from_edge_id": "-382257499#1",
+      "to_edge_id": "819904524#2",
+      "count": 2770.0
+    },
+    {
+      "gate_index": 33,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_2",
+      "from_edge_id": "382257499#1",
+      "to_edge_id": "819904524#2",
+      "count": 2726.0
+    },
+    {
+      "gate_index": 34,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_3",
+      "from_edge_id": "-382257499#1",
+      "to_edge_id": "-819061596",
+      "count": 2670.0
+    },
+    {
+      "gate_index": 35,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_1",
+      "from_edge_id": "1111661767",
+      "to_edge_id": "139012855",
+      "count": 2029.0
+    },
+    {
+      "gate_index": 36,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_2",
+      "from_edge_id": "1111661767",
+      "to_edge_id": "139012855",
+      "count": 2012.5
+    },
+    {
+      "gate_index": 37,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_3",
+      "from_edge_id": "1433340230#1",
+      "to_edge_id": "-675187175#0",
+      "count": 3992.5
+    },
+    {
+      "gate_index": 38,
+      "camera_id": "cam_c2",
+      "gate_id": "gate_1",
+      "from_edge_id": "173844911",
+      "to_edge_id": "41888516#0",
+      "count": 2043.5
+    },
+    {
+      "gate_index": 39,
+      "camera_id": "cam_c2",
+      "gate_id": "gate_2",
+      "from_edge_id": "708541835",
+      "to_edge_id": "317670568",
+      "count": 2777.0
+    },
+    {
+      "gate_index": 40,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_1",
+      "from_edge_id": "206824122",
+      "to_edge_id": "139012855",
+      "count": 3097.0
+    },
+    {
+      "gate_index": 41,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_2",
+      "from_edge_id": "949085189#0",
+      "to_edge_id": "139012877",
+      "count": 1583.5
+    },
+    {
+      "gate_index": 42,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_3",
+      "from_edge_id": "949085189#0",
+      "to_edge_id": "241691507#0",
+      "count": 3112.5
+    },
+    {
+      "gate_index": 43,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_1",
+      "from_edge_id": "178450675#5",
+      "to_edge_id": "739838044#2",
+      "count": 3112.5
+    },
+    {
+      "gate_index": 44,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_2",
+      "from_edge_id": "178450675#5",
+      "to_edge_id": "1301126131",
+      "count": 1494.5
+    },
+    {
+      "gate_index": 45,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_3",
+      "from_edge_id": "178450675#5",
+      "to_edge_id": "-307152346",
+      "count": 663.0
+    },
+    {
+      "gate_index": 46,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_1",
+      "from_edge_id": "714970666",
+      "to_edge_id": "464722742#0",
+      "count": 2605.0
+    },
+    {
+      "gate_index": 47,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_2",
+      "from_edge_id": "688160140",
+      "to_edge_id": "630436400",
+      "count": 3762.0
+    },
+    {
+      "gate_index": 48,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_3",
+      "from_edge_id": "688160140",
+      "to_edge_id": "630436400",
+      "count": 1151.0
+    },
+    {
+      "gate_index": 49,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_4",
+      "from_edge_id": "491449937#1",
+      "to_edge_id": "491449938#0",
+      "count": 1245.5
+    },
+    {
+      "gate_index": 50,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_5",
+      "from_edge_id": "688160140",
+      "to_edge_id": "491449938#0",
+      "count": 320.5
+    },
+    {
+      "gate_index": 51,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_1",
+      "from_edge_id": "661491750",
+      "to_edge_id": "241738509#0",
+      "count": 2859.0
+    },
+    {
+      "gate_index": 52,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_2",
+      "from_edge_id": "661491750",
+      "to_edge_id": "554188163",
+      "count": 2284.0
+    },
+    {
+      "gate_index": 53,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_3",
+      "from_edge_id": "661491750",
+      "to_edge_id": "241738509#1",
+      "count": 2429.0
+    },
+    {
+      "gate_index": 54,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_4",
+      "from_edge_id": "139012845#0",
+      "to_edge_id": "241738509#1",
+      "count": 524.0
+    },
+    {
+      "gate_index": 55,
+      "camera_id": "cam_c7",
+      "gate_id": "gate_1",
+      "from_edge_id": "402155625#0",
+      "to_edge_id": "663814299#0",
+      "count": 3866.0
+    },
+    {
+      "gate_index": 56,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_1",
+      "from_edge_id": "769894649",
+      "to_edge_id": "1110671131",
+      "count": 529.5
+    },
+    {
+      "gate_index": 57,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_2",
+      "from_edge_id": "818848196",
+      "to_edge_id": "1110671131",
+      "count": 81.0
+    },
+    {
+      "gate_index": 58,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_3",
+      "from_edge_id": "-675187175#0",
+      "to_edge_id": "1433687441#1",
+      "count": 856.0
+    },
+    {
+      "gate_index": 59,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_1",
+      "from_edge_id": "206824402",
+      "to_edge_id": "776556417#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 60,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_2",
+      "from_edge_id": "206824402",
+      "to_edge_id": "714976508#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 61,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_3",
+      "from_edge_id": "328756976#1",
+      "to_edge_id": "993269161#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 62,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_4",
+      "from_edge_id": "328756976#1",
+      "to_edge_id": "206824402",
+      "count": 0.0
+    },
+    {
+      "gate_index": 63,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_5",
+      "from_edge_id": "983630914#0",
+      "to_edge_id": "983630917#1",
+      "count": 0.0
+    },
+    {
+      "gate_index": 64,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_6",
+      "from_edge_id": "983630914#0",
+      "to_edge_id": "714976508#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 65,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_1",
+      "from_edge_id": "993269159",
+      "to_edge_id": "183435296#1",
+      "count": 133.0
+    },
+    {
+      "gate_index": 66,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_2",
+      "from_edge_id": "993269159",
+      "to_edge_id": "-980150785#0",
+      "count": 392.0
+    },
+    {
+      "gate_index": 67,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_3",
+      "from_edge_id": "993269159",
+      "to_edge_id": "183401735",
+      "count": 73.0
+    },
+    {
+      "gate_index": 68,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_4",
+      "from_edge_id": "-980150785#0",
+      "to_edge_id": "-980150785#1",
+      "count": 58.0
+    },
+    {
+      "gate_index": 69,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_5",
+      "from_edge_id": "-980150785#0",
+      "to_edge_id": "993269159",
+      "count": 45.5
+    },
+    {
+      "gate_index": 70,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_6",
+      "from_edge_id": "206853630#4",
+      "to_edge_id": "-980150785#0",
+      "count": 224.5
+    },
+    {
+      "gate_index": 71,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_7",
+      "from_edge_id": "206853630#4",
+      "to_edge_id": "183401735",
+      "count": 11.5
+    },
+    {
+      "gate_index": 72,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_1",
+      "from_edge_id": "206824122",
+      "to_edge_id": "241738502#1",
+      "count": 1289.5
+    },
+    {
+      "gate_index": 73,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_2",
+      "from_edge_id": "206824122",
+      "to_edge_id": "241886464",
+      "count": 223.0
+    },
+    {
+      "gate_index": 74,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_3",
+      "from_edge_id": "1311265242",
+      "to_edge_id": "241886464",
+      "count": 157.0
+    },
+    {
+      "gate_index": 75,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_4",
+      "from_edge_id": "1311265242",
+      "to_edge_id": "241886464",
+      "count": 123.0
+    },
+    {
+      "gate_index": 76,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_5",
+      "from_edge_id": "241738502#1",
+      "to_edge_id": "241886464",
+      "count": 536.5
+    },
+    {
+      "gate_index": 77,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_6",
+      "from_edge_id": "949085189#0",
+      "to_edge_id": "241738502#1",
+      "count": 40.0
+    },
+    {
+      "gate_index": 78,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_1",
+      "from_edge_id": "1475293961",
+      "to_edge_id": "131609037",
+      "count": 972.5
+    },
+    {
+      "gate_index": 79,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_2",
+      "from_edge_id": "1475293961",
+      "to_edge_id": "131609037",
+      "count": 1088.5
+    },
+    {
+      "gate_index": 80,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_3",
+      "from_edge_id": "206824119",
+      "to_edge_id": "183803699#0",
+      "count": 436.0
+    },
+    {
+      "gate_index": 81,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_4",
+      "from_edge_id": "206824119",
+      "to_edge_id": "183803699#0",
+      "count": 982.0
+    },
+    {
+      "gate_index": 82,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_1",
+      "from_edge_id": "183803726",
+      "to_edge_id": "1212514672#0",
+      "count": 3907.0
+    },
+    {
+      "gate_index": 83,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_2",
+      "from_edge_id": "206824376#1",
+      "to_edge_id": "1212514670",
+      "count": 1086.0
+    },
+    {
+      "gate_index": 84,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_3",
+      "from_edge_id": "206824376#1",
+      "to_edge_id": "1212514670",
+      "count": 935.5
+    },
+    {
+      "gate_index": 85,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_1",
+      "from_edge_id": "759510272",
+      "to_edge_id": "525000539",
+      "count": 1158.5
+    },
+    {
+      "gate_index": 86,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_2",
+      "from_edge_id": "759510272",
+      "to_edge_id": "206824318#3",
+      "count": 1423.0
+    },
+    {
+      "gate_index": 87,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_3",
+      "from_edge_id": "754628459",
+      "to_edge_id": "-525000539",
+      "count": 3318.5
+    },
+    {
+      "gate_index": 88,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_1",
+      "from_edge_id": "183827691",
+      "to_edge_id": "722648811#0",
+      "count": 1972.0
+    },
+    {
+      "gate_index": 89,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_2",
+      "from_edge_id": "1032906585#0",
+      "to_edge_id": "206824139",
+      "count": 890.0
+    },
+    {
+      "gate_index": 90,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_3",
+      "from_edge_id": "183827691",
+      "to_edge_id": "722648811#0",
+      "count": 586.5
+    },
+    {
+      "gate_index": 91,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_4",
+      "from_edge_id": "1032906585#0",
+      "to_edge_id": "206824139",
+      "count": 505.5
+    },
+    {
+      "gate_index": 92,
+      "camera_id": "cam_e1",
+      "gate_id": "gate_1",
+      "from_edge_id": "770557476#7",
+      "to_edge_id": "1030068512",
+      "count": 989.5
+    },
+    {
+      "gate_index": 93,
+      "camera_id": "cam_e1",
+      "gate_id": "gate_2",
+      "from_edge_id": "770557476#7",
+      "to_edge_id": "770557476#4",
+      "count": 3305.5
+    },
+    {
+      "gate_index": 94,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_1",
+      "from_edge_id": "206824242#0",
+      "to_edge_id": "208241273",
+      "count": 861.5
+    },
+    {
+      "gate_index": 95,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_2",
+      "from_edge_id": "206824242#0",
+      "to_edge_id": "183819440",
+      "count": 890.0
+    },
+    {
+      "gate_index": 96,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_3",
+      "from_edge_id": "206824242#0",
+      "to_edge_id": "206824242#1",
+      "count": 666.5
+    },
+    {
+      "gate_index": 97,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_4",
+      "from_edge_id": "206824242#0",
+      "to_edge_id": "722648817#0",
+      "count": 480.5
+    },
+    {
+      "gate_index": 98,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_1",
+      "from_edge_id": "138279929#5",
+      "to_edge_id": "562893033",
+      "count": 52.5
+    },
+    {
+      "gate_index": 99,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_2",
+      "from_edge_id": "138279929#5",
+      "to_edge_id": "138279929#6",
+      "count": 191.0
+    },
+    {
+      "gate_index": 100,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_3",
+      "from_edge_id": "819061611#1",
+      "to_edge_id": "562893034",
+      "count": 344.0
+    },
+    {
+      "gate_index": 101,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_4",
+      "from_edge_id": "562893034",
+      "to_edge_id": "708079739",
+      "count": 0.0
+    },
+    {
+      "gate_index": 102,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_1",
+      "from_edge_id": "167719718#1",
+      "to_edge_id": "712473866",
+      "count": 1599.0
+    },
+    {
+      "gate_index": 103,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_2",
+      "from_edge_id": "321628439#1",
+      "to_edge_id": "321628304",
+      "count": 1921.5
+    },
+    {
+      "gate_index": 104,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_3",
+      "from_edge_id": "712473856#0",
+      "to_edge_id": "167719718#1",
+      "count": 362.5
+    },
+    {
+      "gate_index": 105,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_4",
+      "from_edge_id": "167719718#1",
+      "to_edge_id": "321628313",
+      "count": 353.5
+    },
+    {
+      "gate_index": 106,
+      "camera_id": "cam_e5",
+      "gate_id": "gate_1",
+      "from_edge_id": "819904521#0",
+      "to_edge_id": "206830704#1",
+      "count": 3130.5
+    },
+    {
+      "gate_index": 107,
+      "camera_id": "cam_e5",
+      "gate_id": "gate_2",
+      "from_edge_id": "206830704#1",
+      "to_edge_id": "206830704#0",
+      "count": 440.5
+    },
+    {
+      "gate_index": 108,
+      "camera_id": "cam_e6",
+      "gate_id": "gate_1",
+      "from_edge_id": "378721691",
+      "to_edge_id": "297728673#0",
+      "count": 1159.0
+    },
+    {
+      "gate_index": 109,
+      "camera_id": "cam_e6",
+      "gate_id": "gate_2",
+      "from_edge_id": "297728673#0",
+      "to_edge_id": "297728673#1",
+      "count": 1361.0
+    },
+    {
+      "gate_index": 110,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_1",
+      "from_edge_id": "819799029#1",
+      "to_edge_id": "1203937858#0",
+      "count": 237.0
+    },
+    {
+      "gate_index": 111,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_2",
+      "from_edge_id": "206853679#0",
+      "to_edge_id": "208241318#1",
+      "count": 877.0
+    },
+    {
+      "gate_index": 112,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_3",
+      "from_edge_id": "819799029#1",
+      "to_edge_id": "183449863#2",
+      "count": 35.0
+    },
+    {
+      "gate_index": 113,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_4",
+      "from_edge_id": "206853679#0",
+      "to_edge_id": "183449863#2",
+      "count": 207.5
+    },
+    {
+      "gate_index": 114,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_5",
+      "from_edge_id": "183449863#2",
+      "to_edge_id": "1203937856",
+      "count": 9.5
+    },
+    {
+      "gate_index": 115,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_6",
+      "from_edge_id": "673662845#0",
+      "to_edge_id": "206853679#0",
+      "count": 10.5
+    },
+    {
+      "gate_index": 116,
+      "camera_id": "cam_f2",
+      "gate_id": "gate_1",
+      "from_edge_id": "819799019#2",
+      "to_edge_id": "183840224#1",
+      "count": 7564.5
+    },
+    {
+      "gate_index": 117,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_1",
+      "from_edge_id": "707974623",
+      "to_edge_id": "819061594#0",
+      "count": 1145.5
+    },
+    {
+      "gate_index": 118,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_2",
+      "from_edge_id": "707974623",
+      "to_edge_id": "172281040",
+      "count": 841.5
+    },
+    {
+      "gate_index": 119,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_3",
+      "from_edge_id": "707974623",
+      "to_edge_id": "156356513",
+      "count": 946.0
+    },
+    {
+      "gate_index": 120,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_1",
+      "from_edge_id": "206853654#7",
+      "to_edge_id": "820210979#1",
+      "count": 796.0
+    },
+    {
+      "gate_index": 121,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_2",
+      "from_edge_id": "206853654#7",
+      "to_edge_id": "241618684#0",
+      "count": 935.0
+    },
+    {
+      "gate_index": 122,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_3",
+      "from_edge_id": "206853654#7",
+      "to_edge_id": "-241618684#1",
+      "count": 635.0
+    },
+    {
+      "gate_index": 123,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_1",
+      "from_edge_id": "-183972467",
+      "to_edge_id": "526197779#1",
+      "count": 2218.5
+    },
+    {
+      "gate_index": 124,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_2",
+      "from_edge_id": "-183972467",
+      "to_edge_id": "526197779#1",
+      "count": 1831.5
+    },
+    {
+      "gate_index": 125,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_3",
+      "from_edge_id": "490965895#0",
+      "to_edge_id": "1032934318",
+      "count": 2445.0
+    },
+    {
+      "gate_index": 126,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_4",
+      "from_edge_id": "490965895#0",
+      "to_edge_id": "1032934318",
+      "count": 3007.5
+    },
+    {
+      "gate_index": 127,
+      "camera_id": "cam_f6",
+      "gate_id": "gate_1",
+      "from_edge_id": "183435297#2",
+      "to_edge_id": "1037733904",
+      "count": 2339.5
+    },
+    {
+      "gate_index": 128,
+      "camera_id": "cam_f6",
+      "gate_id": "gate_2",
+      "from_edge_id": "183435297#2",
+      "to_edge_id": "482447786#1",
+      "count": 3133.0
+    },
+    {
+      "gate_index": 129,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_1",
+      "from_edge_id": "183840227#3",
+      "to_edge_id": "-672232296#1",
+      "count": 1191.0
+    },
+    {
+      "gate_index": 130,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_2",
+      "from_edge_id": "183840227#3",
+      "to_edge_id": "183840227#1",
+      "count": 151.5
+    },
+    {
+      "gate_index": 131,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_3",
+      "from_edge_id": "384870464#2",
+      "to_edge_id": "713092771#5",
+      "count": 201.0
+    },
+    {
+      "gate_index": 132,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_4",
+      "from_edge_id": "384870464#2",
+      "to_edge_id": "183840227#3",
+      "count": 401.0
+    },
+    {
+      "gate_index": 133,
+      "camera_id": "cam_f8",
+      "gate_id": "gate_1",
+      "from_edge_id": "296744922#6",
+      "to_edge_id": "-22988092#3",
+      "count": 1856.0
+    },
+    {
+      "gate_index": 134,
+      "camera_id": "cam_f8",
+      "gate_id": "gate_2",
+      "from_edge_id": "714014613#0",
+      "to_edge_id": "778294009#0",
+      "count": 2581.5
+    },
+    {
+      "gate_index": 135,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_1",
+      "from_edge_id": "-435767759",
+      "to_edge_id": "257324213",
+      "count": 2553.0
+    },
+    {
+      "gate_index": 136,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_2",
+      "from_edge_id": "183715803#3",
+      "to_edge_id": "257324211#0",
+      "count": 875.5
+    },
+    {
+      "gate_index": 137,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_3",
+      "from_edge_id": "710402993#4",
+      "to_edge_id": "710402993#2",
+      "count": 743.0
+    },
+    {
+      "gate_index": 138,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_4",
+      "from_edge_id": "257324211#0",
+      "to_edge_id": "710402993#4",
+      "count": 1384.0
+    },
+    {
+      "gate_index": 139,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_5",
+      "from_edge_id": "710402993#4",
+      "to_edge_id": "772694319",
+      "count": 1292.0
+    },
+    {
+      "gate_index": 140,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_6",
+      "from_edge_id": "257324217",
+      "to_edge_id": "967039305",
+      "count": 4734.0
+    },
+    {
+      "gate_index": 141,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_1",
+      "from_edge_id": "307034303#0",
+      "to_edge_id": "307030615",
+      "count": 482.5
+    },
+    {
+      "gate_index": 142,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_2",
+      "from_edge_id": "307034303#0",
+      "to_edge_id": "714324868#2",
+      "count": 109.5
+    },
+    {
+      "gate_index": 143,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_3",
+      "from_edge_id": "-307030615",
+      "to_edge_id": "714014613#1",
+      "count": 71.5
+    },
+    {
+      "gate_index": 144,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_4",
+      "from_edge_id": "-307030615",
+      "to_edge_id": "307034303#0",
+      "count": 17.5
+    },
+    {
+      "gate_index": 145,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_5",
+      "from_edge_id": "206824095#3",
+      "to_edge_id": "714014613#0",
+      "count": 14.0
+    },
+    {
+      "gate_index": 146,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_6",
+      "from_edge_id": "296744922#6",
+      "to_edge_id": "206824095#3",
+      "count": 3.0
+    },
+    {
+      "gate_index": 147,
+      "camera_id": "cam_f11",
+      "gate_id": "gate_1",
+      "from_edge_id": "192182412",
+      "to_edge_id": "710263101",
+      "count": 1336.5
+    },
+    {
+      "gate_index": 148,
+      "camera_id": "cam_f11",
+      "gate_id": "gate_2",
+      "from_edge_id": "714482013",
+      "to_edge_id": "192182433#3",
+      "count": 435.0
+    },
+    {
+      "gate_index": 149,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_1",
+      "from_edge_id": "710263101",
+      "to_edge_id": "820351278",
+      "count": 640.5
+    },
+    {
+      "gate_index": 150,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_2",
+      "from_edge_id": "820351278",
+      "to_edge_id": "751584966#0",
+      "count": 130.5
+    },
+    {
+      "gate_index": 151,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_3",
+      "from_edge_id": "714482013",
+      "to_edge_id": "192182433#3",
+      "count": 613.5
+    },
+    {
+      "gate_index": 152,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_4",
+      "from_edge_id": "206830698",
+      "to_edge_id": "192182421",
+      "count": 675.5
+    },
+    {
+      "gate_index": 153,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_5",
+      "from_edge_id": "206830698",
+      "to_edge_id": "192182433#3",
+      "count": 1262.5
+    },
+    {
+      "gate_index": 154,
+      "camera_id": "cam_f13",
+      "gate_id": "gate_1",
+      "from_edge_id": "751287954#2",
+      "to_edge_id": "751287954#0",
+      "count": 3640.0
+    },
+    {
+      "gate_index": 155,
+      "camera_id": "cam_f13",
+      "gate_id": "gate_2",
+      "from_edge_id": "751287954#2",
+      "to_edge_id": "711701159#0",
+      "count": 3577.0
+    },
+    {
+      "gate_index": 156,
+      "camera_id": "cam_f14",
+      "gate_id": "gate_1",
+      "from_edge_id": "306158864#3",
+      "to_edge_id": "205784550",
+      "count": 2623.0
+    },
+    {
+      "gate_index": 157,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_1",
+      "from_edge_id": "429424733",
+      "to_edge_id": "-205784550",
+      "count": 1514.5
+    },
+    {
+      "gate_index": 158,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_2",
+      "from_edge_id": "-205784550",
+      "to_edge_id": "751287956#0",
+      "count": 916.5
+    },
+    {
+      "gate_index": 159,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_3",
+      "from_edge_id": "751287954#2",
+      "to_edge_id": "205784550",
+      "count": 4697.5
+    },
+    {
+      "gate_index": 160,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_1",
+      "from_edge_id": "306854731",
+      "to_edge_id": "772605627",
+      "count": 1956.5
+    },
+    {
+      "gate_index": 161,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_2",
+      "from_edge_id": "306854731",
+      "to_edge_id": "820210985#0",
+      "count": 441.0
+    },
+    {
+      "gate_index": 162,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_3",
+      "from_edge_id": "399013238#1",
+      "to_edge_id": "976701335",
+      "count": 1258.0
+    },
+    {
+      "gate_index": 163,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_4",
+      "from_edge_id": "399013238#1",
+      "to_edge_id": "820210985#0",
+      "count": 130.5
+    },
+    {
+      "gate_index": 164,
+      "camera_id": "cam_f17",
+      "gate_id": "gate_1",
+      "from_edge_id": "-490710459#1",
+      "to_edge_id": "-490710459#0",
+      "count": 1581.5
+    },
+    {
+      "gate_index": 165,
+      "camera_id": "cam_f17",
+      "gate_id": "gate_2",
+      "from_edge_id": "490710459#1",
+      "to_edge_id": "704562114#0",
+      "count": 1871.0
+    },
+    {
+      "gate_index": 166,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_1",
+      "from_edge_id": "206824293",
+      "to_edge_id": "206824265",
+      "count": 7.5
+    },
+    {
+      "gate_index": 167,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_2",
+      "from_edge_id": "206824293",
+      "to_edge_id": "306158863",
+      "count": 87.5
+    },
+    {
+      "gate_index": 168,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_3",
+      "from_edge_id": "297728966#3",
+      "to_edge_id": "206824295#1",
+      "count": 14.5
+    },
+    {
+      "gate_index": 169,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_4",
+      "from_edge_id": "206824293",
+      "to_edge_id": "306158863",
+      "count": 66.5
+    },
+    {
+      "gate_index": 170,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_5",
+      "from_edge_id": "306158863",
+      "to_edge_id": "713730214#0",
+      "count": 70.5
+    },
+    {
+      "gate_index": 171,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_6",
+      "from_edge_id": "306158863",
+      "to_edge_id": "713730214#0",
+      "count": 76.0
+    },
+    {
+      "gate_index": 172,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_7",
+      "from_edge_id": "306158863",
+      "to_edge_id": "297728966#3",
+      "count": 61.5
+    },
+    {
+      "gate_index": 173,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_8",
+      "from_edge_id": "297728966#3",
+      "to_edge_id": "206824265",
+      "count": 48.5
+    },
+    {
+      "gate_index": 174,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_9",
+      "from_edge_id": "297728966#3",
+      "to_edge_id": "306158863",
+      "count": 31.5
+    },
+    {
+      "gate_index": 175,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_10",
+      "from_edge_id": "297728966#3",
+      "to_edge_id": "306158863",
+      "count": 36.5
+    },
+    {
+      "gate_index": 176,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_11",
+      "from_edge_id": "206824265",
+      "to_edge_id": "41895335#3",
+      "count": 7.0
+    },
+    {
+      "gate_index": 177,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_1",
+      "from_edge_id": "206830698",
+      "to_edge_id": "192182421",
+      "count": 6984.0
+    },
+    {
+      "gate_index": 178,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_2",
+      "from_edge_id": "206830698",
+      "to_edge_id": "41895335#1",
+      "count": 693.5
+    },
+    {
+      "gate_index": 179,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_3",
+      "from_edge_id": "192182433#3",
+      "to_edge_id": "41895335#1",
+      "count": 2083.0
+    },
+    {
+      "gate_index": 180,
+      "camera_id": "cam_f20",
+      "gate_id": "gate_1",
+      "from_edge_id": "714014613#4",
+      "to_edge_id": "714014613#5",
+      "count": 3977.5
+    },
+    {
+      "gate_index": 181,
+      "camera_id": "cam_f20",
+      "gate_id": "gate_2",
+      "from_edge_id": "704846030#2",
+      "to_edge_id": "296744922#1",
+      "count": 2752.0
+    },
+    {
+      "gate_index": 182,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_1",
+      "from_edge_id": "976721424",
+      "to_edge_id": "976721426#1",
+      "count": 27.5
+    },
+    {
+      "gate_index": 183,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_2",
+      "from_edge_id": "976721424",
+      "to_edge_id": "533273463",
+      "count": 26.0
+    },
+    {
+      "gate_index": 184,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_3",
+      "from_edge_id": "976721424",
+      "to_edge_id": "533273463",
+      "count": 20.0
+    },
+    {
+      "gate_index": 185,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_4",
+      "from_edge_id": "976721423#1",
+      "to_edge_id": "976721423#0",
+      "count": 281.0
+    },
+    {
+      "gate_index": 186,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_5",
+      "from_edge_id": "772683242",
+      "to_edge_id": "976721424",
+      "count": 73.0
+    },
+    {
+      "gate_index": 187,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_6",
+      "from_edge_id": "772683242",
+      "to_edge_id": "976721423#1",
+      "count": 5.0
+    },
+    {
+      "gate_index": 188,
+      "camera_id": "cam_f22",
+      "gate_id": "gate_1",
+      "from_edge_id": "-705790522",
+      "to_edge_id": "712010780#7",
+      "count": 1567.0
+    },
+    {
+      "gate_index": 189,
+      "camera_id": "cam_f22",
+      "gate_id": "gate_2",
+      "from_edge_id": "770883168#1",
+      "to_edge_id": "770883168#2",
+      "count": 326.0
+    },
+    {
+      "gate_index": 190,
+      "camera_id": "cam_f23",
+      "gate_id": "gate_1",
+      "from_edge_id": "399013238#1",
+      "to_edge_id": "399013238#0",
+      "count": 505.0
+    },
+    {
+      "gate_index": 191,
+      "camera_id": "cam_f24",
+      "gate_id": "gate_1",
+      "from_edge_id": "772683246#3",
+      "to_edge_id": "772683246#4",
+      "count": 2406.5
+    },
+    {
+      "gate_index": 192,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_1",
+      "from_edge_id": "712010777#1",
+      "to_edge_id": "712010777#0",
+      "count": 383.0
+    },
+    {
+      "gate_index": 193,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_2",
+      "from_edge_id": "-712010777#1",
+      "to_edge_id": "-976701334",
+      "count": 40.5
+    },
+    {
+      "gate_index": 194,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_3",
+      "from_edge_id": "-712010777#1",
+      "to_edge_id": "377740829",
+      "count": 545.5
+    },
+    {
+      "gate_index": 195,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_4",
+      "from_edge_id": "-703917295",
+      "to_edge_id": "-712010777#1",
+      "count": 515.0
+    },
+    {
+      "gate_index": 196,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_5",
+      "from_edge_id": "-703917295",
+      "to_edge_id": "712010777#1",
+      "count": 534.5
+    },
+    {
+      "gate_index": 197,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_1",
+      "from_edge_id": "306158864#3",
+      "to_edge_id": "-751316848",
+      "count": 508.0
+    },
+    {
+      "gate_index": 198,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_2",
+      "from_edge_id": "306158864#3",
+      "to_edge_id": "-205784550",
+      "count": 214.5
+    },
+    {
+      "gate_index": 199,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_3",
+      "from_edge_id": "751316848",
+      "to_edge_id": "713730214#0",
+      "count": 303.5
+    },
+    {
+      "gate_index": 200,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_4",
+      "from_edge_id": "751316848",
+      "to_edge_id": "751287954#2",
+      "count": 342.0
+    },
+    {
+      "gate_index": 201,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_5",
+      "from_edge_id": "751287954#2",
+      "to_edge_id": "205784550",
+      "count": 217.0
+    },
+    {
+      "gate_index": 202,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_6",
+      "from_edge_id": "751287954#2",
+      "to_edge_id": "306158864#3",
+      "count": 960.0
+    },
+    {
+      "gate_index": 203,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_7",
+      "from_edge_id": "-205784550",
+      "to_edge_id": "751287956#0",
+      "count": 88.0
+    },
+    {
+      "gate_index": 204,
+      "camera_id": "cam_g3",
+      "gate_id": "gate_1",
+      "from_edge_id": "409750500#3",
+      "to_edge_id": "409750500#1",
+      "count": 557.5
+    },
+    {
+      "gate_index": 205,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_1",
+      "from_edge_id": "285704242",
+      "to_edge_id": "710516675#0",
+      "count": 161.5
+    },
+    {
+      "gate_index": 206,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_2",
+      "from_edge_id": "285704242",
+      "to_edge_id": "490736224#0",
+      "count": 121.5
+    },
+    {
+      "gate_index": 207,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_3",
+      "from_edge_id": "735262494#1",
+      "to_edge_id": "710683369#0",
+      "count": 561.0
+    },
+    {
+      "gate_index": 208,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_4",
+      "from_edge_id": "735262494#1",
+      "to_edge_id": "230863139#1",
+      "count": 98.5
+    },
+    {
+      "gate_index": 209,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_1",
+      "from_edge_id": "376509794#4",
+      "to_edge_id": "376509794#3",
+      "count": 3056.0
+    },
+    {
+      "gate_index": 210,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_2",
+      "from_edge_id": "404896406#0",
+      "to_edge_id": "317670572",
+      "count": 2130.0
+    },
+    {
+      "gate_index": 211,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_3",
+      "from_edge_id": "404896406#0",
+      "to_edge_id": "317670572",
+      "count": 999.0
+    },
+    {
+      "gate_index": 212,
+      "camera_id": "cam_g6",
+      "gate_id": "gate_1",
+      "from_edge_id": "409750500#1",
+      "to_edge_id": "407998743#1",
+      "count": 1551.5
+    },
+    {
+      "gate_index": 213,
+      "camera_id": "cam_g6",
+      "gate_id": "gate_2",
+      "from_edge_id": "735262491",
+      "to_edge_id": "709681730",
+      "count": 2052.0
+    },
+    {
+      "gate_index": 214,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_1",
+      "from_edge_id": "491637747#0",
+      "to_edge_id": "208241311#1",
+      "count": 129.0
+    },
+    {
+      "gate_index": 215,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_2",
+      "from_edge_id": "491637747#0",
+      "to_edge_id": "820458011#1",
+      "count": 207.0
+    },
+    {
+      "gate_index": 216,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_3",
+      "from_edge_id": "775193318#1",
+      "to_edge_id": "208241311#1",
+      "count": 117.0
+    },
+    {
+      "gate_index": 217,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_44",
+      "from_edge_id": "775193318#1",
+      "to_edge_id": "491637747#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 218,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_1",
+      "from_edge_id": "467615880",
+      "to_edge_id": "467615881#19",
+      "count": 1549.5
+    },
+    {
+      "gate_index": 219,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_2",
+      "from_edge_id": "467615880",
+      "to_edge_id": "138258235#0",
+      "count": 773.0
+    },
+    {
+      "gate_index": 220,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_3",
+      "from_edge_id": "208241178",
+      "to_edge_id": "-467615881#19",
+      "count": 1461.0
+    },
+    {
+      "gate_index": 221,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_1",
+      "from_edge_id": "46510099",
+      "to_edge_id": "772118306",
+      "count": 324.5
+    },
+    {
+      "gate_index": 222,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_2",
+      "from_edge_id": "46510099",
+      "to_edge_id": "772118306",
+      "count": 563.5
+    },
+    {
+      "gate_index": 223,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_3",
+      "from_edge_id": "46510099",
+      "to_edge_id": "772118306",
+      "count": 167.0
+    },
+    {
+      "gate_index": 224,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_4",
+      "from_edge_id": "46510099",
+      "to_edge_id": "772118306",
+      "count": 1023.0
+    },
+    {
+      "gate_index": 225,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_5",
+      "from_edge_id": "46510099",
+      "to_edge_id": "772118306",
+      "count": 376.5
+    },
+    {
+      "gate_index": 226,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_6",
+      "from_edge_id": "46510099",
+      "to_edge_id": "295507009#1",
+      "count": 2423.5
+    },
+    {
+      "gate_index": 227,
+      "camera_id": "cam_i11",
+      "gate_id": "gate_1",
+      "from_edge_id": "138448179#0",
+      "to_edge_id": "711303145",
+      "count": 2723.5
+    },
+    {
+      "gate_index": 228,
+      "camera_id": "cam_i11",
+      "gate_id": "gate_2",
+      "from_edge_id": "208241282",
+      "to_edge_id": "138448179#0",
+      "count": 1812.0
+    },
+    {
+      "gate_index": 229,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_1",
+      "from_edge_id": "800396235#0",
+      "to_edge_id": "163725460#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 230,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_2",
+      "from_edge_id": "800396235#0",
+      "to_edge_id": "163725460#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 231,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_3",
+      "from_edge_id": "800396235#0",
+      "to_edge_id": "163725460#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 232,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_1",
+      "from_edge_id": "332560360#0",
+      "to_edge_id": "985157346#0",
+      "count": 1034.5
+    },
+    {
+      "gate_index": 233,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_2",
+      "from_edge_id": "332560360#0",
+      "to_edge_id": "332560360#1",
+      "count": 2418.0
+    },
+    {
+      "gate_index": 234,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_3",
+      "from_edge_id": "985157346#1",
+      "to_edge_id": "985157346#0",
+      "count": 1562.5
+    },
+    {
+      "gate_index": 235,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_1",
+      "from_edge_id": "370219349#1",
+      "to_edge_id": "771918842",
+      "count": 368.0
+    },
+    {
+      "gate_index": 236,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_2",
+      "from_edge_id": "370219349#1",
+      "to_edge_id": "771918844",
+      "count": 379.5
+    },
+    {
+      "gate_index": 237,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_3",
+      "from_edge_id": "46510030",
+      "to_edge_id": "820104111",
+      "count": 89.5
+    },
+    {
+      "gate_index": 238,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_4",
+      "from_edge_id": "46510030",
+      "to_edge_id": "370219349#1",
+      "count": 368.0
+    },
+    {
+      "gate_index": 239,
+      "camera_id": "cam_k1",
+      "gate_id": "gate_1",
+      "from_edge_id": "208241312",
+      "to_edge_id": "306158893#0",
+      "count": 4086.5
+    },
+    {
+      "gate_index": 240,
+      "camera_id": "cam_k1",
+      "gate_id": "gate_2",
+      "from_edge_id": "183428322",
+      "to_edge_id": "325413814",
+      "count": 2183.5
+    },
+    {
+      "gate_index": 241,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_1",
+      "from_edge_id": "370219349#1",
+      "to_edge_id": "491620421#0",
+      "count": 3071.5
+    },
+    {
+      "gate_index": 242,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_2",
+      "from_edge_id": "370219349#1",
+      "to_edge_id": "1212815430#1",
+      "count": 39.0
+    },
+    {
+      "gate_index": 243,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_3",
+      "from_edge_id": "370219349#1",
+      "to_edge_id": "820457994#0",
+      "count": 106.0
+    },
+    {
+      "gate_index": 244,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_4",
+      "from_edge_id": "490965519#9",
+      "to_edge_id": "820457994#0",
+      "count": 1555.5
+    },
+    {
+      "gate_index": 245,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_5",
+      "from_edge_id": "820457994#0",
+      "to_edge_id": "1212815430#1",
+      "count": 1122.0
+    },
+    {
+      "gate_index": 246,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_6",
+      "from_edge_id": "820457994#0",
+      "to_edge_id": "820457994#2",
+      "count": 1927.5
+    },
+    {
+      "gate_index": 247,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_1",
+      "from_edge_id": "1014940193#2",
+      "to_edge_id": "360452847",
+      "count": 2069.5
+    },
+    {
+      "gate_index": 248,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_2",
+      "from_edge_id": "183687934#0",
+      "to_edge_id": "306158889#0",
+      "count": 2073.5
+    },
+    {
+      "gate_index": 249,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_3",
+      "from_edge_id": "777264066",
+      "to_edge_id": "306158889#0",
+      "count": 3646.5
+    },
+    {
+      "gate_index": 250,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_1",
+      "from_edge_id": "46510030",
+      "to_edge_id": "322859478",
+      "count": 1511.5
+    },
+    {
+      "gate_index": 251,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_2",
+      "from_edge_id": "322859478",
+      "to_edge_id": "370219347#0",
+      "count": 346.5
+    },
+    {
+      "gate_index": 252,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_3",
+      "from_edge_id": "322859477",
+      "to_edge_id": "370219348#2",
+      "count": 1543.0
+    },
+    {
+      "gate_index": 253,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_1",
+      "from_edge_id": "241886392",
+      "to_edge_id": "138279934",
+      "count": 1372.5
+    },
+    {
+      "gate_index": 254,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_2",
+      "from_edge_id": "138279928",
+      "to_edge_id": "321628431",
+      "count": 1209.0
+    },
+    {
+      "gate_index": 255,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_3",
+      "from_edge_id": "816508172",
+      "to_edge_id": "138279928",
+      "count": 2351.5
+    },
+    {
+      "gate_index": 256,
+      "camera_id": "cam_m2",
+      "gate_id": "gate_1",
+      "from_edge_id": "138191503#0",
+      "to_edge_id": "138191485#1",
+      "count": 980.5
+    },
+    {
+      "gate_index": 257,
+      "camera_id": "cam_m2",
+      "gate_id": "gate_2",
+      "from_edge_id": "138191503#0",
+      "to_edge_id": "138191493",
+      "count": 1682.0
+    },
+    {
+      "gate_index": 258,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_1",
+      "from_edge_id": "138258223",
+      "to_edge_id": "241886409",
+      "count": 498.0
+    },
+    {
+      "gate_index": 259,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_2",
+      "from_edge_id": "467615880",
+      "to_edge_id": "241886409",
+      "count": 982.0
+    },
+    {
+      "gate_index": 260,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_3",
+      "from_edge_id": "241886408",
+      "to_edge_id": "208241178",
+      "count": 572.5
+    },
+    {
+      "gate_index": 261,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_4",
+      "from_edge_id": "404003670",
+      "to_edge_id": "208241178",
+      "count": 368.0
+    },
+    {
+      "gate_index": 266,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_1",
+      "from_edge_id": "317670568",
+      "to_edge_id": "131609311",
+      "count": 1881.5
+    },
+    {
+      "gate_index": 267,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_2",
+      "from_edge_id": "317670568",
+      "to_edge_id": "131609311",
+      "count": 3894.5
+    },
+    {
+      "gate_index": 268,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_3",
+      "from_edge_id": "404003672#1",
+      "to_edge_id": "41888516#1",
+      "count": 2767.0
+    },
+    {
+      "gate_index": 279,
+      "camera_id": "cam_m11",
+      "gate_id": "gate_4",
+      "from_edge_id": "164166938",
+      "to_edge_id": "46510094",
+      "count": 542.0
+    },
+    {
+      "gate_index": 280,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_1",
+      "from_edge_id": "1319919689",
+      "to_edge_id": "635696596",
+      "count": 632.5
+    },
+    {
+      "gate_index": 281,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_2",
+      "from_edge_id": "1319919689",
+      "to_edge_id": "1316734555",
+      "count": 1134.0
+    },
+    {
+      "gate_index": 282,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_3",
+      "from_edge_id": "1319919689",
+      "to_edge_id": "635696596",
+      "count": 2061.5
+    },
+    {
+      "gate_index": 283,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_4",
+      "from_edge_id": "1316734554",
+      "to_edge_id": "548115155",
+      "count": 765.5
+    },
+    {
+      "gate_index": 284,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_1",
+      "from_edge_id": "635696593",
+      "to_edge_id": "1319410182",
+      "count": 1440.0
+    },
+    {
+      "gate_index": 285,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_2",
+      "from_edge_id": "1319410182",
+      "to_edge_id": "867611259",
+      "count": 1606.5
+    },
+    {
+      "gate_index": 286,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_3",
+      "from_edge_id": "1319410181",
+      "to_edge_id": "867611252",
+      "count": 2016.0
+    },
+    {
+      "gate_index": 288,
+      "camera_id": "cam_m14",
+      "gate_id": "gate_2",
+      "from_edge_id": "851359758",
+      "to_edge_id": "1319410181",
+      "count": 1262.5
+    },
+    {
+      "gate_index": 289,
+      "camera_id": "cam_m14",
+      "gate_id": "gate_3",
+      "from_edge_id": "851359758",
+      "to_edge_id": "635696593",
+      "count": 895.5
+    },
+    {
+      "gate_index": 292,
+      "camera_id": "cam_m17",
+      "gate_id": "gate_1",
+      "from_edge_id": "1319920280",
+      "to_edge_id": "851359758",
+      "count": 3306.0
+    },
+    {
+      "gate_index": 293,
+      "camera_id": "cam_m17",
+      "gate_id": "gate_2",
+      "from_edge_id": "1319410180",
+      "to_edge_id": "635696593",
+      "count": 2155.5
+    },
+    {
+      "gate_index": 294,
+      "camera_id": "cam_n1",
+      "gate_id": "gate_1",
+      "from_edge_id": "548115272#2",
+      "to_edge_id": "1470031967#0",
+      "count": 1192.0
+    },
+    {
+      "gate_index": 295,
+      "camera_id": "cam_n2",
+      "gate_id": "gate_1",
+      "from_edge_id": "1155231754#0",
+      "to_edge_id": "1112310176",
+      "count": 1731.5
+    },
+    {
+      "gate_index": 296,
+      "camera_id": "cam_n2",
+      "gate_id": "gate_2",
+      "from_edge_id": "548115278",
+      "to_edge_id": "795036962",
+      "count": 1813.5
+    },
+    {
+      "gate_index": 297,
+      "camera_id": "cam_o1",
+      "gate_id": "gate_1",
+      "from_edge_id": "386900950",
+      "to_edge_id": "-615615381",
+      "count": 2771.0
+    },
+    {
+      "gate_index": 298,
+      "camera_id": "cam_o1",
+      "gate_id": "gate_2",
+      "from_edge_id": "566743644",
+      "to_edge_id": "615615381",
+      "count": 821.5
+    },
+    {
+      "gate_index": 299,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_1",
+      "from_edge_id": "386900950",
+      "to_edge_id": "514715386#3",
+      "count": 651.0
+    },
+    {
+      "gate_index": 300,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_2",
+      "from_edge_id": "386900950",
+      "to_edge_id": "-545595778",
+      "count": 651.5
+    },
+    {
+      "gate_index": 301,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_3",
+      "from_edge_id": "638684285#1",
+      "to_edge_id": "638684285#2",
+      "count": 412.0
+    },
+    {
+      "gate_index": 302,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_4",
+      "from_edge_id": "638684285#1",
+      "to_edge_id": "638684285#2",
+      "count": 348.5
+    },
+    {
+      "gate_index": 303,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_5",
+      "from_edge_id": "638684285#1",
+      "to_edge_id": "638684285#2",
+      "count": 439.5
+    },
+    {
+      "gate_index": 304,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_6",
+      "from_edge_id": "638684285#1",
+      "to_edge_id": "514715386#3",
+      "count": 213.0
+    },
+    {
+      "gate_index": 305,
+      "camera_id": "cam_o3",
+      "gate_id": "gate_1",
+      "from_edge_id": "638684285#0",
+      "to_edge_id": "638684285#1",
+      "count": 790.5
+    },
+    {
+      "gate_index": 306,
+      "camera_id": "cam_o3",
+      "gate_id": "gate_2",
+      "from_edge_id": "638684285#0",
+      "to_edge_id": "638684285#1",
+      "count": 18.5
+    },
+    {
+      "gate_index": 307,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_1",
+      "from_edge_id": "514715386#3",
+      "to_edge_id": "-615615381",
+      "count": 234.5
+    },
+    {
+      "gate_index": 308,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_2",
+      "from_edge_id": "514715386#3",
+      "to_edge_id": "545595778",
+      "count": 85.0
+    },
+    {
+      "gate_index": 309,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_3",
+      "from_edge_id": "-545595778",
+      "to_edge_id": "514715386#3",
+      "count": 763.0
+    },
+    {
+      "gate_index": 310,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_1",
+      "from_edge_id": "138191483",
+      "to_edge_id": "306158785",
+      "count": 483.5
+    },
+    {
+      "gate_index": 311,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_2",
+      "from_edge_id": "138191483",
+      "to_edge_id": "306158785",
+      "count": 192.5
+    },
+    {
+      "gate_index": 312,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_3",
+      "from_edge_id": "138191483",
+      "to_edge_id": "306158785",
+      "count": 551.0
+    },
+    {
+      "gate_index": 313,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_1",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518745",
+      "count": 4.0
+    },
+    {
+      "gate_index": 314,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_2",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518749#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 315,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_3",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518745",
+      "count": 0.0
+    },
+    {
+      "gate_index": 316,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_4",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518745",
+      "count": 4.5
+    },
+    {
+      "gate_index": 317,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_5",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518745",
+      "count": 0.0
+    },
+    {
+      "gate_index": 318,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_6",
+      "from_edge_id": "664148478#2",
+      "to_edge_id": "664148478#1",
+      "count": 6.0
+    },
+    {
+      "gate_index": 319,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_7",
+      "from_edge_id": "548115171#2",
+      "to_edge_id": "548115171#0",
+      "count": 5.5
+    },
+    {
+      "gate_index": 320,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_8",
+      "from_edge_id": "548115171#2",
+      "to_edge_id": "639537873#1",
+      "count": 120.0
+    },
+    {
+      "gate_index": 321,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_9",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548518745",
+      "count": 0.0
+    },
+    {
+      "gate_index": 322,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_10",
+      "from_edge_id": "548115171#0",
+      "to_edge_id": "548115171#2",
+      "count": 48.5
+    },
+    {
+      "gate_index": 323,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_1",
+      "from_edge_id": "1167299851#0",
+      "to_edge_id": "643103587#0",
+      "count": 0.0
+    },
+    {
+      "gate_index": 324,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_2",
+      "from_edge_id": "643103587#0",
+      "to_edge_id": "548115221#0",
+      "count": 862.5
+    },
+    {
+      "gate_index": 325,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_3",
+      "from_edge_id": "643103587#0",
+      "to_edge_id": "548115221#0",
+      "count": 559.0
+    },
+    {
+      "gate_index": 326,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_4",
+      "from_edge_id": "643103587#0",
+      "to_edge_id": "548115221#0",
+      "count": 754.5
+    },
+    {
+      "gate_index": 327,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_1",
+      "from_edge_id": "194911803",
+      "to_edge_id": "425318120#1",
+      "count": 1807.0
+    },
+    {
+      "gate_index": 328,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_2",
+      "from_edge_id": "781185952",
+      "to_edge_id": "425318083#1",
+      "count": 1861.0
+    },
+    {
+      "gate_index": 329,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_3",
+      "from_edge_id": "183555254#2",
+      "to_edge_id": "491685228",
+      "count": 454.0
+    },
+    {
+      "gate_index": 330,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_4",
+      "from_edge_id": "194911803",
+      "to_edge_id": "425318120#1",
+      "count": 415.0
+    },
+    {
+      "gate_index": 331,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_1",
+      "from_edge_id": "183555254#2",
+      "to_edge_id": "491685228",
+      "count": 1587.5
+    },
+    {
+      "gate_index": 332,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_2",
+      "from_edge_id": "491685228",
+      "to_edge_id": "820458019#2",
+      "count": 2154.5
+    },
+    {
+      "gate_index": 333,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_3",
+      "from_edge_id": "-208241224#1",
+      "to_edge_id": "208241142",
+      "count": 577.0
+    },
+    {
+      "gate_index": 334,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_4",
+      "from_edge_id": "491685229#2",
+      "to_edge_id": "491685228",
+      "count": 488.5
+    },
+    {
+      "gate_index": 335,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_1",
+      "from_edge_id": "424870772",
+      "to_edge_id": "661491751#1",
+      "count": 4637.0
+    },
+    {
+      "gate_index": 336,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_2",
+      "from_edge_id": "138665704",
+      "to_edge_id": "776179253#0",
+      "count": 1654.5
+    },
+    {
+      "gate_index": 337,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_3",
+      "from_edge_id": "424870772",
+      "to_edge_id": "630436402#0",
+      "count": 1439.5
+    },
+    {
+      "gate_index": 338,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_1",
+      "from_edge_id": "424870772",
+      "to_edge_id": "206824378",
+      "count": 1400.0
+    },
+    {
+      "gate_index": 339,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_2",
+      "from_edge_id": "651819277#1",
+      "to_edge_id": "533193454",
+      "count": 1363.5
+    },
+    {
+      "gate_index": 340,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_3",
+      "from_edge_id": "424870772",
+      "to_edge_id": "651819277#1",
+      "count": 267.0
+    },
+    {
+      "gate_index": 341,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_4",
+      "from_edge_id": "424870772",
+      "to_edge_id": "206824378",
+      "count": 29.5
+    },
+    {
+      "gate_index": 342,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_5",
+      "from_edge_id": "424870772",
+      "to_edge_id": "206824378",
+      "count": 4.5
+    },
+    {
+      "gate_index": 343,
+      "camera_id": "cam_q1",
+      "gate_id": "gate_1",
+      "from_edge_id": "657873599#0",
+      "to_edge_id": "657873599#1",
+      "count": 1960.5
+    },
+    {
+      "gate_index": 344,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_1",
+      "from_edge_id": "839634424#1",
+      "to_edge_id": "315140075#1",
+      "count": 336.0
+    },
+    {
+      "gate_index": 345,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_2",
+      "from_edge_id": "839634424#1",
+      "to_edge_id": "-1021030453",
+      "count": 93.0
+    },
+    {
+      "gate_index": 346,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_3",
+      "from_edge_id": "839634424#1",
+      "to_edge_id": "639777153#1",
+      "count": 112.0
+    },
+    {
+      "gate_index": 347,
+      "camera_id": "cam_q3",
+      "gate_id": "gate_1",
+      "from_edge_id": "895548372",
+      "to_edge_id": "657873599#1",
+      "count": 2043.5
+    },
+    {
+      "gate_index": 348,
+      "camera_id": "cam_q4",
+      "gate_id": "gate_1",
+      "from_edge_id": "1418129588#0",
+      "to_edge_id": "-657873599#3",
+      "count": 753.5
+    },
+    {
+      "gate_index": 349,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_1",
+      "from_edge_id": "713090285",
+      "to_edge_id": "206824057#1",
+      "count": 1150.5
+    },
+    {
+      "gate_index": 350,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_2",
+      "from_edge_id": "713090285",
+      "to_edge_id": "206824057#1",
+      "count": 2808.5
+    },
+    {
+      "gate_index": 351,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_3",
+      "from_edge_id": "713090284#1",
+      "to_edge_id": "489379683",
+      "count": 1155.0
+    },
+    {
+      "gate_index": 352,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_4",
+      "from_edge_id": "713090285",
+      "to_edge_id": "713090284#1",
+      "count": 386.0
+    },
+    {
+      "gate_index": 353,
+      "camera_id": "cam_r2",
+      "gate_id": "gate_1",
+      "from_edge_id": "713090285",
+      "to_edge_id": "519408219",
+      "count": 1584.0
+    }
+  ],
+  "cameras": [
+    {
+      "camera_id": "cam_a1",
+      "n_movements": 8,
+      "total_count": 0.0,
+      "movements": [
+        {
+          "gate_index": 0,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_1",
+          "from_edge_id": "291345240#1",
+          "to_edge_id": "306158865#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 1,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_2",
+          "from_edge_id": "306158865#0",
+          "to_edge_id": "306158865#3",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 2,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_3",
+          "from_edge_id": "194911804#0",
+          "to_edge_id": "306158865#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 3,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_4",
+          "from_edge_id": "291345240#1",
+          "to_edge_id": "291345240#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 4,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_5",
+          "from_edge_id": "1319619924",
+          "to_edge_id": "981256937#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 5,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_6",
+          "from_edge_id": "306158865#0",
+          "to_edge_id": "291345240#1",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 6,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_7",
+          "from_edge_id": "306158865#0",
+          "to_edge_id": "1319619924",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 7,
+          "camera_id": "cam_a1",
+          "gate_id": "gate_8",
+          "from_edge_id": "1319619924",
+          "to_edge_id": "306158865#0",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_a2",
+      "n_movements": 3,
+      "total_count": 3076.5,
+      "movements": [
+        {
+          "gate_index": 8,
+          "camera_id": "cam_a2",
+          "gate_id": "gate_1",
+          "from_edge_id": "704309242#5",
+          "to_edge_id": "1063571027#0",
+          "count": 2109.0,
+          "proportion": 0.6855192588980985
+        },
+        {
+          "gate_index": 9,
+          "camera_id": "cam_a2",
+          "gate_id": "gate_2",
+          "from_edge_id": "629170948",
+          "to_edge_id": "206830706#1",
+          "count": 967.5,
+          "proportion": 0.3144807411019015
+        },
+        {
+          "gate_index": 10,
+          "camera_id": "cam_a2",
+          "gate_id": "gate_3",
+          "from_edge_id": "704309242#5",
+          "to_edge_id": "629170948",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_a3",
+      "n_movements": 2,
+      "total_count": 408.5,
+      "movements": [
+        {
+          "gate_index": 11,
+          "camera_id": "cam_a3",
+          "gate_id": "gate_1",
+          "from_edge_id": "183556690",
+          "to_edge_id": "184017293",
+          "count": 170.5,
+          "proportion": 0.4173806609547124
+        },
+        {
+          "gate_index": 12,
+          "camera_id": "cam_a3",
+          "gate_id": "gate_2",
+          "from_edge_id": "241886461",
+          "to_edge_id": "184017293",
+          "count": 238.0,
+          "proportion": 0.5826193390452876
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_a4",
+      "n_movements": 4,
+      "total_count": 5152.5,
+      "movements": [
+        {
+          "gate_index": 13,
+          "camera_id": "cam_a4",
+          "gate_id": "gate_1",
+          "from_edge_id": "554442874",
+          "to_edge_id": "709703877#2",
+          "count": 996.5,
+          "proportion": 0.19340126152353226
+        },
+        {
+          "gate_index": 14,
+          "camera_id": "cam_a4",
+          "gate_id": "gate_2",
+          "from_edge_id": "554442874",
+          "to_edge_id": "629170948",
+          "count": 957.5,
+          "proportion": 0.18583212032993693
+        },
+        {
+          "gate_index": 15,
+          "camera_id": "cam_a4",
+          "gate_id": "gate_3",
+          "from_edge_id": "709703878#1",
+          "to_edge_id": "183715801#1",
+          "count": 2572.5,
+          "proportion": 0.4992721979621543
+        },
+        {
+          "gate_index": 16,
+          "camera_id": "cam_a4",
+          "gate_id": "gate_4",
+          "from_edge_id": "183317868",
+          "to_edge_id": "709703878#1",
+          "count": 626.0,
+          "proportion": 0.12149442018437652
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_a5",
+      "n_movements": 8,
+      "total_count": 5573.0,
+      "movements": [
+        {
+          "gate_index": 17,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_1",
+          "from_edge_id": "1164192971#2",
+          "to_edge_id": "772683243",
+          "count": 468.5,
+          "proportion": 0.08406603265745559
+        },
+        {
+          "gate_index": 18,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_2",
+          "from_edge_id": "1164192971#2",
+          "to_edge_id": "772683243",
+          "count": 57.5,
+          "proportion": 0.010317602727435852
+        },
+        {
+          "gate_index": 19,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_3",
+          "from_edge_id": "1164192971#2",
+          "to_edge_id": "1164192971#0",
+          "count": 1713.0,
+          "proportion": 0.307374842993002
+        },
+        {
+          "gate_index": 20,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_4",
+          "from_edge_id": "486503023#0",
+          "to_edge_id": "976721426#1",
+          "count": 1685.0,
+          "proportion": 0.30235061905616367
+        },
+        {
+          "gate_index": 21,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_5",
+          "from_edge_id": "486503023#0",
+          "to_edge_id": "1164192971#0",
+          "count": 14.0,
+          "proportion": 0.002512111968419164
+        },
+        {
+          "gate_index": 22,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_6",
+          "from_edge_id": "486503023#0",
+          "to_edge_id": "976721426#1",
+          "count": 1614.0,
+          "proportion": 0.289610622644895
+        },
+        {
+          "gate_index": 23,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_7",
+          "from_edge_id": "486503023#0",
+          "to_edge_id": "772683243",
+          "count": 18.0,
+          "proportion": 0.0032298582451103534
+        },
+        {
+          "gate_index": 24,
+          "camera_id": "cam_a5",
+          "gate_id": "gate_8",
+          "from_edge_id": "486503023#0",
+          "to_edge_id": "772683243",
+          "count": 3.0,
+          "proportion": 0.0005383097075183922
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_b1",
+      "n_movements": 7,
+      "total_count": 4222.0,
+      "movements": [
+        {
+          "gate_index": 25,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_1",
+          "from_edge_id": "1147025899",
+          "to_edge_id": "411759665#0",
+          "count": 1680.5,
+          "proportion": 0.39803410705826625
+        },
+        {
+          "gate_index": 26,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_2",
+          "from_edge_id": "1147025899",
+          "to_edge_id": "328757078",
+          "count": 211.0,
+          "proportion": 0.04997631454287068
+        },
+        {
+          "gate_index": 27,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_3",
+          "from_edge_id": "1147025899",
+          "to_edge_id": "178489346",
+          "count": 121.0,
+          "proportion": 0.02865940312648034
+        },
+        {
+          "gate_index": 28,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_4",
+          "from_edge_id": "411759665#0",
+          "to_edge_id": "411759665#1",
+          "count": 1466.5,
+          "proportion": 0.34734722880151586
+        },
+        {
+          "gate_index": 29,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_5",
+          "from_edge_id": "411759665#0",
+          "to_edge_id": "1147025899",
+          "count": 548.5,
+          "proportion": 0.12991473235433443
+        },
+        {
+          "gate_index": 30,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_6",
+          "from_edge_id": "178489346",
+          "to_edge_id": "775492985",
+          "count": 44.5,
+          "proportion": 0.010540028422548555
+        },
+        {
+          "gate_index": 31,
+          "camera_id": "cam_b1",
+          "gate_id": "gate_7",
+          "from_edge_id": "178489346",
+          "to_edge_id": "1147025899",
+          "count": 150.0,
+          "proportion": 0.035528185693983895
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_b2",
+      "n_movements": 3,
+      "total_count": 8166.0,
+      "movements": [
+        {
+          "gate_index": 32,
+          "camera_id": "cam_b2",
+          "gate_id": "gate_1",
+          "from_edge_id": "-382257499#1",
+          "to_edge_id": "819904524#2",
+          "count": 2770.0,
+          "proportion": 0.33921136419299536
+        },
+        {
+          "gate_index": 33,
+          "camera_id": "cam_b2",
+          "gate_id": "gate_2",
+          "from_edge_id": "382257499#1",
+          "to_edge_id": "819904524#2",
+          "count": 2726.0,
+          "proportion": 0.3338231692383052
+        },
+        {
+          "gate_index": 34,
+          "camera_id": "cam_b2",
+          "gate_id": "gate_3",
+          "from_edge_id": "-382257499#1",
+          "to_edge_id": "-819061596",
+          "count": 2670.0,
+          "proportion": 0.32696546656869946
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c1",
+      "n_movements": 3,
+      "total_count": 8034.0,
+      "movements": [
+        {
+          "gate_index": 35,
+          "camera_id": "cam_c1",
+          "gate_id": "gate_1",
+          "from_edge_id": "1111661767",
+          "to_edge_id": "139012855",
+          "count": 2029.0,
+          "proportion": 0.2525516554642768
+        },
+        {
+          "gate_index": 36,
+          "camera_id": "cam_c1",
+          "gate_id": "gate_2",
+          "from_edge_id": "1111661767",
+          "to_edge_id": "139012855",
+          "count": 2012.5,
+          "proportion": 0.25049788399302964
+        },
+        {
+          "gate_index": 37,
+          "camera_id": "cam_c1",
+          "gate_id": "gate_3",
+          "from_edge_id": "1433340230#1",
+          "to_edge_id": "-675187175#0",
+          "count": 3992.5,
+          "proportion": 0.49695046054269354
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c10",
+      "n_movements": 7,
+      "total_count": 937.5,
+      "movements": [
+        {
+          "gate_index": 65,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_1",
+          "from_edge_id": "993269159",
+          "to_edge_id": "183435296#1",
+          "count": 133.0,
+          "proportion": 0.14186666666666667
+        },
+        {
+          "gate_index": 66,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_2",
+          "from_edge_id": "993269159",
+          "to_edge_id": "-980150785#0",
+          "count": 392.0,
+          "proportion": 0.41813333333333336
+        },
+        {
+          "gate_index": 67,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_3",
+          "from_edge_id": "993269159",
+          "to_edge_id": "183401735",
+          "count": 73.0,
+          "proportion": 0.07786666666666667
+        },
+        {
+          "gate_index": 68,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_4",
+          "from_edge_id": "-980150785#0",
+          "to_edge_id": "-980150785#1",
+          "count": 58.0,
+          "proportion": 0.06186666666666667
+        },
+        {
+          "gate_index": 69,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_5",
+          "from_edge_id": "-980150785#0",
+          "to_edge_id": "993269159",
+          "count": 45.5,
+          "proportion": 0.04853333333333333
+        },
+        {
+          "gate_index": 70,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_6",
+          "from_edge_id": "206853630#4",
+          "to_edge_id": "-980150785#0",
+          "count": 224.5,
+          "proportion": 0.23946666666666666
+        },
+        {
+          "gate_index": 71,
+          "camera_id": "cam_c10",
+          "gate_id": "gate_7",
+          "from_edge_id": "206853630#4",
+          "to_edge_id": "183401735",
+          "count": 11.5,
+          "proportion": 0.012266666666666667
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c11",
+      "n_movements": 6,
+      "total_count": 2369.0,
+      "movements": [
+        {
+          "gate_index": 72,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_1",
+          "from_edge_id": "206824122",
+          "to_edge_id": "241738502#1",
+          "count": 1289.5,
+          "proportion": 0.5443224989447024
+        },
+        {
+          "gate_index": 73,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_2",
+          "from_edge_id": "206824122",
+          "to_edge_id": "241886464",
+          "count": 223.0,
+          "proportion": 0.09413254537779654
+        },
+        {
+          "gate_index": 74,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_3",
+          "from_edge_id": "1311265242",
+          "to_edge_id": "241886464",
+          "count": 157.0,
+          "proportion": 0.06627268889826932
+        },
+        {
+          "gate_index": 75,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_4",
+          "from_edge_id": "1311265242",
+          "to_edge_id": "241886464",
+          "count": 123.0,
+          "proportion": 0.051920641620937104
+        },
+        {
+          "gate_index": 76,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_5",
+          "from_edge_id": "241738502#1",
+          "to_edge_id": "241886464",
+          "count": 536.5,
+          "proportion": 0.22646686365555085
+        },
+        {
+          "gate_index": 77,
+          "camera_id": "cam_c11",
+          "gate_id": "gate_6",
+          "from_edge_id": "949085189#0",
+          "to_edge_id": "241738502#1",
+          "count": 40.0,
+          "proportion": 0.016884761502743775
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c2",
+      "n_movements": 2,
+      "total_count": 4820.5,
+      "movements": [
+        {
+          "gate_index": 38,
+          "camera_id": "cam_c2",
+          "gate_id": "gate_1",
+          "from_edge_id": "173844911",
+          "to_edge_id": "41888516#0",
+          "count": 2043.5,
+          "proportion": 0.42391868063478894
+        },
+        {
+          "gate_index": 39,
+          "camera_id": "cam_c2",
+          "gate_id": "gate_2",
+          "from_edge_id": "708541835",
+          "to_edge_id": "317670568",
+          "count": 2777.0,
+          "proportion": 0.5760813193652111
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c3",
+      "n_movements": 3,
+      "total_count": 7793.0,
+      "movements": [
+        {
+          "gate_index": 40,
+          "camera_id": "cam_c3",
+          "gate_id": "gate_1",
+          "from_edge_id": "206824122",
+          "to_edge_id": "139012855",
+          "count": 3097.0,
+          "proportion": 0.39740793019376364
+        },
+        {
+          "gate_index": 41,
+          "camera_id": "cam_c3",
+          "gate_id": "gate_2",
+          "from_edge_id": "949085189#0",
+          "to_edge_id": "139012877",
+          "count": 1583.5,
+          "proportion": 0.20319517515719235
+        },
+        {
+          "gate_index": 42,
+          "camera_id": "cam_c3",
+          "gate_id": "gate_3",
+          "from_edge_id": "949085189#0",
+          "to_edge_id": "241691507#0",
+          "count": 3112.5,
+          "proportion": 0.399396894649044
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c4",
+      "n_movements": 3,
+      "total_count": 5270.0,
+      "movements": [
+        {
+          "gate_index": 43,
+          "camera_id": "cam_c4",
+          "gate_id": "gate_1",
+          "from_edge_id": "178450675#5",
+          "to_edge_id": "739838044#2",
+          "count": 3112.5,
+          "proportion": 0.5906072106261859
+        },
+        {
+          "gate_index": 44,
+          "camera_id": "cam_c4",
+          "gate_id": "gate_2",
+          "from_edge_id": "178450675#5",
+          "to_edge_id": "1301126131",
+          "count": 1494.5,
+          "proportion": 0.2835863377609108
+        },
+        {
+          "gate_index": 45,
+          "camera_id": "cam_c4",
+          "gate_id": "gate_3",
+          "from_edge_id": "178450675#5",
+          "to_edge_id": "-307152346",
+          "count": 663.0,
+          "proportion": 0.12580645161290321
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c5",
+      "n_movements": 5,
+      "total_count": 9084.0,
+      "movements": [
+        {
+          "gate_index": 46,
+          "camera_id": "cam_c5",
+          "gate_id": "gate_1",
+          "from_edge_id": "714970666",
+          "to_edge_id": "464722742#0",
+          "count": 2605.0,
+          "proportion": 0.28676794363716424
+        },
+        {
+          "gate_index": 47,
+          "camera_id": "cam_c5",
+          "gate_id": "gate_2",
+          "from_edge_id": "688160140",
+          "to_edge_id": "630436400",
+          "count": 3762.0,
+          "proportion": 0.4141347424042272
+        },
+        {
+          "gate_index": 48,
+          "camera_id": "cam_c5",
+          "gate_id": "gate_3",
+          "from_edge_id": "688160140",
+          "to_edge_id": "630436400",
+          "count": 1151.0,
+          "proportion": 0.12670629678555703
+        },
+        {
+          "gate_index": 49,
+          "camera_id": "cam_c5",
+          "gate_id": "gate_4",
+          "from_edge_id": "491449937#1",
+          "to_edge_id": "491449938#0",
+          "count": 1245.5,
+          "proportion": 0.13710920299427565
+        },
+        {
+          "gate_index": 50,
+          "camera_id": "cam_c5",
+          "gate_id": "gate_5",
+          "from_edge_id": "688160140",
+          "to_edge_id": "491449938#0",
+          "count": 320.5,
+          "proportion": 0.03528181417877587
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c6",
+      "n_movements": 4,
+      "total_count": 8096.0,
+      "movements": [
+        {
+          "gate_index": 51,
+          "camera_id": "cam_c6",
+          "gate_id": "gate_1",
+          "from_edge_id": "661491750",
+          "to_edge_id": "241738509#0",
+          "count": 2859.0,
+          "proportion": 0.35313735177865613
+        },
+        {
+          "gate_index": 52,
+          "camera_id": "cam_c6",
+          "gate_id": "gate_2",
+          "from_edge_id": "661491750",
+          "to_edge_id": "554188163",
+          "count": 2284.0,
+          "proportion": 0.28211462450592883
+        },
+        {
+          "gate_index": 53,
+          "camera_id": "cam_c6",
+          "gate_id": "gate_3",
+          "from_edge_id": "661491750",
+          "to_edge_id": "241738509#1",
+          "count": 2429.0,
+          "proportion": 0.30002470355731226
+        },
+        {
+          "gate_index": 54,
+          "camera_id": "cam_c6",
+          "gate_id": "gate_4",
+          "from_edge_id": "139012845#0",
+          "to_edge_id": "241738509#1",
+          "count": 524.0,
+          "proportion": 0.06472332015810277
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c7",
+      "n_movements": 1,
+      "total_count": 3866.0,
+      "movements": [
+        {
+          "gate_index": 55,
+          "camera_id": "cam_c7",
+          "gate_id": "gate_1",
+          "from_edge_id": "402155625#0",
+          "to_edge_id": "663814299#0",
+          "count": 3866.0,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c8",
+      "n_movements": 3,
+      "total_count": 1466.5,
+      "movements": [
+        {
+          "gate_index": 56,
+          "camera_id": "cam_c8",
+          "gate_id": "gate_1",
+          "from_edge_id": "769894649",
+          "to_edge_id": "1110671131",
+          "count": 529.5,
+          "proportion": 0.3610637572451415
+        },
+        {
+          "gate_index": 57,
+          "camera_id": "cam_c8",
+          "gate_id": "gate_2",
+          "from_edge_id": "818848196",
+          "to_edge_id": "1110671131",
+          "count": 81.0,
+          "proportion": 0.055233549266962154
+        },
+        {
+          "gate_index": 58,
+          "camera_id": "cam_c8",
+          "gate_id": "gate_3",
+          "from_edge_id": "-675187175#0",
+          "to_edge_id": "1433687441#1",
+          "count": 856.0,
+          "proportion": 0.5837026934878964
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_c9",
+      "n_movements": 6,
+      "total_count": 0.0,
+      "movements": [
+        {
+          "gate_index": 59,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_1",
+          "from_edge_id": "206824402",
+          "to_edge_id": "776556417#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 60,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_2",
+          "from_edge_id": "206824402",
+          "to_edge_id": "714976508#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 61,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_3",
+          "from_edge_id": "328756976#1",
+          "to_edge_id": "993269161#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 62,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_4",
+          "from_edge_id": "328756976#1",
+          "to_edge_id": "206824402",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 63,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_5",
+          "from_edge_id": "983630914#0",
+          "to_edge_id": "983630917#1",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 64,
+          "camera_id": "cam_c9",
+          "gate_id": "gate_6",
+          "from_edge_id": "983630914#0",
+          "to_edge_id": "714976508#0",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_d1",
+      "n_movements": 4,
+      "total_count": 3479.0,
+      "movements": [
+        {
+          "gate_index": 78,
+          "camera_id": "cam_d1",
+          "gate_id": "gate_1",
+          "from_edge_id": "1475293961",
+          "to_edge_id": "131609037",
+          "count": 972.5,
+          "proportion": 0.27953434895084794
+        },
+        {
+          "gate_index": 79,
+          "camera_id": "cam_d1",
+          "gate_id": "gate_2",
+          "from_edge_id": "1475293961",
+          "to_edge_id": "131609037",
+          "count": 1088.5,
+          "proportion": 0.31287726358148893
+        },
+        {
+          "gate_index": 80,
+          "camera_id": "cam_d1",
+          "gate_id": "gate_3",
+          "from_edge_id": "206824119",
+          "to_edge_id": "183803699#0",
+          "count": 436.0,
+          "proportion": 0.12532336878413336
+        },
+        {
+          "gate_index": 81,
+          "camera_id": "cam_d1",
+          "gate_id": "gate_4",
+          "from_edge_id": "206824119",
+          "to_edge_id": "183803699#0",
+          "count": 982.0,
+          "proportion": 0.28226501868352977
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_d2",
+      "n_movements": 3,
+      "total_count": 5928.5,
+      "movements": [
+        {
+          "gate_index": 82,
+          "camera_id": "cam_d2",
+          "gate_id": "gate_1",
+          "from_edge_id": "183803726",
+          "to_edge_id": "1212514672#0",
+          "count": 3907.0,
+          "proportion": 0.6590199881926289
+        },
+        {
+          "gate_index": 83,
+          "camera_id": "cam_d2",
+          "gate_id": "gate_2",
+          "from_edge_id": "206824376#1",
+          "to_edge_id": "1212514670",
+          "count": 1086.0,
+          "proportion": 0.18318292991481824
+        },
+        {
+          "gate_index": 84,
+          "camera_id": "cam_d2",
+          "gate_id": "gate_3",
+          "from_edge_id": "206824376#1",
+          "to_edge_id": "1212514670",
+          "count": 935.5,
+          "proportion": 0.15779708189255293
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_d3",
+      "n_movements": 3,
+      "total_count": 5900.0,
+      "movements": [
+        {
+          "gate_index": 85,
+          "camera_id": "cam_d3",
+          "gate_id": "gate_1",
+          "from_edge_id": "759510272",
+          "to_edge_id": "525000539",
+          "count": 1158.5,
+          "proportion": 0.19635593220338984
+        },
+        {
+          "gate_index": 86,
+          "camera_id": "cam_d3",
+          "gate_id": "gate_2",
+          "from_edge_id": "759510272",
+          "to_edge_id": "206824318#3",
+          "count": 1423.0,
+          "proportion": 0.2411864406779661
+        },
+        {
+          "gate_index": 87,
+          "camera_id": "cam_d3",
+          "gate_id": "gate_3",
+          "from_edge_id": "754628459",
+          "to_edge_id": "-525000539",
+          "count": 3318.5,
+          "proportion": 0.5624576271186441
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_d4",
+      "n_movements": 4,
+      "total_count": 3954.0,
+      "movements": [
+        {
+          "gate_index": 88,
+          "camera_id": "cam_d4",
+          "gate_id": "gate_1",
+          "from_edge_id": "183827691",
+          "to_edge_id": "722648811#0",
+          "count": 1972.0,
+          "proportion": 0.49873545776428935
+        },
+        {
+          "gate_index": 89,
+          "camera_id": "cam_d4",
+          "gate_id": "gate_2",
+          "from_edge_id": "1032906585#0",
+          "to_edge_id": "206824139",
+          "count": 890.0,
+          "proportion": 0.22508851795649976
+        },
+        {
+          "gate_index": 90,
+          "camera_id": "cam_d4",
+          "gate_id": "gate_3",
+          "from_edge_id": "183827691",
+          "to_edge_id": "722648811#0",
+          "count": 586.5,
+          "proportion": 0.1483308042488619
+        },
+        {
+          "gate_index": 91,
+          "camera_id": "cam_d4",
+          "gate_id": "gate_4",
+          "from_edge_id": "1032906585#0",
+          "to_edge_id": "206824139",
+          "count": 505.5,
+          "proportion": 0.127845220030349
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e1",
+      "n_movements": 2,
+      "total_count": 4295.0,
+      "movements": [
+        {
+          "gate_index": 92,
+          "camera_id": "cam_e1",
+          "gate_id": "gate_1",
+          "from_edge_id": "770557476#7",
+          "to_edge_id": "1030068512",
+          "count": 989.5,
+          "proportion": 0.23038416763678696
+        },
+        {
+          "gate_index": 93,
+          "camera_id": "cam_e1",
+          "gate_id": "gate_2",
+          "from_edge_id": "770557476#7",
+          "to_edge_id": "770557476#4",
+          "count": 3305.5,
+          "proportion": 0.7696158323632131
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e2",
+      "n_movements": 4,
+      "total_count": 2898.5,
+      "movements": [
+        {
+          "gate_index": 94,
+          "camera_id": "cam_e2",
+          "gate_id": "gate_1",
+          "from_edge_id": "206824242#0",
+          "to_edge_id": "208241273",
+          "count": 861.5,
+          "proportion": 0.29722270139727447
+        },
+        {
+          "gate_index": 95,
+          "camera_id": "cam_e2",
+          "gate_id": "gate_2",
+          "from_edge_id": "206824242#0",
+          "to_edge_id": "183819440",
+          "count": 890.0,
+          "proportion": 0.3070553734690357
+        },
+        {
+          "gate_index": 96,
+          "camera_id": "cam_e2",
+          "gate_id": "gate_3",
+          "from_edge_id": "206824242#0",
+          "to_edge_id": "206824242#1",
+          "count": 666.5,
+          "proportion": 0.22994652406417113
+        },
+        {
+          "gate_index": 97,
+          "camera_id": "cam_e2",
+          "gate_id": "gate_4",
+          "from_edge_id": "206824242#0",
+          "to_edge_id": "722648817#0",
+          "count": 480.5,
+          "proportion": 0.1657754010695187
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e3",
+      "n_movements": 4,
+      "total_count": 587.5,
+      "movements": [
+        {
+          "gate_index": 98,
+          "camera_id": "cam_e3",
+          "gate_id": "gate_1",
+          "from_edge_id": "138279929#5",
+          "to_edge_id": "562893033",
+          "count": 52.5,
+          "proportion": 0.08936170212765958
+        },
+        {
+          "gate_index": 99,
+          "camera_id": "cam_e3",
+          "gate_id": "gate_2",
+          "from_edge_id": "138279929#5",
+          "to_edge_id": "138279929#6",
+          "count": 191.0,
+          "proportion": 0.3251063829787234
+        },
+        {
+          "gate_index": 100,
+          "camera_id": "cam_e3",
+          "gate_id": "gate_3",
+          "from_edge_id": "819061611#1",
+          "to_edge_id": "562893034",
+          "count": 344.0,
+          "proportion": 0.585531914893617
+        },
+        {
+          "gate_index": 101,
+          "camera_id": "cam_e3",
+          "gate_id": "gate_4",
+          "from_edge_id": "562893034",
+          "to_edge_id": "708079739",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e4",
+      "n_movements": 4,
+      "total_count": 4236.5,
+      "movements": [
+        {
+          "gate_index": 102,
+          "camera_id": "cam_e4",
+          "gate_id": "gate_1",
+          "from_edge_id": "167719718#1",
+          "to_edge_id": "712473866",
+          "count": 1599.0,
+          "proportion": 0.3774342027617137
+        },
+        {
+          "gate_index": 103,
+          "camera_id": "cam_e4",
+          "gate_id": "gate_2",
+          "from_edge_id": "321628439#1",
+          "to_edge_id": "321628304",
+          "count": 1921.5,
+          "proportion": 0.45355836185530507
+        },
+        {
+          "gate_index": 104,
+          "camera_id": "cam_e4",
+          "gate_id": "gate_3",
+          "from_edge_id": "712473856#0",
+          "to_edge_id": "167719718#1",
+          "count": 362.5,
+          "proportion": 0.0855659152602384
+        },
+        {
+          "gate_index": 105,
+          "camera_id": "cam_e4",
+          "gate_id": "gate_4",
+          "from_edge_id": "167719718#1",
+          "to_edge_id": "321628313",
+          "count": 353.5,
+          "proportion": 0.08344152012274283
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e5",
+      "n_movements": 2,
+      "total_count": 3571.0,
+      "movements": [
+        {
+          "gate_index": 106,
+          "camera_id": "cam_e5",
+          "gate_id": "gate_1",
+          "from_edge_id": "819904521#0",
+          "to_edge_id": "206830704#1",
+          "count": 3130.5,
+          "proportion": 0.8766451974236908
+        },
+        {
+          "gate_index": 107,
+          "camera_id": "cam_e5",
+          "gate_id": "gate_2",
+          "from_edge_id": "206830704#1",
+          "to_edge_id": "206830704#0",
+          "count": 440.5,
+          "proportion": 0.12335480257630915
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_e6",
+      "n_movements": 2,
+      "total_count": 2520.0,
+      "movements": [
+        {
+          "gate_index": 108,
+          "camera_id": "cam_e6",
+          "gate_id": "gate_1",
+          "from_edge_id": "378721691",
+          "to_edge_id": "297728673#0",
+          "count": 1159.0,
+          "proportion": 0.4599206349206349
+        },
+        {
+          "gate_index": 109,
+          "camera_id": "cam_e6",
+          "gate_id": "gate_2",
+          "from_edge_id": "297728673#0",
+          "to_edge_id": "297728673#1",
+          "count": 1361.0,
+          "proportion": 0.540079365079365
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f1",
+      "n_movements": 6,
+      "total_count": 1376.5,
+      "movements": [
+        {
+          "gate_index": 110,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_1",
+          "from_edge_id": "819799029#1",
+          "to_edge_id": "1203937858#0",
+          "count": 237.0,
+          "proportion": 0.1721758082092263
+        },
+        {
+          "gate_index": 111,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_2",
+          "from_edge_id": "206853679#0",
+          "to_edge_id": "208241318#1",
+          "count": 877.0,
+          "proportion": 0.6371231383944788
+        },
+        {
+          "gate_index": 112,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_3",
+          "from_edge_id": "819799029#1",
+          "to_edge_id": "183449863#2",
+          "count": 35.0,
+          "proportion": 0.025426807119505995
+        },
+        {
+          "gate_index": 113,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_4",
+          "from_edge_id": "206853679#0",
+          "to_edge_id": "183449863#2",
+          "count": 207.5,
+          "proportion": 0.1507446422084998
+        },
+        {
+          "gate_index": 114,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_5",
+          "from_edge_id": "183449863#2",
+          "to_edge_id": "1203937856",
+          "count": 9.5,
+          "proportion": 0.006901561932437341
+        },
+        {
+          "gate_index": 115,
+          "camera_id": "cam_f1",
+          "gate_id": "gate_6",
+          "from_edge_id": "673662845#0",
+          "to_edge_id": "206853679#0",
+          "count": 10.5,
+          "proportion": 0.007628042135851798
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f10",
+      "n_movements": 6,
+      "total_count": 698.0,
+      "movements": [
+        {
+          "gate_index": 141,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_1",
+          "from_edge_id": "307034303#0",
+          "to_edge_id": "307030615",
+          "count": 482.5,
+          "proportion": 0.6912607449856734
+        },
+        {
+          "gate_index": 142,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_2",
+          "from_edge_id": "307034303#0",
+          "to_edge_id": "714324868#2",
+          "count": 109.5,
+          "proportion": 0.15687679083094555
+        },
+        {
+          "gate_index": 143,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_3",
+          "from_edge_id": "-307030615",
+          "to_edge_id": "714014613#1",
+          "count": 71.5,
+          "proportion": 0.10243553008595989
+        },
+        {
+          "gate_index": 144,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_4",
+          "from_edge_id": "-307030615",
+          "to_edge_id": "307034303#0",
+          "count": 17.5,
+          "proportion": 0.025071633237822348
+        },
+        {
+          "gate_index": 145,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_5",
+          "from_edge_id": "206824095#3",
+          "to_edge_id": "714014613#0",
+          "count": 14.0,
+          "proportion": 0.02005730659025788
+        },
+        {
+          "gate_index": 146,
+          "camera_id": "cam_f10",
+          "gate_id": "gate_6",
+          "from_edge_id": "296744922#6",
+          "to_edge_id": "206824095#3",
+          "count": 3.0,
+          "proportion": 0.004297994269340974
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f11",
+      "n_movements": 2,
+      "total_count": 1771.5,
+      "movements": [
+        {
+          "gate_index": 147,
+          "camera_id": "cam_f11",
+          "gate_id": "gate_1",
+          "from_edge_id": "192182412",
+          "to_edge_id": "710263101",
+          "count": 1336.5,
+          "proportion": 0.7544453852667231
+        },
+        {
+          "gate_index": 148,
+          "camera_id": "cam_f11",
+          "gate_id": "gate_2",
+          "from_edge_id": "714482013",
+          "to_edge_id": "192182433#3",
+          "count": 435.0,
+          "proportion": 0.2455546147332769
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f12",
+      "n_movements": 5,
+      "total_count": 3322.5,
+      "movements": [
+        {
+          "gate_index": 149,
+          "camera_id": "cam_f12",
+          "gate_id": "gate_1",
+          "from_edge_id": "710263101",
+          "to_edge_id": "820351278",
+          "count": 640.5,
+          "proportion": 0.1927765237020316
+        },
+        {
+          "gate_index": 150,
+          "camera_id": "cam_f12",
+          "gate_id": "gate_2",
+          "from_edge_id": "820351278",
+          "to_edge_id": "751584966#0",
+          "count": 130.5,
+          "proportion": 0.03927765237020316
+        },
+        {
+          "gate_index": 151,
+          "camera_id": "cam_f12",
+          "gate_id": "gate_3",
+          "from_edge_id": "714482013",
+          "to_edge_id": "192182433#3",
+          "count": 613.5,
+          "proportion": 0.18465011286681715
+        },
+        {
+          "gate_index": 152,
+          "camera_id": "cam_f12",
+          "gate_id": "gate_4",
+          "from_edge_id": "206830698",
+          "to_edge_id": "192182421",
+          "count": 675.5,
+          "proportion": 0.2033107599699022
+        },
+        {
+          "gate_index": 153,
+          "camera_id": "cam_f12",
+          "gate_id": "gate_5",
+          "from_edge_id": "206830698",
+          "to_edge_id": "192182433#3",
+          "count": 1262.5,
+          "proportion": 0.3799849510910459
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f13",
+      "n_movements": 2,
+      "total_count": 7217.0,
+      "movements": [
+        {
+          "gate_index": 154,
+          "camera_id": "cam_f13",
+          "gate_id": "gate_1",
+          "from_edge_id": "751287954#2",
+          "to_edge_id": "751287954#0",
+          "count": 3640.0,
+          "proportion": 0.504364694471387
+        },
+        {
+          "gate_index": 155,
+          "camera_id": "cam_f13",
+          "gate_id": "gate_2",
+          "from_edge_id": "751287954#2",
+          "to_edge_id": "711701159#0",
+          "count": 3577.0,
+          "proportion": 0.495635305528613
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f14",
+      "n_movements": 1,
+      "total_count": 2623.0,
+      "movements": [
+        {
+          "gate_index": 156,
+          "camera_id": "cam_f14",
+          "gate_id": "gate_1",
+          "from_edge_id": "306158864#3",
+          "to_edge_id": "205784550",
+          "count": 2623.0,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f15",
+      "n_movements": 3,
+      "total_count": 7128.5,
+      "movements": [
+        {
+          "gate_index": 157,
+          "camera_id": "cam_f15",
+          "gate_id": "gate_1",
+          "from_edge_id": "429424733",
+          "to_edge_id": "-205784550",
+          "count": 1514.5,
+          "proportion": 0.21245703864768184
+        },
+        {
+          "gate_index": 158,
+          "camera_id": "cam_f15",
+          "gate_id": "gate_2",
+          "from_edge_id": "-205784550",
+          "to_edge_id": "751287956#0",
+          "count": 916.5,
+          "proportion": 0.12856842252928385
+        },
+        {
+          "gate_index": 159,
+          "camera_id": "cam_f15",
+          "gate_id": "gate_3",
+          "from_edge_id": "751287954#2",
+          "to_edge_id": "205784550",
+          "count": 4697.5,
+          "proportion": 0.6589745388230343
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f16",
+      "n_movements": 4,
+      "total_count": 3786.0,
+      "movements": [
+        {
+          "gate_index": 160,
+          "camera_id": "cam_f16",
+          "gate_id": "gate_1",
+          "from_edge_id": "306854731",
+          "to_edge_id": "772605627",
+          "count": 1956.5,
+          "proportion": 0.5167723190702589
+        },
+        {
+          "gate_index": 161,
+          "camera_id": "cam_f16",
+          "gate_id": "gate_2",
+          "from_edge_id": "306854731",
+          "to_edge_id": "820210985#0",
+          "count": 441.0,
+          "proportion": 0.11648177496038035
+        },
+        {
+          "gate_index": 162,
+          "camera_id": "cam_f16",
+          "gate_id": "gate_3",
+          "from_edge_id": "399013238#1",
+          "to_edge_id": "976701335",
+          "count": 1258.0,
+          "proportion": 0.3322768092974115
+        },
+        {
+          "gate_index": 163,
+          "camera_id": "cam_f16",
+          "gate_id": "gate_4",
+          "from_edge_id": "399013238#1",
+          "to_edge_id": "820210985#0",
+          "count": 130.5,
+          "proportion": 0.034469096671949286
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f17",
+      "n_movements": 2,
+      "total_count": 3452.5,
+      "movements": [
+        {
+          "gate_index": 164,
+          "camera_id": "cam_f17",
+          "gate_id": "gate_1",
+          "from_edge_id": "-490710459#1",
+          "to_edge_id": "-490710459#0",
+          "count": 1581.5,
+          "proportion": 0.45807385952208546
+        },
+        {
+          "gate_index": 165,
+          "camera_id": "cam_f17",
+          "gate_id": "gate_2",
+          "from_edge_id": "490710459#1",
+          "to_edge_id": "704562114#0",
+          "count": 1871.0,
+          "proportion": 0.5419261404779145
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f18",
+      "n_movements": 11,
+      "total_count": 507.5,
+      "movements": [
+        {
+          "gate_index": 166,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_1",
+          "from_edge_id": "206824293",
+          "to_edge_id": "206824265",
+          "count": 7.5,
+          "proportion": 0.014778325123152709
+        },
+        {
+          "gate_index": 167,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_2",
+          "from_edge_id": "206824293",
+          "to_edge_id": "306158863",
+          "count": 87.5,
+          "proportion": 0.1724137931034483
+        },
+        {
+          "gate_index": 168,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_3",
+          "from_edge_id": "297728966#3",
+          "to_edge_id": "206824295#1",
+          "count": 14.5,
+          "proportion": 0.02857142857142857
+        },
+        {
+          "gate_index": 169,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_4",
+          "from_edge_id": "206824293",
+          "to_edge_id": "306158863",
+          "count": 66.5,
+          "proportion": 0.1310344827586207
+        },
+        {
+          "gate_index": 170,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_5",
+          "from_edge_id": "306158863",
+          "to_edge_id": "713730214#0",
+          "count": 70.5,
+          "proportion": 0.13891625615763548
+        },
+        {
+          "gate_index": 171,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_6",
+          "from_edge_id": "306158863",
+          "to_edge_id": "713730214#0",
+          "count": 76.0,
+          "proportion": 0.1497536945812808
+        },
+        {
+          "gate_index": 172,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_7",
+          "from_edge_id": "306158863",
+          "to_edge_id": "297728966#3",
+          "count": 61.5,
+          "proportion": 0.12118226600985221
+        },
+        {
+          "gate_index": 173,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_8",
+          "from_edge_id": "297728966#3",
+          "to_edge_id": "206824265",
+          "count": 48.5,
+          "proportion": 0.09556650246305419
+        },
+        {
+          "gate_index": 174,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_9",
+          "from_edge_id": "297728966#3",
+          "to_edge_id": "306158863",
+          "count": 31.5,
+          "proportion": 0.06206896551724138
+        },
+        {
+          "gate_index": 175,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_10",
+          "from_edge_id": "297728966#3",
+          "to_edge_id": "306158863",
+          "count": 36.5,
+          "proportion": 0.07192118226600985
+        },
+        {
+          "gate_index": 176,
+          "camera_id": "cam_f18",
+          "gate_id": "gate_11",
+          "from_edge_id": "206824265",
+          "to_edge_id": "41895335#3",
+          "count": 7.0,
+          "proportion": 0.013793103448275862
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f19",
+      "n_movements": 3,
+      "total_count": 9760.5,
+      "movements": [
+        {
+          "gate_index": 177,
+          "camera_id": "cam_f19",
+          "gate_id": "gate_1",
+          "from_edge_id": "206830698",
+          "to_edge_id": "192182421",
+          "count": 6984.0,
+          "proportion": 0.7155371138773629
+        },
+        {
+          "gate_index": 178,
+          "camera_id": "cam_f19",
+          "gate_id": "gate_2",
+          "from_edge_id": "206830698",
+          "to_edge_id": "41895335#1",
+          "count": 693.5,
+          "proportion": 0.07105168792582348
+        },
+        {
+          "gate_index": 179,
+          "camera_id": "cam_f19",
+          "gate_id": "gate_3",
+          "from_edge_id": "192182433#3",
+          "to_edge_id": "41895335#1",
+          "count": 2083.0,
+          "proportion": 0.2134111981968137
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f2",
+      "n_movements": 1,
+      "total_count": 7564.5,
+      "movements": [
+        {
+          "gate_index": 116,
+          "camera_id": "cam_f2",
+          "gate_id": "gate_1",
+          "from_edge_id": "819799019#2",
+          "to_edge_id": "183840224#1",
+          "count": 7564.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f20",
+      "n_movements": 2,
+      "total_count": 6729.5,
+      "movements": [
+        {
+          "gate_index": 180,
+          "camera_id": "cam_f20",
+          "gate_id": "gate_1",
+          "from_edge_id": "714014613#4",
+          "to_edge_id": "714014613#5",
+          "count": 3977.5,
+          "proportion": 0.5910543130990416
+        },
+        {
+          "gate_index": 181,
+          "camera_id": "cam_f20",
+          "gate_id": "gate_2",
+          "from_edge_id": "704846030#2",
+          "to_edge_id": "296744922#1",
+          "count": 2752.0,
+          "proportion": 0.40894568690095845
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f21",
+      "n_movements": 6,
+      "total_count": 432.5,
+      "movements": [
+        {
+          "gate_index": 182,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_1",
+          "from_edge_id": "976721424",
+          "to_edge_id": "976721426#1",
+          "count": 27.5,
+          "proportion": 0.06358381502890173
+        },
+        {
+          "gate_index": 183,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_2",
+          "from_edge_id": "976721424",
+          "to_edge_id": "533273463",
+          "count": 26.0,
+          "proportion": 0.06011560693641618
+        },
+        {
+          "gate_index": 184,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_3",
+          "from_edge_id": "976721424",
+          "to_edge_id": "533273463",
+          "count": 20.0,
+          "proportion": 0.046242774566473986
+        },
+        {
+          "gate_index": 185,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_4",
+          "from_edge_id": "976721423#1",
+          "to_edge_id": "976721423#0",
+          "count": 281.0,
+          "proportion": 0.6497109826589595
+        },
+        {
+          "gate_index": 186,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_5",
+          "from_edge_id": "772683242",
+          "to_edge_id": "976721424",
+          "count": 73.0,
+          "proportion": 0.16878612716763006
+        },
+        {
+          "gate_index": 187,
+          "camera_id": "cam_f21",
+          "gate_id": "gate_6",
+          "from_edge_id": "772683242",
+          "to_edge_id": "976721423#1",
+          "count": 5.0,
+          "proportion": 0.011560693641618497
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f22",
+      "n_movements": 2,
+      "total_count": 1893.0,
+      "movements": [
+        {
+          "gate_index": 188,
+          "camera_id": "cam_f22",
+          "gate_id": "gate_1",
+          "from_edge_id": "-705790522",
+          "to_edge_id": "712010780#7",
+          "count": 1567.0,
+          "proportion": 0.8277865821447438
+        },
+        {
+          "gate_index": 189,
+          "camera_id": "cam_f22",
+          "gate_id": "gate_2",
+          "from_edge_id": "770883168#1",
+          "to_edge_id": "770883168#2",
+          "count": 326.0,
+          "proportion": 0.1722134178552562
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f23",
+      "n_movements": 1,
+      "total_count": 505.0,
+      "movements": [
+        {
+          "gate_index": 190,
+          "camera_id": "cam_f23",
+          "gate_id": "gate_1",
+          "from_edge_id": "399013238#1",
+          "to_edge_id": "399013238#0",
+          "count": 505.0,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f24",
+      "n_movements": 1,
+      "total_count": 2406.5,
+      "movements": [
+        {
+          "gate_index": 191,
+          "camera_id": "cam_f24",
+          "gate_id": "gate_1",
+          "from_edge_id": "772683246#3",
+          "to_edge_id": "772683246#4",
+          "count": 2406.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f3",
+      "n_movements": 3,
+      "total_count": 2933.0,
+      "movements": [
+        {
+          "gate_index": 117,
+          "camera_id": "cam_f3",
+          "gate_id": "gate_1",
+          "from_edge_id": "707974623",
+          "to_edge_id": "819061594#0",
+          "count": 1145.5,
+          "proportion": 0.3905557449710194
+        },
+        {
+          "gate_index": 118,
+          "camera_id": "cam_f3",
+          "gate_id": "gate_2",
+          "from_edge_id": "707974623",
+          "to_edge_id": "172281040",
+          "count": 841.5,
+          "proportion": 0.2869076031367201
+        },
+        {
+          "gate_index": 119,
+          "camera_id": "cam_f3",
+          "gate_id": "gate_3",
+          "from_edge_id": "707974623",
+          "to_edge_id": "156356513",
+          "count": 946.0,
+          "proportion": 0.3225366518922605
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f4",
+      "n_movements": 3,
+      "total_count": 2366.0,
+      "movements": [
+        {
+          "gate_index": 120,
+          "camera_id": "cam_f4",
+          "gate_id": "gate_1",
+          "from_edge_id": "206853654#7",
+          "to_edge_id": "820210979#1",
+          "count": 796.0,
+          "proportion": 0.3364327979712595
+        },
+        {
+          "gate_index": 121,
+          "camera_id": "cam_f4",
+          "gate_id": "gate_2",
+          "from_edge_id": "206853654#7",
+          "to_edge_id": "241618684#0",
+          "count": 935.0,
+          "proportion": 0.3951817413355875
+        },
+        {
+          "gate_index": 122,
+          "camera_id": "cam_f4",
+          "gate_id": "gate_3",
+          "from_edge_id": "206853654#7",
+          "to_edge_id": "-241618684#1",
+          "count": 635.0,
+          "proportion": 0.268385460693153
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f5",
+      "n_movements": 4,
+      "total_count": 9502.5,
+      "movements": [
+        {
+          "gate_index": 123,
+          "camera_id": "cam_f5",
+          "gate_id": "gate_1",
+          "from_edge_id": "-183972467",
+          "to_edge_id": "526197779#1",
+          "count": 2218.5,
+          "proportion": 0.2334648776637727
+        },
+        {
+          "gate_index": 124,
+          "camera_id": "cam_f5",
+          "gate_id": "gate_2",
+          "from_edge_id": "-183972467",
+          "to_edge_id": "526197779#1",
+          "count": 1831.5,
+          "proportion": 0.19273875295974743
+        },
+        {
+          "gate_index": 125,
+          "camera_id": "cam_f5",
+          "gate_id": "gate_3",
+          "from_edge_id": "490965895#0",
+          "to_edge_id": "1032934318",
+          "count": 2445.0,
+          "proportion": 0.2573007103393844
+        },
+        {
+          "gate_index": 126,
+          "camera_id": "cam_f5",
+          "gate_id": "gate_4",
+          "from_edge_id": "490965895#0",
+          "to_edge_id": "1032934318",
+          "count": 3007.5,
+          "proportion": 0.3164956590370955
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f6",
+      "n_movements": 2,
+      "total_count": 5472.5,
+      "movements": [
+        {
+          "gate_index": 127,
+          "camera_id": "cam_f6",
+          "gate_id": "gate_1",
+          "from_edge_id": "183435297#2",
+          "to_edge_id": "1037733904",
+          "count": 2339.5,
+          "proportion": 0.4275011420740064
+        },
+        {
+          "gate_index": 128,
+          "camera_id": "cam_f6",
+          "gate_id": "gate_2",
+          "from_edge_id": "183435297#2",
+          "to_edge_id": "482447786#1",
+          "count": 3133.0,
+          "proportion": 0.5724988579259936
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f7",
+      "n_movements": 4,
+      "total_count": 1944.5,
+      "movements": [
+        {
+          "gate_index": 129,
+          "camera_id": "cam_f7",
+          "gate_id": "gate_1",
+          "from_edge_id": "183840227#3",
+          "to_edge_id": "-672232296#1",
+          "count": 1191.0,
+          "proportion": 0.6124967858061198
+        },
+        {
+          "gate_index": 130,
+          "camera_id": "cam_f7",
+          "gate_id": "gate_2",
+          "from_edge_id": "183840227#3",
+          "to_edge_id": "183840227#1",
+          "count": 151.5,
+          "proportion": 0.07791205965543842
+        },
+        {
+          "gate_index": 131,
+          "camera_id": "cam_f7",
+          "gate_id": "gate_3",
+          "from_edge_id": "384870464#2",
+          "to_edge_id": "713092771#5",
+          "count": 201.0,
+          "proportion": 0.10336847518642324
+        },
+        {
+          "gate_index": 132,
+          "camera_id": "cam_f7",
+          "gate_id": "gate_4",
+          "from_edge_id": "384870464#2",
+          "to_edge_id": "183840227#3",
+          "count": 401.0,
+          "proportion": 0.20622267935201852
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f8",
+      "n_movements": 2,
+      "total_count": 4437.5,
+      "movements": [
+        {
+          "gate_index": 133,
+          "camera_id": "cam_f8",
+          "gate_id": "gate_1",
+          "from_edge_id": "296744922#6",
+          "to_edge_id": "-22988092#3",
+          "count": 1856.0,
+          "proportion": 0.41825352112676056
+        },
+        {
+          "gate_index": 134,
+          "camera_id": "cam_f8",
+          "gate_id": "gate_2",
+          "from_edge_id": "714014613#0",
+          "to_edge_id": "778294009#0",
+          "count": 2581.5,
+          "proportion": 0.5817464788732395
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_f9",
+      "n_movements": 6,
+      "total_count": 11581.5,
+      "movements": [
+        {
+          "gate_index": 135,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_1",
+          "from_edge_id": "-435767759",
+          "to_edge_id": "257324213",
+          "count": 2553.0,
+          "proportion": 0.2204377671286103
+        },
+        {
+          "gate_index": 136,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_2",
+          "from_edge_id": "183715803#3",
+          "to_edge_id": "257324211#0",
+          "count": 875.5,
+          "proportion": 0.07559469844147995
+        },
+        {
+          "gate_index": 137,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_3",
+          "from_edge_id": "710402993#4",
+          "to_edge_id": "710402993#2",
+          "count": 743.0,
+          "proportion": 0.06415403876872598
+        },
+        {
+          "gate_index": 138,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_4",
+          "from_edge_id": "257324211#0",
+          "to_edge_id": "710402993#4",
+          "count": 1384.0,
+          "proportion": 0.11950092820446402
+        },
+        {
+          "gate_index": 139,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_5",
+          "from_edge_id": "710402993#4",
+          "to_edge_id": "772694319",
+          "count": 1292.0,
+          "proportion": 0.1115572248845141
+        },
+        {
+          "gate_index": 140,
+          "camera_id": "cam_f9",
+          "gate_id": "gate_6",
+          "from_edge_id": "257324217",
+          "to_edge_id": "967039305",
+          "count": 4734.0,
+          "proportion": 0.4087553425722057
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g1",
+      "n_movements": 5,
+      "total_count": 2018.5,
+      "movements": [
+        {
+          "gate_index": 192,
+          "camera_id": "cam_g1",
+          "gate_id": "gate_1",
+          "from_edge_id": "712010777#1",
+          "to_edge_id": "712010777#0",
+          "count": 383.0,
+          "proportion": 0.18974486004458757
+        },
+        {
+          "gate_index": 193,
+          "camera_id": "cam_g1",
+          "gate_id": "gate_2",
+          "from_edge_id": "-712010777#1",
+          "to_edge_id": "-976701334",
+          "count": 40.5,
+          "proportion": 0.020064404260589547
+        },
+        {
+          "gate_index": 194,
+          "camera_id": "cam_g1",
+          "gate_id": "gate_3",
+          "from_edge_id": "-712010777#1",
+          "to_edge_id": "377740829",
+          "count": 545.5,
+          "proportion": 0.27025018578152094
+        },
+        {
+          "gate_index": 195,
+          "camera_id": "cam_g1",
+          "gate_id": "gate_4",
+          "from_edge_id": "-703917295",
+          "to_edge_id": "-712010777#1",
+          "count": 515.0,
+          "proportion": 0.25513995541243495
+        },
+        {
+          "gate_index": 196,
+          "camera_id": "cam_g1",
+          "gate_id": "gate_5",
+          "from_edge_id": "-703917295",
+          "to_edge_id": "712010777#1",
+          "count": 534.5,
+          "proportion": 0.26480059450086696
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g2",
+      "n_movements": 7,
+      "total_count": 2633.0,
+      "movements": [
+        {
+          "gate_index": 197,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_1",
+          "from_edge_id": "306158864#3",
+          "to_edge_id": "-751316848",
+          "count": 508.0,
+          "proportion": 0.19293581466008355
+        },
+        {
+          "gate_index": 198,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_2",
+          "from_edge_id": "306158864#3",
+          "to_edge_id": "-205784550",
+          "count": 214.5,
+          "proportion": 0.08146600835548803
+        },
+        {
+          "gate_index": 199,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_3",
+          "from_edge_id": "751316848",
+          "to_edge_id": "713730214#0",
+          "count": 303.5,
+          "proportion": 0.11526775541207748
+        },
+        {
+          "gate_index": 200,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_4",
+          "from_edge_id": "751316848",
+          "to_edge_id": "751287954#2",
+          "count": 342.0,
+          "proportion": 0.12988985947588302
+        },
+        {
+          "gate_index": 201,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_5",
+          "from_edge_id": "751287954#2",
+          "to_edge_id": "205784550",
+          "count": 217.0,
+          "proportion": 0.08241549563235853
+        },
+        {
+          "gate_index": 202,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_6",
+          "from_edge_id": "751287954#2",
+          "to_edge_id": "306158864#3",
+          "count": 960.0,
+          "proportion": 0.36460311431826814
+        },
+        {
+          "gate_index": 203,
+          "camera_id": "cam_g2",
+          "gate_id": "gate_7",
+          "from_edge_id": "-205784550",
+          "to_edge_id": "751287956#0",
+          "count": 88.0,
+          "proportion": 0.03342195214584125
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g3",
+      "n_movements": 1,
+      "total_count": 557.5,
+      "movements": [
+        {
+          "gate_index": 204,
+          "camera_id": "cam_g3",
+          "gate_id": "gate_1",
+          "from_edge_id": "409750500#3",
+          "to_edge_id": "409750500#1",
+          "count": 557.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g4",
+      "n_movements": 4,
+      "total_count": 942.5,
+      "movements": [
+        {
+          "gate_index": 205,
+          "camera_id": "cam_g4",
+          "gate_id": "gate_1",
+          "from_edge_id": "285704242",
+          "to_edge_id": "710516675#0",
+          "count": 161.5,
+          "proportion": 0.1713527851458886
+        },
+        {
+          "gate_index": 206,
+          "camera_id": "cam_g4",
+          "gate_id": "gate_2",
+          "from_edge_id": "285704242",
+          "to_edge_id": "490736224#0",
+          "count": 121.5,
+          "proportion": 0.12891246684350133
+        },
+        {
+          "gate_index": 207,
+          "camera_id": "cam_g4",
+          "gate_id": "gate_3",
+          "from_edge_id": "735262494#1",
+          "to_edge_id": "710683369#0",
+          "count": 561.0,
+          "proportion": 0.5952254641909814
+        },
+        {
+          "gate_index": 208,
+          "camera_id": "cam_g4",
+          "gate_id": "gate_4",
+          "from_edge_id": "735262494#1",
+          "to_edge_id": "230863139#1",
+          "count": 98.5,
+          "proportion": 0.10450928381962865
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g5",
+      "n_movements": 3,
+      "total_count": 6185.0,
+      "movements": [
+        {
+          "gate_index": 209,
+          "camera_id": "cam_g5",
+          "gate_id": "gate_1",
+          "from_edge_id": "376509794#4",
+          "to_edge_id": "376509794#3",
+          "count": 3056.0,
+          "proportion": 0.4940986257073565
+        },
+        {
+          "gate_index": 210,
+          "camera_id": "cam_g5",
+          "gate_id": "gate_2",
+          "from_edge_id": "404896406#0",
+          "to_edge_id": "317670572",
+          "count": 2130.0,
+          "proportion": 0.34438156831042843
+        },
+        {
+          "gate_index": 211,
+          "camera_id": "cam_g5",
+          "gate_id": "gate_3",
+          "from_edge_id": "404896406#0",
+          "to_edge_id": "317670572",
+          "count": 999.0,
+          "proportion": 0.16151980598221505
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_g6",
+      "n_movements": 2,
+      "total_count": 3603.5,
+      "movements": [
+        {
+          "gate_index": 212,
+          "camera_id": "cam_g6",
+          "gate_id": "gate_1",
+          "from_edge_id": "409750500#1",
+          "to_edge_id": "407998743#1",
+          "count": 1551.5,
+          "proportion": 0.430553628416817
+        },
+        {
+          "gate_index": 213,
+          "camera_id": "cam_g6",
+          "gate_id": "gate_2",
+          "from_edge_id": "735262491",
+          "to_edge_id": "709681730",
+          "count": 2052.0,
+          "proportion": 0.569446371583183
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_h1",
+      "n_movements": 4,
+      "total_count": 453.0,
+      "movements": [
+        {
+          "gate_index": 214,
+          "camera_id": "cam_h1",
+          "gate_id": "gate_1",
+          "from_edge_id": "491637747#0",
+          "to_edge_id": "208241311#1",
+          "count": 129.0,
+          "proportion": 0.2847682119205298
+        },
+        {
+          "gate_index": 215,
+          "camera_id": "cam_h1",
+          "gate_id": "gate_2",
+          "from_edge_id": "491637747#0",
+          "to_edge_id": "820458011#1",
+          "count": 207.0,
+          "proportion": 0.45695364238410596
+        },
+        {
+          "gate_index": 216,
+          "camera_id": "cam_h1",
+          "gate_id": "gate_3",
+          "from_edge_id": "775193318#1",
+          "to_edge_id": "208241311#1",
+          "count": 117.0,
+          "proportion": 0.2582781456953642
+        },
+        {
+          "gate_index": 217,
+          "camera_id": "cam_h1",
+          "gate_id": "gate_44",
+          "from_edge_id": "775193318#1",
+          "to_edge_id": "491637747#0",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_h2",
+      "n_movements": 3,
+      "total_count": 3783.5,
+      "movements": [
+        {
+          "gate_index": 218,
+          "camera_id": "cam_h2",
+          "gate_id": "gate_1",
+          "from_edge_id": "467615880",
+          "to_edge_id": "467615881#19",
+          "count": 1549.5,
+          "proportion": 0.4095414298929563
+        },
+        {
+          "gate_index": 219,
+          "camera_id": "cam_h2",
+          "gate_id": "gate_2",
+          "from_edge_id": "467615880",
+          "to_edge_id": "138258235#0",
+          "count": 773.0,
+          "proportion": 0.20430818025637637
+        },
+        {
+          "gate_index": 220,
+          "camera_id": "cam_h2",
+          "gate_id": "gate_3",
+          "from_edge_id": "208241178",
+          "to_edge_id": "-467615881#19",
+          "count": 1461.0,
+          "proportion": 0.38615038985066735
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_h3",
+      "n_movements": 6,
+      "total_count": 4878.0,
+      "movements": [
+        {
+          "gate_index": 221,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_1",
+          "from_edge_id": "46510099",
+          "to_edge_id": "772118306",
+          "count": 324.5,
+          "proportion": 0.06652316523165232
+        },
+        {
+          "gate_index": 222,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_2",
+          "from_edge_id": "46510099",
+          "to_edge_id": "772118306",
+          "count": 563.5,
+          "proportion": 0.11551865518655187
+        },
+        {
+          "gate_index": 223,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_3",
+          "from_edge_id": "46510099",
+          "to_edge_id": "772118306",
+          "count": 167.0,
+          "proportion": 0.034235342353423535
+        },
+        {
+          "gate_index": 224,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_4",
+          "from_edge_id": "46510099",
+          "to_edge_id": "772118306",
+          "count": 1023.0,
+          "proportion": 0.2097170971709717
+        },
+        {
+          "gate_index": 225,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_5",
+          "from_edge_id": "46510099",
+          "to_edge_id": "772118306",
+          "count": 376.5,
+          "proportion": 0.07718327183271832
+        },
+        {
+          "gate_index": 226,
+          "camera_id": "cam_h3",
+          "gate_id": "gate_6",
+          "from_edge_id": "46510099",
+          "to_edge_id": "295507009#1",
+          "count": 2423.5,
+          "proportion": 0.49682246822468223
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_i11",
+      "n_movements": 2,
+      "total_count": 4535.5,
+      "movements": [
+        {
+          "gate_index": 227,
+          "camera_id": "cam_i11",
+          "gate_id": "gate_1",
+          "from_edge_id": "138448179#0",
+          "to_edge_id": "711303145",
+          "count": 2723.5,
+          "proportion": 0.6004850622864072
+        },
+        {
+          "gate_index": 228,
+          "camera_id": "cam_i11",
+          "gate_id": "gate_2",
+          "from_edge_id": "208241282",
+          "to_edge_id": "138448179#0",
+          "count": 1812.0,
+          "proportion": 0.39951493771359275
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_j1",
+      "n_movements": 3,
+      "total_count": 0.0,
+      "movements": [
+        {
+          "gate_index": 229,
+          "camera_id": "cam_j1",
+          "gate_id": "gate_1",
+          "from_edge_id": "800396235#0",
+          "to_edge_id": "163725460#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 230,
+          "camera_id": "cam_j1",
+          "gate_id": "gate_2",
+          "from_edge_id": "800396235#0",
+          "to_edge_id": "163725460#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 231,
+          "camera_id": "cam_j1",
+          "gate_id": "gate_3",
+          "from_edge_id": "800396235#0",
+          "to_edge_id": "163725460#0",
+          "count": 0.0,
+          "proportion": 0.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_j2",
+      "n_movements": 3,
+      "total_count": 5015.0,
+      "movements": [
+        {
+          "gate_index": 232,
+          "camera_id": "cam_j2",
+          "gate_id": "gate_1",
+          "from_edge_id": "332560360#0",
+          "to_edge_id": "985157346#0",
+          "count": 1034.5,
+          "proportion": 0.20628115653040877
+        },
+        {
+          "gate_index": 233,
+          "camera_id": "cam_j2",
+          "gate_id": "gate_2",
+          "from_edge_id": "332560360#0",
+          "to_edge_id": "332560360#1",
+          "count": 2418.0,
+          "proportion": 0.48215353938185446
+        },
+        {
+          "gate_index": 234,
+          "camera_id": "cam_j2",
+          "gate_id": "gate_3",
+          "from_edge_id": "985157346#1",
+          "to_edge_id": "985157346#0",
+          "count": 1562.5,
+          "proportion": 0.3115653040877368
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_j3",
+      "n_movements": 4,
+      "total_count": 1205.0,
+      "movements": [
+        {
+          "gate_index": 235,
+          "camera_id": "cam_j3",
+          "gate_id": "gate_1",
+          "from_edge_id": "370219349#1",
+          "to_edge_id": "771918842",
+          "count": 368.0,
+          "proportion": 0.3053941908713693
+        },
+        {
+          "gate_index": 236,
+          "camera_id": "cam_j3",
+          "gate_id": "gate_2",
+          "from_edge_id": "370219349#1",
+          "to_edge_id": "771918844",
+          "count": 379.5,
+          "proportion": 0.3149377593360996
+        },
+        {
+          "gate_index": 237,
+          "camera_id": "cam_j3",
+          "gate_id": "gate_3",
+          "from_edge_id": "46510030",
+          "to_edge_id": "820104111",
+          "count": 89.5,
+          "proportion": 0.07427385892116183
+        },
+        {
+          "gate_index": 238,
+          "camera_id": "cam_j3",
+          "gate_id": "gate_4",
+          "from_edge_id": "46510030",
+          "to_edge_id": "370219349#1",
+          "count": 368.0,
+          "proportion": 0.3053941908713693
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_k1",
+      "n_movements": 2,
+      "total_count": 6270.0,
+      "movements": [
+        {
+          "gate_index": 239,
+          "camera_id": "cam_k1",
+          "gate_id": "gate_1",
+          "from_edge_id": "208241312",
+          "to_edge_id": "306158893#0",
+          "count": 4086.5,
+          "proportion": 0.6517543859649123
+        },
+        {
+          "gate_index": 240,
+          "camera_id": "cam_k1",
+          "gate_id": "gate_2",
+          "from_edge_id": "183428322",
+          "to_edge_id": "325413814",
+          "count": 2183.5,
+          "proportion": 0.3482456140350877
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_l1",
+      "n_movements": 6,
+      "total_count": 7821.5,
+      "movements": [
+        {
+          "gate_index": 241,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_1",
+          "from_edge_id": "370219349#1",
+          "to_edge_id": "491620421#0",
+          "count": 3071.5,
+          "proportion": 0.39269961004922327
+        },
+        {
+          "gate_index": 242,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_2",
+          "from_edge_id": "370219349#1",
+          "to_edge_id": "1212815430#1",
+          "count": 39.0,
+          "proportion": 0.0049862558332800615
+        },
+        {
+          "gate_index": 243,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_3",
+          "from_edge_id": "370219349#1",
+          "to_edge_id": "820457994#0",
+          "count": 106.0,
+          "proportion": 0.01355238764942786
+        },
+        {
+          "gate_index": 244,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_4",
+          "from_edge_id": "490965519#9",
+          "to_edge_id": "820457994#0",
+          "count": 1555.5,
+          "proportion": 0.19887489611967013
+        },
+        {
+          "gate_index": 245,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_5",
+          "from_edge_id": "820457994#0",
+          "to_edge_id": "1212815430#1",
+          "count": 1122.0,
+          "proportion": 0.14345074474205716
+        },
+        {
+          "gate_index": 246,
+          "camera_id": "cam_l1",
+          "gate_id": "gate_6",
+          "from_edge_id": "820457994#0",
+          "to_edge_id": "820457994#2",
+          "count": 1927.5,
+          "proportion": 0.2464361056063415
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_l2",
+      "n_movements": 3,
+      "total_count": 7789.5,
+      "movements": [
+        {
+          "gate_index": 247,
+          "camera_id": "cam_l2",
+          "gate_id": "gate_1",
+          "from_edge_id": "1014940193#2",
+          "to_edge_id": "360452847",
+          "count": 2069.5,
+          "proportion": 0.26567815649271453
+        },
+        {
+          "gate_index": 248,
+          "camera_id": "cam_l2",
+          "gate_id": "gate_2",
+          "from_edge_id": "183687934#0",
+          "to_edge_id": "306158889#0",
+          "count": 2073.5,
+          "proportion": 0.26619166827139096
+        },
+        {
+          "gate_index": 249,
+          "camera_id": "cam_l2",
+          "gate_id": "gate_3",
+          "from_edge_id": "777264066",
+          "to_edge_id": "306158889#0",
+          "count": 3646.5,
+          "proportion": 0.46813017523589445
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_l3",
+      "n_movements": 3,
+      "total_count": 3401.0,
+      "movements": [
+        {
+          "gate_index": 250,
+          "camera_id": "cam_l3",
+          "gate_id": "gate_1",
+          "from_edge_id": "46510030",
+          "to_edge_id": "322859478",
+          "count": 1511.5,
+          "proportion": 0.44442810937959426
+        },
+        {
+          "gate_index": 251,
+          "camera_id": "cam_l3",
+          "gate_id": "gate_2",
+          "from_edge_id": "322859478",
+          "to_edge_id": "370219347#0",
+          "count": 346.5,
+          "proportion": 0.1018817994707439
+        },
+        {
+          "gate_index": 252,
+          "camera_id": "cam_l3",
+          "gate_id": "gate_3",
+          "from_edge_id": "322859477",
+          "to_edge_id": "370219348#2",
+          "count": 1543.0,
+          "proportion": 0.45369009114966186
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m1",
+      "n_movements": 3,
+      "total_count": 4933.0,
+      "movements": [
+        {
+          "gate_index": 253,
+          "camera_id": "cam_m1",
+          "gate_id": "gate_1",
+          "from_edge_id": "241886392",
+          "to_edge_id": "138279934",
+          "count": 1372.5,
+          "proportion": 0.2782282586661261
+        },
+        {
+          "gate_index": 254,
+          "camera_id": "cam_m1",
+          "gate_id": "gate_2",
+          "from_edge_id": "138279928",
+          "to_edge_id": "321628431",
+          "count": 1209.0,
+          "proportion": 0.24508412730589904
+        },
+        {
+          "gate_index": 255,
+          "camera_id": "cam_m1",
+          "gate_id": "gate_3",
+          "from_edge_id": "816508172",
+          "to_edge_id": "138279928",
+          "count": 2351.5,
+          "proportion": 0.4766876140279749
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m11",
+      "n_movements": 1,
+      "total_count": 542.0,
+      "movements": [
+        {
+          "gate_index": 279,
+          "camera_id": "cam_m11",
+          "gate_id": "gate_4",
+          "from_edge_id": "164166938",
+          "to_edge_id": "46510094",
+          "count": 542.0,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m12",
+      "n_movements": 4,
+      "total_count": 4593.5,
+      "movements": [
+        {
+          "gate_index": 280,
+          "camera_id": "cam_m12",
+          "gate_id": "gate_1",
+          "from_edge_id": "1319919689",
+          "to_edge_id": "635696596",
+          "count": 632.5,
+          "proportion": 0.13769456841188635
+        },
+        {
+          "gate_index": 281,
+          "camera_id": "cam_m12",
+          "gate_id": "gate_2",
+          "from_edge_id": "1319919689",
+          "to_edge_id": "1316734555",
+          "count": 1134.0,
+          "proportion": 0.24687057799063894
+        },
+        {
+          "gate_index": 282,
+          "camera_id": "cam_m12",
+          "gate_id": "gate_3",
+          "from_edge_id": "1319919689",
+          "to_edge_id": "635696596",
+          "count": 2061.5,
+          "proportion": 0.44878632850767386
+        },
+        {
+          "gate_index": 283,
+          "camera_id": "cam_m12",
+          "gate_id": "gate_4",
+          "from_edge_id": "1316734554",
+          "to_edge_id": "548115155",
+          "count": 765.5,
+          "proportion": 0.1666485250898008
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m13",
+      "n_movements": 3,
+      "total_count": 5062.5,
+      "movements": [
+        {
+          "gate_index": 284,
+          "camera_id": "cam_m13",
+          "gate_id": "gate_1",
+          "from_edge_id": "635696593",
+          "to_edge_id": "1319410182",
+          "count": 1440.0,
+          "proportion": 0.28444444444444444
+        },
+        {
+          "gate_index": 285,
+          "camera_id": "cam_m13",
+          "gate_id": "gate_2",
+          "from_edge_id": "1319410182",
+          "to_edge_id": "867611259",
+          "count": 1606.5,
+          "proportion": 0.31733333333333336
+        },
+        {
+          "gate_index": 286,
+          "camera_id": "cam_m13",
+          "gate_id": "gate_3",
+          "from_edge_id": "1319410181",
+          "to_edge_id": "867611252",
+          "count": 2016.0,
+          "proportion": 0.3982222222222222
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m14",
+      "n_movements": 2,
+      "total_count": 2158.0,
+      "movements": [
+        {
+          "gate_index": 288,
+          "camera_id": "cam_m14",
+          "gate_id": "gate_2",
+          "from_edge_id": "851359758",
+          "to_edge_id": "1319410181",
+          "count": 1262.5,
+          "proportion": 0.585032437442076
+        },
+        {
+          "gate_index": 289,
+          "camera_id": "cam_m14",
+          "gate_id": "gate_3",
+          "from_edge_id": "851359758",
+          "to_edge_id": "635696593",
+          "count": 895.5,
+          "proportion": 0.414967562557924
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m17",
+      "n_movements": 2,
+      "total_count": 5461.5,
+      "movements": [
+        {
+          "gate_index": 292,
+          "camera_id": "cam_m17",
+          "gate_id": "gate_1",
+          "from_edge_id": "1319920280",
+          "to_edge_id": "851359758",
+          "count": 3306.0,
+          "proportion": 0.6053282065366657
+        },
+        {
+          "gate_index": 293,
+          "camera_id": "cam_m17",
+          "gate_id": "gate_2",
+          "from_edge_id": "1319410180",
+          "to_edge_id": "635696593",
+          "count": 2155.5,
+          "proportion": 0.39467179346333425
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m2",
+      "n_movements": 2,
+      "total_count": 2662.5,
+      "movements": [
+        {
+          "gate_index": 256,
+          "camera_id": "cam_m2",
+          "gate_id": "gate_1",
+          "from_edge_id": "138191503#0",
+          "to_edge_id": "138191485#1",
+          "count": 980.5,
+          "proportion": 0.36826291079812207
+        },
+        {
+          "gate_index": 257,
+          "camera_id": "cam_m2",
+          "gate_id": "gate_2",
+          "from_edge_id": "138191503#0",
+          "to_edge_id": "138191493",
+          "count": 1682.0,
+          "proportion": 0.631737089201878
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m3",
+      "n_movements": 4,
+      "total_count": 2420.5,
+      "movements": [
+        {
+          "gate_index": 258,
+          "camera_id": "cam_m3",
+          "gate_id": "gate_1",
+          "from_edge_id": "138258223",
+          "to_edge_id": "241886409",
+          "count": 498.0,
+          "proportion": 0.20574261516215658
+        },
+        {
+          "gate_index": 259,
+          "camera_id": "cam_m3",
+          "gate_id": "gate_2",
+          "from_edge_id": "467615880",
+          "to_edge_id": "241886409",
+          "count": 982.0,
+          "proportion": 0.40570130138401156
+        },
+        {
+          "gate_index": 260,
+          "camera_id": "cam_m3",
+          "gate_id": "gate_3",
+          "from_edge_id": "241886408",
+          "to_edge_id": "208241178",
+          "count": 572.5,
+          "proportion": 0.23652137988019004
+        },
+        {
+          "gate_index": 261,
+          "camera_id": "cam_m3",
+          "gate_id": "gate_4",
+          "from_edge_id": "404003670",
+          "to_edge_id": "208241178",
+          "count": 368.0,
+          "proportion": 0.15203470357364182
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_m6",
+      "n_movements": 3,
+      "total_count": 8543.0,
+      "movements": [
+        {
+          "gate_index": 266,
+          "camera_id": "cam_m6",
+          "gate_id": "gate_1",
+          "from_edge_id": "317670568",
+          "to_edge_id": "131609311",
+          "count": 1881.5,
+          "proportion": 0.22023879199344493
+        },
+        {
+          "gate_index": 267,
+          "camera_id": "cam_m6",
+          "gate_id": "gate_2",
+          "from_edge_id": "317670568",
+          "to_edge_id": "131609311",
+          "count": 3894.5,
+          "proportion": 0.45587030317218774
+        },
+        {
+          "gate_index": 268,
+          "camera_id": "cam_m6",
+          "gate_id": "gate_3",
+          "from_edge_id": "404003672#1",
+          "to_edge_id": "41888516#1",
+          "count": 2767.0,
+          "proportion": 0.32389090483436733
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_n1",
+      "n_movements": 1,
+      "total_count": 1192.0,
+      "movements": [
+        {
+          "gate_index": 294,
+          "camera_id": "cam_n1",
+          "gate_id": "gate_1",
+          "from_edge_id": "548115272#2",
+          "to_edge_id": "1470031967#0",
+          "count": 1192.0,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_n2",
+      "n_movements": 2,
+      "total_count": 3545.0,
+      "movements": [
+        {
+          "gate_index": 295,
+          "camera_id": "cam_n2",
+          "gate_id": "gate_1",
+          "from_edge_id": "1155231754#0",
+          "to_edge_id": "1112310176",
+          "count": 1731.5,
+          "proportion": 0.48843441466854726
+        },
+        {
+          "gate_index": 296,
+          "camera_id": "cam_n2",
+          "gate_id": "gate_2",
+          "from_edge_id": "548115278",
+          "to_edge_id": "795036962",
+          "count": 1813.5,
+          "proportion": 0.5115655853314528
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o1",
+      "n_movements": 2,
+      "total_count": 3592.5,
+      "movements": [
+        {
+          "gate_index": 297,
+          "camera_id": "cam_o1",
+          "gate_id": "gate_1",
+          "from_edge_id": "386900950",
+          "to_edge_id": "-615615381",
+          "count": 2771.0,
+          "proportion": 0.7713291579679888
+        },
+        {
+          "gate_index": 298,
+          "camera_id": "cam_o1",
+          "gate_id": "gate_2",
+          "from_edge_id": "566743644",
+          "to_edge_id": "615615381",
+          "count": 821.5,
+          "proportion": 0.22867084203201113
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o2",
+      "n_movements": 6,
+      "total_count": 2715.5,
+      "movements": [
+        {
+          "gate_index": 299,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_1",
+          "from_edge_id": "386900950",
+          "to_edge_id": "514715386#3",
+          "count": 651.0,
+          "proportion": 0.23973485545939974
+        },
+        {
+          "gate_index": 300,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_2",
+          "from_edge_id": "386900950",
+          "to_edge_id": "-545595778",
+          "count": 651.5,
+          "proportion": 0.23991898361259437
+        },
+        {
+          "gate_index": 301,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_3",
+          "from_edge_id": "638684285#1",
+          "to_edge_id": "638684285#2",
+          "count": 412.0,
+          "proportion": 0.15172159823236972
+        },
+        {
+          "gate_index": 302,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_4",
+          "from_edge_id": "638684285#1",
+          "to_edge_id": "638684285#2",
+          "count": 348.5,
+          "proportion": 0.12833732277665255
+        },
+        {
+          "gate_index": 303,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_5",
+          "from_edge_id": "638684285#1",
+          "to_edge_id": "638684285#2",
+          "count": 439.5,
+          "proportion": 0.16184864665807402
+        },
+        {
+          "gate_index": 304,
+          "camera_id": "cam_o2",
+          "gate_id": "gate_6",
+          "from_edge_id": "638684285#1",
+          "to_edge_id": "514715386#3",
+          "count": 213.0,
+          "proportion": 0.07843859326090959
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o3",
+      "n_movements": 2,
+      "total_count": 809.0,
+      "movements": [
+        {
+          "gate_index": 305,
+          "camera_id": "cam_o3",
+          "gate_id": "gate_1",
+          "from_edge_id": "638684285#0",
+          "to_edge_id": "638684285#1",
+          "count": 790.5,
+          "proportion": 0.977132262051916
+        },
+        {
+          "gate_index": 306,
+          "camera_id": "cam_o3",
+          "gate_id": "gate_2",
+          "from_edge_id": "638684285#0",
+          "to_edge_id": "638684285#1",
+          "count": 18.5,
+          "proportion": 0.022867737948084055
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o4",
+      "n_movements": 3,
+      "total_count": 1082.5,
+      "movements": [
+        {
+          "gate_index": 307,
+          "camera_id": "cam_o4",
+          "gate_id": "gate_1",
+          "from_edge_id": "514715386#3",
+          "to_edge_id": "-615615381",
+          "count": 234.5,
+          "proportion": 0.21662817551963048
+        },
+        {
+          "gate_index": 308,
+          "camera_id": "cam_o4",
+          "gate_id": "gate_2",
+          "from_edge_id": "514715386#3",
+          "to_edge_id": "545595778",
+          "count": 85.0,
+          "proportion": 0.07852193995381063
+        },
+        {
+          "gate_index": 309,
+          "camera_id": "cam_o4",
+          "gate_id": "gate_3",
+          "from_edge_id": "-545595778",
+          "to_edge_id": "514715386#3",
+          "count": 763.0,
+          "proportion": 0.704849884526559
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o5",
+      "n_movements": 3,
+      "total_count": 1227.0,
+      "movements": [
+        {
+          "gate_index": 310,
+          "camera_id": "cam_o5",
+          "gate_id": "gate_1",
+          "from_edge_id": "138191483",
+          "to_edge_id": "306158785",
+          "count": 483.5,
+          "proportion": 0.3940505297473513
+        },
+        {
+          "gate_index": 311,
+          "camera_id": "cam_o5",
+          "gate_id": "gate_2",
+          "from_edge_id": "138191483",
+          "to_edge_id": "306158785",
+          "count": 192.5,
+          "proportion": 0.15688671556642217
+        },
+        {
+          "gate_index": 312,
+          "camera_id": "cam_o5",
+          "gate_id": "gate_3",
+          "from_edge_id": "138191483",
+          "to_edge_id": "306158785",
+          "count": 551.0,
+          "proportion": 0.4490627546862266
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o6",
+      "n_movements": 10,
+      "total_count": 188.5,
+      "movements": [
+        {
+          "gate_index": 313,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_1",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518745",
+          "count": 4.0,
+          "proportion": 0.021220159151193633
+        },
+        {
+          "gate_index": 314,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_2",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518749#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 315,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_3",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518745",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 316,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_4",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518745",
+          "count": 4.5,
+          "proportion": 0.023872679045092837
+        },
+        {
+          "gate_index": 317,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_5",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518745",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 318,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_6",
+          "from_edge_id": "664148478#2",
+          "to_edge_id": "664148478#1",
+          "count": 6.0,
+          "proportion": 0.03183023872679045
+        },
+        {
+          "gate_index": 319,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_7",
+          "from_edge_id": "548115171#2",
+          "to_edge_id": "548115171#0",
+          "count": 5.5,
+          "proportion": 0.029177718832891247
+        },
+        {
+          "gate_index": 320,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_8",
+          "from_edge_id": "548115171#2",
+          "to_edge_id": "639537873#1",
+          "count": 120.0,
+          "proportion": 0.636604774535809
+        },
+        {
+          "gate_index": 321,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_9",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548518745",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 322,
+          "camera_id": "cam_o6",
+          "gate_id": "gate_10",
+          "from_edge_id": "548115171#0",
+          "to_edge_id": "548115171#2",
+          "count": 48.5,
+          "proportion": 0.2572944297082228
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_o7",
+      "n_movements": 4,
+      "total_count": 2176.0,
+      "movements": [
+        {
+          "gate_index": 323,
+          "camera_id": "cam_o7",
+          "gate_id": "gate_1",
+          "from_edge_id": "1167299851#0",
+          "to_edge_id": "643103587#0",
+          "count": 0.0,
+          "proportion": 0.0
+        },
+        {
+          "gate_index": 324,
+          "camera_id": "cam_o7",
+          "gate_id": "gate_2",
+          "from_edge_id": "643103587#0",
+          "to_edge_id": "548115221#0",
+          "count": 862.5,
+          "proportion": 0.39636948529411764
+        },
+        {
+          "gate_index": 325,
+          "camera_id": "cam_o7",
+          "gate_id": "gate_3",
+          "from_edge_id": "643103587#0",
+          "to_edge_id": "548115221#0",
+          "count": 559.0,
+          "proportion": 0.2568933823529412
+        },
+        {
+          "gate_index": 326,
+          "camera_id": "cam_o7",
+          "gate_id": "gate_4",
+          "from_edge_id": "643103587#0",
+          "to_edge_id": "548115221#0",
+          "count": 754.5,
+          "proportion": 0.3467371323529412
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_p1",
+      "n_movements": 4,
+      "total_count": 4537.0,
+      "movements": [
+        {
+          "gate_index": 327,
+          "camera_id": "cam_p1",
+          "gate_id": "gate_1",
+          "from_edge_id": "194911803",
+          "to_edge_id": "425318120#1",
+          "count": 1807.0,
+          "proportion": 0.3982808022922636
+        },
+        {
+          "gate_index": 328,
+          "camera_id": "cam_p1",
+          "gate_id": "gate_2",
+          "from_edge_id": "781185952",
+          "to_edge_id": "425318083#1",
+          "count": 1861.0,
+          "proportion": 0.4101829402689002
+        },
+        {
+          "gate_index": 329,
+          "camera_id": "cam_p1",
+          "gate_id": "gate_3",
+          "from_edge_id": "183555254#2",
+          "to_edge_id": "491685228",
+          "count": 454.0,
+          "proportion": 0.1000661229887591
+        },
+        {
+          "gate_index": 330,
+          "camera_id": "cam_p1",
+          "gate_id": "gate_4",
+          "from_edge_id": "194911803",
+          "to_edge_id": "425318120#1",
+          "count": 415.0,
+          "proportion": 0.09147013445007714
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_p2",
+      "n_movements": 4,
+      "total_count": 4807.5,
+      "movements": [
+        {
+          "gate_index": 331,
+          "camera_id": "cam_p2",
+          "gate_id": "gate_1",
+          "from_edge_id": "183555254#2",
+          "to_edge_id": "491685228",
+          "count": 1587.5,
+          "proportion": 0.33021320852834113
+        },
+        {
+          "gate_index": 332,
+          "camera_id": "cam_p2",
+          "gate_id": "gate_2",
+          "from_edge_id": "491685228",
+          "to_edge_id": "820458019#2",
+          "count": 2154.5,
+          "proportion": 0.4481539261570463
+        },
+        {
+          "gate_index": 333,
+          "camera_id": "cam_p2",
+          "gate_id": "gate_3",
+          "from_edge_id": "-208241224#1",
+          "to_edge_id": "208241142",
+          "count": 577.0,
+          "proportion": 0.12002080083203329
+        },
+        {
+          "gate_index": 334,
+          "camera_id": "cam_p2",
+          "gate_id": "gate_4",
+          "from_edge_id": "491685229#2",
+          "to_edge_id": "491685228",
+          "count": 488.5,
+          "proportion": 0.1016120644825793
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_p3",
+      "n_movements": 3,
+      "total_count": 7731.0,
+      "movements": [
+        {
+          "gate_index": 335,
+          "camera_id": "cam_p3",
+          "gate_id": "gate_1",
+          "from_edge_id": "424870772",
+          "to_edge_id": "661491751#1",
+          "count": 4637.0,
+          "proportion": 0.5997930410037511
+        },
+        {
+          "gate_index": 336,
+          "camera_id": "cam_p3",
+          "gate_id": "gate_2",
+          "from_edge_id": "138665704",
+          "to_edge_id": "776179253#0",
+          "count": 1654.5,
+          "proportion": 0.21400853705859527
+        },
+        {
+          "gate_index": 337,
+          "camera_id": "cam_p3",
+          "gate_id": "gate_3",
+          "from_edge_id": "424870772",
+          "to_edge_id": "630436402#0",
+          "count": 1439.5,
+          "proportion": 0.1861984219376536
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_p4",
+      "n_movements": 5,
+      "total_count": 3064.5,
+      "movements": [
+        {
+          "gate_index": 338,
+          "camera_id": "cam_p4",
+          "gate_id": "gate_1",
+          "from_edge_id": "424870772",
+          "to_edge_id": "206824378",
+          "count": 1400.0,
+          "proportion": 0.4568445097079458
+        },
+        {
+          "gate_index": 339,
+          "camera_id": "cam_p4",
+          "gate_id": "gate_2",
+          "from_edge_id": "651819277#1",
+          "to_edge_id": "533193454",
+          "count": 1363.5,
+          "proportion": 0.44493392070484583
+        },
+        {
+          "gate_index": 340,
+          "camera_id": "cam_p4",
+          "gate_id": "gate_3",
+          "from_edge_id": "424870772",
+          "to_edge_id": "651819277#1",
+          "count": 267.0,
+          "proportion": 0.08712677435144396
+        },
+        {
+          "gate_index": 341,
+          "camera_id": "cam_p4",
+          "gate_id": "gate_4",
+          "from_edge_id": "424870772",
+          "to_edge_id": "206824378",
+          "count": 29.5,
+          "proportion": 0.009626366454560288
+        },
+        {
+          "gate_index": 342,
+          "camera_id": "cam_p4",
+          "gate_id": "gate_5",
+          "from_edge_id": "424870772",
+          "to_edge_id": "206824378",
+          "count": 4.5,
+          "proportion": 0.0014684287812041115
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_q1",
+      "n_movements": 1,
+      "total_count": 1960.5,
+      "movements": [
+        {
+          "gate_index": 343,
+          "camera_id": "cam_q1",
+          "gate_id": "gate_1",
+          "from_edge_id": "657873599#0",
+          "to_edge_id": "657873599#1",
+          "count": 1960.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_q2",
+      "n_movements": 3,
+      "total_count": 541.0,
+      "movements": [
+        {
+          "gate_index": 344,
+          "camera_id": "cam_q2",
+          "gate_id": "gate_1",
+          "from_edge_id": "839634424#1",
+          "to_edge_id": "315140075#1",
+          "count": 336.0,
+          "proportion": 0.6210720887245841
+        },
+        {
+          "gate_index": 345,
+          "camera_id": "cam_q2",
+          "gate_id": "gate_2",
+          "from_edge_id": "839634424#1",
+          "to_edge_id": "-1021030453",
+          "count": 93.0,
+          "proportion": 0.17190388170055454
+        },
+        {
+          "gate_index": 346,
+          "camera_id": "cam_q2",
+          "gate_id": "gate_3",
+          "from_edge_id": "839634424#1",
+          "to_edge_id": "639777153#1",
+          "count": 112.0,
+          "proportion": 0.20702402957486138
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_q3",
+      "n_movements": 1,
+      "total_count": 2043.5,
+      "movements": [
+        {
+          "gate_index": 347,
+          "camera_id": "cam_q3",
+          "gate_id": "gate_1",
+          "from_edge_id": "895548372",
+          "to_edge_id": "657873599#1",
+          "count": 2043.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_q4",
+      "n_movements": 1,
+      "total_count": 753.5,
+      "movements": [
+        {
+          "gate_index": 348,
+          "camera_id": "cam_q4",
+          "gate_id": "gate_1",
+          "from_edge_id": "1418129588#0",
+          "to_edge_id": "-657873599#3",
+          "count": 753.5,
+          "proportion": 1.0
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_r1",
+      "n_movements": 4,
+      "total_count": 5500.0,
+      "movements": [
+        {
+          "gate_index": 349,
+          "camera_id": "cam_r1",
+          "gate_id": "gate_1",
+          "from_edge_id": "713090285",
+          "to_edge_id": "206824057#1",
+          "count": 1150.5,
+          "proportion": 0.2091818181818182
+        },
+        {
+          "gate_index": 350,
+          "camera_id": "cam_r1",
+          "gate_id": "gate_2",
+          "from_edge_id": "713090285",
+          "to_edge_id": "206824057#1",
+          "count": 2808.5,
+          "proportion": 0.5106363636363637
+        },
+        {
+          "gate_index": 351,
+          "camera_id": "cam_r1",
+          "gate_id": "gate_3",
+          "from_edge_id": "713090284#1",
+          "to_edge_id": "489379683",
+          "count": 1155.0,
+          "proportion": 0.21
+        },
+        {
+          "gate_index": 352,
+          "camera_id": "cam_r1",
+          "gate_id": "gate_4",
+          "from_edge_id": "713090285",
+          "to_edge_id": "713090284#1",
+          "count": 386.0,
+          "proportion": 0.07018181818181818
+        }
+      ]
+    },
+    {
+      "camera_id": "cam_r2",
+      "n_movements": 1,
+      "total_count": 1584.0,
+      "movements": [
+        {
+          "gate_index": 353,
+          "camera_id": "cam_r2",
+          "gate_id": "gate_1",
+          "from_edge_id": "713090285",
+          "to_edge_id": "519408219",
+          "count": 1584.0,
+          "proportion": 1.0
+        }
+      ]
+    }
+  ]
+}

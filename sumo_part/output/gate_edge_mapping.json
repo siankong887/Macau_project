@@ -1,0 +1,3544 @@
+{
+  "gates": [
+    {
+      "gate_index": 0,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_1",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 1,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_2",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 2,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_3",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 3,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_4",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 4,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_5",
+      "edge": [
+        "12211736827",
+        "12211736812",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 5,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_6",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 6,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_7",
+      "edge": [
+        "12211736812",
+        "2054222264",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 7,
+      "camera_id": "cam_a1",
+      "gate_id": "gate_8",
+      "edge": [
+        "12211736827",
+        "12211736812",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 8,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_1",
+      "edge": [
+        "9769366872",
+        "1936845009",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 9,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1936845009",
+        "518264005",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 10,
+      "camera_id": "cam_a2",
+      "gate_id": "gate_3",
+      "edge": [
+        "9769366872",
+        "1936845009",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 11,
+      "camera_id": "cam_a3",
+      "gate_id": "gate_1",
+      "edge": [
+        "1811547083",
+        "1522474782",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 12,
+      "camera_id": "cam_a3",
+      "gate_id": "gate_2",
+      "edge": [
+        "1522474782",
+        "1811547083",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 13,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_1",
+      "edge": [
+        "1936845009",
+        "518264005",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 14,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_2",
+      "edge": [
+        "1936845009",
+        "518264005",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 15,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_3",
+      "edge": [
+        "518264005",
+        "1942810209",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 16,
+      "camera_id": "cam_a4",
+      "gate_id": "gate_4",
+      "edge": [
+        "518264005",
+        "1936845018",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 17,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_1",
+      "edge": [
+        "2628726614",
+        "5057120321",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 18,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_2",
+      "edge": [
+        "2628726614",
+        "5057120321",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 19,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_3",
+      "edge": [
+        "2628726614",
+        "5057120321",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 20,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_4",
+      "edge": [
+        "2628726614",
+        "2628726630",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 21,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_5",
+      "edge": [
+        "2628726614",
+        "2628726630",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 22,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_6",
+      "edge": [
+        "2628726614",
+        "2628726630",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 23,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_7",
+      "edge": [
+        "2628726614",
+        "2628726630",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 24,
+      "camera_id": "cam_a5",
+      "gate_id": "gate_8",
+      "edge": [
+        "2628726614",
+        "2628726630",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 25,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1888279429",
+        "1540314462",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 26,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1888279429",
+        "1540314462",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 27,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1888279429",
+        "1540314462",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 28,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_4",
+      "edge": [
+        "1888279429",
+        "3355823914",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 29,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_5",
+      "edge": [
+        "1888279429",
+        "3355823914",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 30,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_6",
+      "edge": [
+        "1449241391",
+        "1888279429",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 31,
+      "camera_id": "cam_b1",
+      "gate_id": "gate_7",
+      "edge": [
+        "1449241391",
+        "1888279429",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 32,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1936887997",
+        "6852411673",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 33,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_2",
+      "edge": [
+        "6852411673",
+        "1936887997",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 34,
+      "camera_id": "cam_b2",
+      "gate_id": "gate_3",
+      "edge": [
+        "1936887997",
+        "6852411673",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 35,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_1",
+      "edge": [
+        "518263546",
+        "518263788",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 36,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_2",
+      "edge": [
+        "518263546",
+        "518263788",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 37,
+      "camera_id": "cam_c1",
+      "gate_id": "gate_3",
+      "edge": [
+        "518263546",
+        "518263788",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 38,
+      "camera_id": "cam_c2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1448263566",
+        "1942292074",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 39,
+      "camera_id": "cam_c2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942292074",
+        "1942292058",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 40,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_1",
+      "edge": [
+        "6240071024",
+        "1887964363",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 41,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_2",
+      "edge": [
+        "6240071024",
+        "1887964363",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 42,
+      "camera_id": "cam_c3",
+      "gate_id": "gate_3",
+      "edge": [
+        "6240071024",
+        "1887964363",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 43,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_1",
+      "edge": [
+        "6562195264",
+        "1888012638",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 44,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_2",
+      "edge": [
+        "6562195264",
+        "1888012638",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 45,
+      "camera_id": "cam_c4",
+      "gate_id": "gate_3",
+      "edge": [
+        "6562195264",
+        "1888012638",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 46,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_1",
+      "edge": [
+        "3355824096",
+        "3355824094",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 47,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_2",
+      "edge": [
+        "5841831224",
+        "3355824096",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 48,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_3",
+      "edge": [
+        "5841831224",
+        "3355824096",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 49,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_4",
+      "edge": [
+        "3355824096",
+        "3355824094",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 50,
+      "camera_id": "cam_c5",
+      "gate_id": "gate_5",
+      "edge": [
+        "5841831224",
+        "3355824096",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 51,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_1",
+      "edge": [
+        "5295497334",
+        "4835553708",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 52,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_2",
+      "edge": [
+        "5295497334",
+        "4835553708",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 53,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_3",
+      "edge": [
+        "5295497334",
+        "4835553708",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 54,
+      "camera_id": "cam_c6",
+      "gate_id": "gate_4",
+      "edge": [
+        "5295497334",
+        "4835553708",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 55,
+      "camera_id": "cam_c7",
+      "gate_id": "gate_1",
+      "edge": [
+        "5107928522",
+        "4680466149",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 56,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_1",
+      "edge": [
+        "10160788286",
+        "1523899606",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 57,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_2",
+      "edge": [
+        "1523899606",
+        "10160788282",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 58,
+      "camera_id": "cam_c8",
+      "gate_id": "gate_3",
+      "edge": [
+        "3376575517",
+        "1523899606",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 59,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_1",
+      "edge": [
+        "3355823817",
+        "518263501",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 60,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_2",
+      "edge": [
+        "3355823817",
+        "518263501",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 61,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_3",
+      "edge": [
+        "5113848563",
+        "518263501",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 62,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_4",
+      "edge": [
+        "5113848563",
+        "518263501",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 63,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_5",
+      "edge": [
+        "518263501",
+        "1846185769",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 64,
+      "camera_id": "cam_c9",
+      "gate_id": "gate_6",
+      "edge": [
+        "518263501",
+        "1846185769",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 65,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_1",
+      "edge": [
+        "7874298255",
+        "4818810106",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 66,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_2",
+      "edge": [
+        "7874298255",
+        "4818810106",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 67,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_3",
+      "edge": [
+        "7874298255",
+        "4818810106",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 68,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_4",
+      "edge": [
+        "9067078743",
+        "7874298255",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 69,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_5",
+      "edge": [
+        "9067078743",
+        "7874298255",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 70,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_6",
+      "edge": [
+        "7874298255",
+        "1936887991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 71,
+      "camera_id": "cam_c10",
+      "gate_id": "gate_7",
+      "edge": [
+        "7874298255",
+        "1936887991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 72,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_1",
+      "edge": [
+        "10143282735",
+        "2492766000",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 73,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_2",
+      "edge": [
+        "10143282735",
+        "2492766000",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 74,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_3",
+      "edge": [
+        "2492766000",
+        "2168718339",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 75,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_4",
+      "edge": [
+        "2492766000",
+        "2168718339",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 76,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_5",
+      "edge": [
+        "2492766000",
+        "2168718339",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 77,
+      "camera_id": "cam_c11",
+      "gate_id": "gate_6",
+      "edge": [
+        "12328602709",
+        "2492766000",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 78,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1942292055",
+        "1448260320",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 79,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942292055",
+        "1448260320",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 80,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1942292055",
+        "1942292051",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 81,
+      "camera_id": "cam_d1",
+      "gate_id": "gate_4",
+      "edge": [
+        "1942292055",
+        "1942292051",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 82,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1942291904",
+        "1867311196",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 83,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942291927",
+        "1867311196",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 84,
+      "camera_id": "cam_d2",
+      "gate_id": "gate_3",
+      "edge": [
+        "1942291927",
+        "1867311196",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 85,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_1",
+      "edge": [
+        "1449241548",
+        "1449241533",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 86,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_2",
+      "edge": [
+        "1449241548",
+        "1449241533",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 87,
+      "camera_id": "cam_d3",
+      "gate_id": "gate_3",
+      "edge": [
+        "1449241533",
+        "1867311193",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 88,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_1",
+      "edge": [
+        "5108134366",
+        "1867311223",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 89,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942467236",
+        "5108134366",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 90,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_3",
+      "edge": [
+        "5108134366",
+        "1867311223",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 91,
+      "camera_id": "cam_d4",
+      "gate_id": "gate_4",
+      "edge": [
+        "1942467236",
+        "5108134366",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 92,
+      "camera_id": "cam_e1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1816987769",
+        "1816987772",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 93,
+      "camera_id": "cam_e1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1816987769",
+        "1816987772",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 94,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1942400763",
+        "5104353668",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 95,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942400763",
+        "5104353668",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 96,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_3",
+      "edge": [
+        "1942400763",
+        "5104353668",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 97,
+      "camera_id": "cam_e2",
+      "gate_id": "gate_4",
+      "edge": [
+        "1942400763",
+        "5104353668",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 98,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_1",
+      "edge": [
+        "4051774595",
+        "518463863",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 99,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_2",
+      "edge": [
+        "4051774595",
+        "518463863",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 100,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_3",
+      "edge": [
+        "518463863",
+        "2917006396",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 101,
+      "camera_id": "cam_e3",
+      "gate_id": "gate_4",
+      "edge": [
+        "1942291748",
+        "518463863",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 102,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_1",
+      "edge": [
+        "518464523",
+        "1420845479",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 103,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_2",
+      "edge": [
+        "518464523",
+        "1420845479",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 104,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_3",
+      "edge": [
+        "518464523",
+        "1420845479",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 105,
+      "camera_id": "cam_e4",
+      "gate_id": "gate_4",
+      "edge": [
+        "518464523",
+        "1420845479",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 106,
+      "camera_id": "cam_e5",
+      "gate_id": "gate_1",
+      "edge": [
+        "1516025641",
+        "1448234534",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 107,
+      "camera_id": "cam_e5",
+      "gate_id": "gate_2",
+      "edge": [
+        "1420845489",
+        "1448234534",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 108,
+      "camera_id": "cam_e6",
+      "gate_id": "gate_1",
+      "edge": [
+        "2992379493",
+        "1420845489",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 109,
+      "camera_id": "cam_e6",
+      "gate_id": "gate_2",
+      "edge": [
+        "1420845489",
+        "1516025646",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 110,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1944086454",
+        "9024344350",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 111,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1944086454",
+        "1686120959",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 112,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1944086454",
+        "9024344350",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 113,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_4",
+      "edge": [
+        "1944086454",
+        "1686120959",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 114,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_5",
+      "edge": [
+        "1944086459",
+        "1944086454",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 115,
+      "camera_id": "cam_f1",
+      "gate_id": "gate_6",
+      "edge": [
+        "1944086454",
+        "1686120959",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 116,
+      "camera_id": "cam_f2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1942584678",
+        "2169024001",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 117,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_1",
+      "edge": [
+        "1832026502",
+        "1832026443",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 118,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_2",
+      "edge": [
+        "1832026502",
+        "1832026443",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 119,
+      "camera_id": "cam_f3",
+      "gate_id": "gate_3",
+      "edge": [
+        "1832026502",
+        "1832026443",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 120,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_1",
+      "edge": [
+        "1832146663",
+        "1942810207",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 121,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_2",
+      "edge": [
+        "1832146663",
+        "1942810207",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 122,
+      "camera_id": "cam_f4",
+      "gate_id": "gate_3",
+      "edge": [
+        "1832146663",
+        "1942810207",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 123,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_1",
+      "edge": [
+        "5117524805",
+        "1449241548",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 124,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_2",
+      "edge": [
+        "5117524805",
+        "1449241548",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 125,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_3",
+      "edge": [
+        "1449241548",
+        "1867326933",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 126,
+      "camera_id": "cam_f5",
+      "gate_id": "gate_4",
+      "edge": [
+        "1449241548",
+        "1867326933",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 127,
+      "camera_id": "cam_f6",
+      "gate_id": "gate_1",
+      "edge": [
+        "1684887332",
+        "1938088901",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 128,
+      "camera_id": "cam_f6",
+      "gate_id": "gate_2",
+      "edge": [
+        "1684887332",
+        "1938088901",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 129,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_1",
+      "edge": [
+        "10293199569",
+        "1449239318",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 130,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_2",
+      "edge": [
+        "10293199569",
+        "1449239318",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 131,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_3",
+      "edge": [
+        "10293199569",
+        "10293199566",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 132,
+      "camera_id": "cam_f7",
+      "gate_id": "gate_4",
+      "edge": [
+        "10293199569",
+        "10293199566",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 133,
+      "camera_id": "cam_f8",
+      "gate_id": "gate_1",
+      "edge": [
+        "9004853901",
+        "247812556",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 134,
+      "camera_id": "cam_f8",
+      "gate_id": "gate_2",
+      "edge": [
+        "247812556",
+        "3120748687",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 135,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_1",
+      "edge": [
+        "1941289254",
+        "6735356641",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 136,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_2",
+      "edge": [
+        "6735356641",
+        "4336638117",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 137,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_3",
+      "edge": [
+        "6735356641",
+        "4336638117",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 138,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_4",
+      "edge": [
+        "6735356641",
+        "2628861504",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 139,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_5",
+      "edge": [
+        "6735356641",
+        "4336638117",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 140,
+      "camera_id": "cam_f9",
+      "gate_id": "gate_6",
+      "edge": [
+        "6735356641",
+        "2628861504",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 141,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_1",
+      "edge": [
+        "247812555",
+        "247812556",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 142,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_2",
+      "edge": [
+        "247812555",
+        "247812556",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 143,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_3",
+      "edge": [
+        "247812556",
+        "3120748687",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 144,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_4",
+      "edge": [
+        "247812556",
+        "3120748687",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 145,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_5",
+      "edge": [
+        "247812556",
+        "247812555",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 146,
+      "camera_id": "cam_f10",
+      "gate_id": "gate_6",
+      "edge": [
+        "9004853901",
+        "247812556",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 147,
+      "camera_id": "cam_f11",
+      "gate_id": "gate_1",
+      "edge": [
+        "2027471525",
+        "518455371",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 148,
+      "camera_id": "cam_f11",
+      "gate_id": "gate_2",
+      "edge": [
+        "518455371",
+        "7026425344",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 149,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_1",
+      "edge": [
+        "518455371",
+        "1846784987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 150,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_2",
+      "edge": [
+        "518455371",
+        "1846784987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 151,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_3",
+      "edge": [
+        "518455371",
+        "7026425344",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 152,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_4",
+      "edge": [
+        "518455371",
+        "1846784987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 153,
+      "camera_id": "cam_f12",
+      "gate_id": "gate_5",
+      "edge": [
+        "518455371",
+        "1846784987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 154,
+      "camera_id": "cam_f13",
+      "gate_id": "gate_1",
+      "edge": [
+        "1844682767",
+        "1791209551",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 155,
+      "camera_id": "cam_f13",
+      "gate_id": "gate_2",
+      "edge": [
+        "1844682767",
+        "1791209551",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 156,
+      "camera_id": "cam_f14",
+      "gate_id": "gate_1",
+      "edge": [
+        "3016309075",
+        "2027471666",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 157,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_1",
+      "edge": [
+        "2027471666",
+        "1791209584",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 158,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_2",
+      "edge": [
+        "1791209584",
+        "1846784930",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 159,
+      "camera_id": "cam_f15",
+      "gate_id": "gate_3",
+      "edge": [
+        "1791209584",
+        "1793358263",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 160,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_1",
+      "edge": [
+        "9038173107",
+        "2168717813",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 161,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_2",
+      "edge": [
+        "9038173107",
+        "2168717813",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 162,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_3",
+      "edge": [
+        "9038173107",
+        "7195542382",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 163,
+      "camera_id": "cam_f16",
+      "gate_id": "gate_4",
+      "edge": [
+        "9038173107",
+        "7195542382",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 164,
+      "camera_id": "cam_f17",
+      "gate_id": "gate_1",
+      "edge": [
+        "2169023988",
+        "2169023991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 165,
+      "camera_id": "cam_f17",
+      "gate_id": "gate_2",
+      "edge": [
+        "2169023991",
+        "2169023988",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 166,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_1",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 167,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_2",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 168,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_3",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 169,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_4",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 170,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_5",
+      "edge": [
+        "2027517119",
+        "5455610066",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 171,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_6",
+      "edge": [
+        "2027517119",
+        "5455610066",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 172,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_7",
+      "edge": [
+        "2027517119",
+        "5455610066",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 173,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_8",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 174,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_9",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 175,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_10",
+      "edge": [
+        "5455610066",
+        "3005526065",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 176,
+      "camera_id": "cam_f18",
+      "gate_id": "gate_11",
+      "edge": [
+        "3005526057",
+        "5455610066",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 177,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_1",
+      "edge": [
+        "9133785911",
+        "7026425345",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 178,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_2",
+      "edge": [
+        "9133785911",
+        "7026425345",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 179,
+      "camera_id": "cam_f19",
+      "gate_id": "gate_3",
+      "edge": [
+        "7026425344",
+        "7026425345",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 180,
+      "camera_id": "cam_f20",
+      "gate_id": "gate_1",
+      "edge": [
+        "3120748687",
+        "3005526082",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 181,
+      "camera_id": "cam_f20",
+      "gate_id": "gate_2",
+      "edge": [
+        "247812506",
+        "3005526082",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 182,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_1",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 183,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_2",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 184,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_3",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 185,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_4",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 186,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_5",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 187,
+      "camera_id": "cam_f21",
+      "gate_id": "gate_6",
+      "edge": [
+        "1941289233",
+        "7213836956",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 188,
+      "camera_id": "cam_f22",
+      "gate_id": "gate_1",
+      "edge": [
+        "2555569529",
+        "9038173103",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 189,
+      "camera_id": "cam_f22",
+      "gate_id": "gate_2",
+      "edge": [
+        "6695185573",
+        "9038173103",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 190,
+      "camera_id": "cam_f23",
+      "gate_id": "gate_1",
+      "edge": [
+        "7195542379",
+        "2168717858",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 191,
+      "camera_id": "cam_f24",
+      "gate_id": "gate_1",
+      "edge": [
+        "2555569506",
+        "2629540340",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 192,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_1",
+      "edge": [
+        "6533196277",
+        "2879195259",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 193,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_2",
+      "edge": [
+        "2879195259",
+        "6533196277",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 194,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_3",
+      "edge": [
+        "2879195259",
+        "6533196277",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 195,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_4",
+      "edge": [
+        "2879195259",
+        "6533196277",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 196,
+      "camera_id": "cam_g1",
+      "gate_id": "gate_5",
+      "edge": [
+        "2879195259",
+        "6533196277",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 197,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_1",
+      "edge": [
+        "2157626049",
+        "1791209584",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 198,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_2",
+      "edge": [
+        "2157626049",
+        "1791209584",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 199,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_3",
+      "edge": [
+        "1791209584",
+        "1793358263",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 200,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_4",
+      "edge": [
+        "1791209584",
+        "1793358263",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 201,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_5",
+      "edge": [
+        "1791209584",
+        "1793358263",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 202,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_6",
+      "edge": [
+        "1791209584",
+        "1793358263",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 203,
+      "camera_id": "cam_g2",
+      "gate_id": "gate_7",
+      "edge": [
+        "1791209584",
+        "1846784930",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 204,
+      "camera_id": "cam_g3",
+      "gate_id": "gate_1",
+      "edge": [
+        "1846242592",
+        "1846242567",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 205,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_1",
+      "edge": [
+        "1844682741",
+        "1844682733",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 206,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_2",
+      "edge": [
+        "1844682741",
+        "1844682733",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 207,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_3",
+      "edge": [
+        "1844682741",
+        "2392981216",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 208,
+      "camera_id": "cam_g4",
+      "gate_id": "gate_4",
+      "edge": [
+        "1844682741",
+        "2392981216",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 209,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_1",
+      "edge": [
+        "1846250221",
+        "2392981213",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 210,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_2",
+      "edge": [
+        "1846250221",
+        "5299061597",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 211,
+      "camera_id": "cam_g5",
+      "gate_id": "gate_3",
+      "edge": [
+        "1846250221",
+        "5299061597",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 212,
+      "camera_id": "cam_g6",
+      "gate_id": "gate_1",
+      "edge": [
+        "3118584064",
+        "2840210327",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 213,
+      "camera_id": "cam_g6",
+      "gate_id": "gate_2",
+      "edge": [
+        "2840210327",
+        "3118584064",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 214,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_1",
+      "edge": [
+        "2517670278",
+        "594811098",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 215,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_2",
+      "edge": [
+        "2517670278",
+        "594811098",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 216,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_3",
+      "edge": [
+        "4837150620",
+        "594811098",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 217,
+      "camera_id": "cam_h1",
+      "gate_id": "gate_44",
+      "edge": [
+        "4837150620",
+        "594811098",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 218,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_1",
+      "edge": [
+        "594811144",
+        "1112039283",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 219,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_2",
+      "edge": [
+        "594811144",
+        "1112039283",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 220,
+      "camera_id": "cam_h2",
+      "gate_id": "gate_3",
+      "edge": [
+        "594811144",
+        "1515748078",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 221,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_1",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 222,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_2",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 223,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_3",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 224,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_4",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 225,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_5",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 226,
+      "camera_id": "cam_h3",
+      "gate_id": "gate_6",
+      "edge": [
+        "4835601260",
+        "12212445468",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 227,
+      "camera_id": "cam_i11",
+      "gate_id": "gate_1",
+      "edge": [
+        "3100109929",
+        "1515996978",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 228,
+      "camera_id": "cam_i11",
+      "gate_id": "gate_2",
+      "edge": [
+        "1515997023",
+        "1515996978",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 229,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_1",
+      "edge": [
+        "4865581763",
+        "12600702227",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 230,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_2",
+      "edge": [
+        "4865581763",
+        "12600702227",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 231,
+      "camera_id": "cam_j1",
+      "gate_id": "gate_3",
+      "edge": [
+        "4865581763",
+        "12600702227",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 232,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1518007286",
+        "1514820631",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 233,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1518007286",
+        "1514820631",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 234,
+      "camera_id": "cam_j2",
+      "gate_id": "gate_3",
+      "edge": [
+        "594810456",
+        "1514820631",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 235,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_1",
+      "edge": [
+        "2026614923",
+        "594810991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 236,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_2",
+      "edge": [
+        "2026614923",
+        "594810991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 237,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_3",
+      "edge": [
+        "7002649406",
+        "594810991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 238,
+      "camera_id": "cam_j3",
+      "gate_id": "gate_4",
+      "edge": [
+        "7002649406",
+        "594810991",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 239,
+      "camera_id": "cam_k1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1432319785",
+        "1888045626",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 240,
+      "camera_id": "cam_k1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1888045626",
+        "1112039279",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 241,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1948626118",
+        "2026614833",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 242,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1948626118",
+        "2026614833",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 243,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1948626118",
+        "2026614833",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 244,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_4",
+      "edge": [
+        "6658271344",
+        "1948626118",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 245,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_5",
+      "edge": [
+        "1948626118",
+        "5425504237",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 246,
+      "camera_id": "cam_l1",
+      "gate_id": "gate_6",
+      "edge": [
+        "1948626118",
+        "5425504237",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 247,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_1",
+      "edge": [
+        "3923359389",
+        "5425504234",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 248,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_2",
+      "edge": [
+        "3923359389",
+        "5425504234",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 249,
+      "camera_id": "cam_l2",
+      "gate_id": "gate_3",
+      "edge": [
+        "4835465664",
+        "3923359389",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 250,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_1",
+      "edge": [
+        "3296513997",
+        "3296513987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 251,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_2",
+      "edge": [
+        "3296513997",
+        "3296513987",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 252,
+      "camera_id": "cam_l3",
+      "gate_id": "gate_3",
+      "edge": [
+        "3296513997",
+        "594811016",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 253,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1420845476",
+        "2992379493",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 254,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1420845476",
+        "1846250241",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 255,
+      "camera_id": "cam_m1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1420845476",
+        "2992379493",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 256,
+      "camera_id": "cam_m2",
+      "gate_id": "gate_1",
+      "edge": [
+        "4056761696",
+        "594810580",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 257,
+      "camera_id": "cam_m2",
+      "gate_id": "gate_2",
+      "edge": [
+        "4056761696",
+        "594810580",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 258,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_1",
+      "edge": [
+        "4075136674",
+        "1112039283",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 259,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_2",
+      "edge": [
+        "594811144",
+        "1112039283",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 260,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_3",
+      "edge": [
+        "1112039283",
+        "1448261053",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 261,
+      "camera_id": "cam_m3",
+      "gate_id": "gate_4",
+      "edge": [
+        "1112039283",
+        "1448261053",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 262,
+      "camera_id": "cam_m4",
+      "gate_id": "gate_1",
+      "edge": [
+        "4064678348",
+        "4064678350",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 263,
+      "camera_id": "cam_m4",
+      "gate_id": "gate_2",
+      "edge": [
+        "1936910344",
+        "4064678350",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 264,
+      "camera_id": "cam_m5",
+      "gate_id": "gate_1",
+      "edge": [
+        "4835579428",
+        "1112039402",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 265,
+      "camera_id": "cam_m5",
+      "gate_id": "gate_2",
+      "edge": [
+        "518263788",
+        "4835579428",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 266,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_1",
+      "edge": [
+        "1112039283",
+        "1448261053",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 267,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_2",
+      "edge": [
+        "1112039283",
+        "1448261053",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 268,
+      "camera_id": "cam_m6",
+      "gate_id": "gate_3",
+      "edge": [
+        "1448261053",
+        "1942292058",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 269,
+      "camera_id": "cam_m7",
+      "gate_id": "gate_1",
+      "edge": [
+        "518263788",
+        "4835579428",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 270,
+      "camera_id": "cam_m7",
+      "gate_id": "gate_2",
+      "edge": [
+        "518263788",
+        "4835579428",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 271,
+      "camera_id": "cam_m8",
+      "gate_id": "gate_1",
+      "edge": [
+        "518263788",
+        "4835579428",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 272,
+      "camera_id": "cam_m9",
+      "gate_id": "gate_1",
+      "edge": [
+        "594810758",
+        "594810582",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 273,
+      "camera_id": "cam_m9",
+      "gate_id": "gate_2",
+      "edge": [
+        "6533234861",
+        "594810758",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 274,
+      "camera_id": "cam_m10",
+      "gate_id": "gate_1",
+      "edge": [
+        "594810580",
+        "594810750",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 275,
+      "camera_id": "cam_m10",
+      "gate_id": "gate_2",
+      "edge": [
+        "594810580",
+        "594810750",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 276,
+      "camera_id": "cam_m11",
+      "gate_id": "gate_1",
+      "edge": [
+        "594810758",
+        "594810582",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 277,
+      "camera_id": "cam_m11",
+      "gate_id": "gate_2",
+      "edge": [
+        "6533234861",
+        "594810758",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 278,
+      "camera_id": "cam_m11",
+      "gate_id": "gate_3",
+      "edge": [
+        "1516025594",
+        "594810758",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 279,
+      "camera_id": "cam_m11",
+      "gate_id": "gate_4",
+      "edge": [
+        "594810758",
+        "594810582",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 280,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_1",
+      "edge": [
+        "5295497027",
+        "5995805805",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 281,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_2",
+      "edge": [
+        "5295497027",
+        "5995805805",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 282,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_3",
+      "edge": [
+        "5295497027",
+        "5995805805",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 283,
+      "camera_id": "cam_m12",
+      "gate_id": "gate_4",
+      "edge": [
+        "5295497027",
+        "5995805805",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 284,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_1",
+      "edge": [
+        "5995805677",
+        "8206064923",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 285,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_2",
+      "edge": [
+        "5995805881",
+        "5995805677",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 286,
+      "camera_id": "cam_m13",
+      "gate_id": "gate_3",
+      "edge": [
+        "5995805677",
+        "8206064923",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 287,
+      "camera_id": "cam_m14",
+      "gate_id": "gate_1",
+      "edge": [
+        "8086970950",
+        "8657455733",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 288,
+      "camera_id": "cam_m14",
+      "gate_id": "gate_2",
+      "edge": [
+        "8212253860",
+        "8086970950",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 289,
+      "camera_id": "cam_m14",
+      "gate_id": "gate_3",
+      "edge": [
+        "8212253860",
+        "8086970950",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 290,
+      "camera_id": "cam_m15",
+      "gate_id": "gate_1",
+      "edge": [
+        "9210167479",
+        "12099657777",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 291,
+      "camera_id": "cam_m16",
+      "gate_id": "gate_1",
+      "edge": [
+        "12099657777",
+        "9210167479",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 292,
+      "camera_id": "cam_m17",
+      "gate_id": "gate_1",
+      "edge": [
+        "12214526358",
+        "8212253860",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 293,
+      "camera_id": "cam_m17",
+      "gate_id": "gate_2",
+      "edge": [
+        "8212253860",
+        "8086970950",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 294,
+      "camera_id": "cam_n1",
+      "gate_id": "gate_1",
+      "edge": [
+        "10689864529",
+        "12143930233",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 295,
+      "camera_id": "cam_n2",
+      "gate_id": "gate_1",
+      "edge": [
+        "5295497610",
+        "12533613033",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 296,
+      "camera_id": "cam_n2",
+      "gate_id": "gate_2",
+      "edge": [
+        "5295497610",
+        "12533613033",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 297,
+      "camera_id": "cam_o1",
+      "gate_id": "gate_1",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 298,
+      "camera_id": "cam_o1",
+      "gate_id": "gate_2",
+      "edge": [
+        "6625037060",
+        "6073647793",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 299,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_1",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 300,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_2",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 301,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_3",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 302,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_4",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 303,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_5",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 304,
+      "camera_id": "cam_o2",
+      "gate_id": "gate_6",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 305,
+      "camera_id": "cam_o3",
+      "gate_id": "gate_1",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 306,
+      "camera_id": "cam_o3",
+      "gate_id": "gate_2",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 307,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_1",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 308,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_2",
+      "edge": [
+        "6625037060",
+        "5028054894",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 309,
+      "camera_id": "cam_o4",
+      "gate_id": "gate_3",
+      "edge": [
+        "6625037060",
+        "6073647793",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 310,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_1",
+      "edge": [
+        "1514820618",
+        "594810504",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 311,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_2",
+      "edge": [
+        "1514820618",
+        "594810504",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 312,
+      "camera_id": "cam_o5",
+      "gate_id": "gate_3",
+      "edge": [
+        "1514820618",
+        "594810504",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 313,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_1",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 314,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_2",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 315,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_3",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 316,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_4",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 317,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_5",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 318,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_6",
+      "edge": [
+        "6026198761",
+        "6026198745",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 319,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_7",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 320,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_8",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 321,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_9",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 322,
+      "camera_id": "cam_o6",
+      "gate_id": "gate_10",
+      "edge": [
+        "6026198745",
+        "5299061043",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 323,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_1",
+      "edge": [
+        "10855460010",
+        "10855460017",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 324,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_2",
+      "edge": [
+        "5548010396",
+        "10855460017",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 325,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_3",
+      "edge": [
+        "5548010396",
+        "10855460017",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 326,
+      "camera_id": "cam_o7",
+      "gate_id": "gate_4",
+      "edge": [
+        "5548010396",
+        "10855460017",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 327,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_1",
+      "edge": [
+        "9060604387",
+        "1939558938",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 328,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_2",
+      "edge": [
+        "9067412347",
+        "1939558938",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 329,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1939558938",
+        "4835445199",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 330,
+      "camera_id": "cam_p1",
+      "gate_id": "gate_4",
+      "edge": [
+        "9060604387",
+        "1939558938",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 331,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_1",
+      "edge": [
+        "3109980755",
+        "4835445199",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 332,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1939558938",
+        "4835445199",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 333,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_3",
+      "edge": [
+        "4835445199",
+        "2185571653",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 334,
+      "camera_id": "cam_p2",
+      "gate_id": "gate_4",
+      "edge": [
+        "4835445199",
+        "2185571653",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 335,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_1",
+      "edge": [
+        "2792179856",
+        "1936863901",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 336,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_2",
+      "edge": [
+        "1936863901",
+        "1449241550",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 337,
+      "camera_id": "cam_p3",
+      "gate_id": "gate_3",
+      "edge": [
+        "2792179856",
+        "1936863901",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 338,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_1",
+      "edge": [
+        "5173211471",
+        "5953028842",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 339,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_2",
+      "edge": [
+        "5173211471",
+        "5953028842",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 340,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_3",
+      "edge": [
+        "5173211471",
+        "5953028842",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 341,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_4",
+      "edge": [
+        "5173211471",
+        "5953028842",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 342,
+      "camera_id": "cam_p4",
+      "gate_id": "gate_5",
+      "edge": [
+        "5173211471",
+        "5953028842",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 343,
+      "camera_id": "cam_q1",
+      "gate_id": "gate_1",
+      "edge": [
+        "11245117419",
+        "13324864160",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 344,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_1",
+      "edge": [
+        "1941536948",
+        "12040037094",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 345,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_2",
+      "edge": [
+        "1941536948",
+        "12040037094",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 346,
+      "camera_id": "cam_q2",
+      "gate_id": "gate_3",
+      "edge": [
+        "1941536948",
+        "12040037094",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 347,
+      "camera_id": "cam_q3",
+      "gate_id": "gate_1",
+      "edge": [
+        "2943809934",
+        "11245117419",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 348,
+      "camera_id": "cam_q4",
+      "gate_id": "gate_1",
+      "edge": [
+        "11245117419",
+        "13324864160",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 349,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_1",
+      "edge": [
+        "1942291995",
+        "594811248",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 350,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_2",
+      "edge": [
+        "1942291995",
+        "594811248",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 351,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_3",
+      "edge": [
+        "1942291995",
+        "594811248",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 352,
+      "camera_id": "cam_r1",
+      "gate_id": "gate_4",
+      "edge": [
+        "1942291995",
+        "594811248",
+        "0"
+      ]
+    },
+    {
+      "gate_index": 353,
+      "camera_id": "cam_r2",
+      "gate_id": "gate_1",
+      "edge": [
+        "594811262",
+        "1942291960",
+        "0"
+      ]
+    }
+  ]
+}
