@@ -460,13 +460,15 @@ def process_segment(decoder, runtime, model, pool, pending_counter,
             preds = model(input_batch)
             if isinstance(preds, (list, tuple)):
                 preds = preds[0]
-            dets_list = non_max_suppression(preds, conf_thres=0.5, iou_thres=0.7)
+            dets_list = non_max_suppression(preds, conf_thres=0.1, iou_thres=0.7)
 
         for bi, det in enumerate(dets_list):
+            pending_ids.append(process_count + bi)
+            det_count = 0
             if det is not None and len(det) > 0:
                 pending_tensors.append(det)
-                pending_ids.append(process_count + bi)
-                pending_counts.append(len(det))
+                det_count = len(det)
+            pending_counts.append(det_count)
 
         process_count += got
         batch_count += 1
@@ -481,17 +483,23 @@ def process_segment(decoder, runtime, model, pool, pending_counter,
                 flush=True,
             )
 
-        if pending_tensors and batch_count % FLUSH_INTERVAL == 0:
-            big_gpu = torch.cat(pending_tensors, dim=0)
-            big_np = big_gpu.cpu().numpy()
+        if pending_ids and batch_count % FLUSH_INTERVAL == 0:
+            if pending_tensors:
+                big_gpu = torch.cat(pending_tensors, dim=0)
+                big_np = big_gpu.cpu().numpy()
+            else:
+                big_np = np.empty((0, 6), dtype=np.float32)
             segment_dets.append((list(pending_ids), big_np, list(pending_counts)))
             pending_tensors.clear()
             pending_ids = []
             pending_counts = []
 
-    if pending_tensors:
-        big_gpu = torch.cat(pending_tensors, dim=0)
-        big_np = big_gpu.cpu().numpy()
+    if pending_ids:
+        if pending_tensors:
+            big_gpu = torch.cat(pending_tensors, dim=0)
+            big_np = big_gpu.cpu().numpy()
+        else:
+            big_np = np.empty((0, 6), dtype=np.float32)
         segment_dets.append((list(pending_ids), big_np, list(pending_counts)))
 
     decode_thread.join()

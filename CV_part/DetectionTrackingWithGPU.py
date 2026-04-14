@@ -41,11 +41,11 @@ TEMP_VIDEO_DIR = str(CV_PATHS.temp_video_dir)
 torch.backends.cudnn.benchmark = True
 torch.set_float32_matmul_precision("high")
 
-# ByteTrack 跟踪器配置（与 ultralytics 的 bytetrack.yaml 默认值一致，为了不读盘而在代码内硬编码）
+# ByteTrack 跟踪器配置（按当前项目实验设置直接写在代码中，避免额外读配置文件）
 _TRACKER_ARGS = IterableSimpleNamespace(
-    track_high_thresh=0.25, # 首次激活轨迹的最低置信度阈值
+    track_high_thresh=0.4,  # 高分检测框阈值：用于第一阶段关联
     track_low_thresh=0.1,   # 允许维持追踪的最低置信度阈值 (ByteTrack 核心原理：兼顾低分段框)
-    new_track_thresh=0.25,  # 诞生新轨迹所需置信度
+    new_track_thresh=0.4,   # 诞生新轨迹所需置信度
     track_buffer=30,        # 轨迹中断缓冲保留帧数 (1秒钟/FPS=30)
     match_thresh=0.8,       # 匈牙利算法等匹配框之间的最大IOU距离
     fuse_score=True,        # 融合目标框得分与位置距离权重
@@ -147,9 +147,9 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
 
     Args:
         segment_dets: list of (frame_ids, big_np, counts) 嵌套汇总的大数组
-                      frame_ids: 每张有检测物的帧 ID 的列表
+                      frame_ids: 片段内每一帧的帧 ID 列表（包括无检测帧）
                       big_np: 平铺式多框联接的大张量 ndarray [总检测框数, 6维] -> 即(x1, y1, x2, y2, 置信度conf, 类别分类cls)
-                      counts: 因为上述是一维平摊堆叠的，这里记录着这幅画面原来有几个人(截断数)的列表
+                      counts: 因为上述是一维平摊堆叠的，这里记录着每一帧原来有几个人(可为0)的列表
         csv_path: 目标 CSV 存放物理路径
         frame_rate: 被监控路段对应流的帧速率，用于维持轨迹生存长短预测
     """
@@ -160,7 +160,7 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
     writer.start()
 
     reset_count = 0 # ByteTrack 中的卡尔曼滤波器可能会矩阵异常导致抛错挂起，我们捕获重置它
-    tracking_input_frames = 0 # 统计真正送入跟踪器的有检测帧数量
+    tracking_input_frames = 0 # 统计真正送入跟踪器的帧数量（包括无检测帧）
     written_rows = 0          # 统计最终成功写出的轨迹行数
 
     # 将汇总压缩好的数据序列重新拆解播放出来
@@ -434,34 +434,42 @@ def video_process(VideoInfo):
                     if isinstance(preds, (list, tuple)):
                         preds = preds[0]
                     # 超密集的检测中必定重叠出无数张复眼一样的重复检测预测矩阵目标，运用大浪淘沙过滤非极大数值。重合度限制在0.7剔除
-                    dets_list = non_max_suppression(preds, conf_thres=0.5, iou_thres=0.7)
+                    dets_list = non_max_suppression(preds, conf_thres=0.1, iou_thres=0.7)
 
                 # 从上述矩阵过滤中挑选并记入待处理区
                 for bi, det in enumerate(dets_list):
+                    pending_ids.append(ProcessCount + bi)
+                    det_count = 0
                     if det is not None and len(det) > 0:
                         pending_tensors.append(det)
-                        pending_ids.append(ProcessCount + bi)
-                        pending_counts.append(len(det))
+                        det_count = len(det)
+                    pending_counts.append(det_count)
 
                 ProcessCount += got
                 current_frame += got
                 batch_count += 1
 
                 # 每运转满一个指定频率触发下行转移通道
-                if pending_tensors and (
+                if pending_ids and (
                     batch_count % FLUSH_INTERVAL == 0
                 ):
-                    big_gpu = torch.cat(pending_tensors, dim=0)
-                    big_np = big_gpu.cpu().numpy()                 # PCIe 高速物理搬运发生在此
+                    if pending_tensors:
+                        big_gpu = torch.cat(pending_tensors, dim=0)
+                        big_np = big_gpu.cpu().numpy()             # PCIe 高速物理搬运发生在此
+                    else:
+                        big_np = np.empty((0, 6), dtype=np.float32)
                     segment_dets.append((list(pending_ids), big_np, list(pending_counts)))
                     pending_tensors.clear()
                     pending_ids = []
                     pending_counts = []
 
             # 最后的倔将：零散的还没满整箱出厂要求的数据全部倾销出倒掉。免得残留无法结算缺失
-            if pending_tensors:
-                big_gpu = torch.cat(pending_tensors, dim=0)
-                big_np = big_gpu.cpu().numpy()
+            if pending_ids:
+                if pending_tensors:
+                    big_gpu = torch.cat(pending_tensors, dim=0)
+                    big_np = big_gpu.cpu().numpy()
+                else:
+                    big_np = np.empty((0, 6), dtype=np.float32)
                 segment_dets.append((list(pending_ids), big_np, list(pending_counts)))
                 pending_tensors.clear()
                 pending_ids = []
