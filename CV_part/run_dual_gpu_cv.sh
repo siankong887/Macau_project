@@ -12,7 +12,7 @@ Usage:
 
 Environment variables you can override:
   BATCH_SIZE=1024
-  TRACK_WORKERS=16
+  TRACK_WORKERS=20
   TIME_LIMIT_JSON=/abs/path/to/time_limit.json
   MODEL_PATH=/abs/path/to/bach2.engine
   TRACKING_ROOT=/abs/path/to/DetactionTrackingCsv
@@ -32,7 +32,7 @@ if [[ ! -f "${VIDEO_LIST}" ]]; then
 fi
 
 BATCH_SIZE="${BATCH_SIZE:-1024}"
-TRACK_WORKERS="${TRACK_WORKERS:-16}"
+TRACK_WORKERS="${TRACK_WORKERS:-20}"
 TIME_LIMIT_JSON="${TIME_LIMIT_JSON:-${SCRIPT_DIR}/time_limit.json}"
 MODEL_PATH="${MODEL_PATH:-${SCRIPT_DIR}/ProjectTextDocument/bach2.engine}"
 TRACKING_ROOT="${TRACKING_ROOT:-${SCRIPT_DIR}/ProjectTextDocument/DetactionTrackingCsv}"

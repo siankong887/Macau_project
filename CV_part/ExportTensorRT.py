@@ -22,10 +22,10 @@ ENGINE_PATH = os.path.join(MODEL_DIR, "bach2.engine")
 IMG_H, IMG_W = 288, 352
 ONNX_BATCH = 128      # 这个Batch 服务于计算图导出的过程，可以不用设置特别大，因为主要是用来构建逻辑计算图(神经网
                     #络结构)，后面通过dynamic=True告诉逻辑计算图网络结构可能传入的batch不定
-MAX_BATCH = 512       # TensorRT 引擎支持的最大 batch，这个参数对计算图的影响很大，在构建引擎的时候，会以这个
+MAX_BATCH = 1024       # TensorRT 引擎支持的最大 batch，这个参数对计算图的影响很大，在构建引擎的时候，会以这个
 #参数大小为最常用的批次，去做算子融合，选择最优的逻辑图方案
 
-WORKSPACE_GIB = 4     # 构建Tensor RT引擎的时候，给定的最大临时显存工作区
+WORKSPACE_GIB = 18     # 构建Tensor RT引擎的时候，给定的最大临时显存工作区
 
 # ── Step 1: 导出 ONNX（如果不存在）──
 if not os.path.exists(ONNX_PATH):
