@@ -8,6 +8,9 @@ import time
 from datetime import datetime
 import re
 
+from cv_paths import CVPaths
+
+PATHS = CVPaths.from_file(__file__)
 
 def iter_tracking_rows_grouped_by_frame(csv_file_path):
     with open(csv_file_path, "r", encoding="utf-8", newline="") as f:
@@ -704,10 +707,10 @@ def aggregate_count_csv(count_csv_path, num_gates):
     return result
 
 
-DEFAULT_ORI_JSON_PATH = r'D:\Paper_relative\yoloDeepSort\road_json\a1_copy_2.json'
-DEFAULT_GATE_LINE_JSON_PATH = r'D:\Paper_relative\yoloDeepSort\road_json\GateLineJson.json'
-DEFAULT_TRACKING_CSV_ROOT = r'D:\Docker_project\vpf_dev\ProjectScripts\ProjectTextDocument\DetactionTrackingCsv'
-DEFAULT_COUNT_CSV_ROOT = r'D:\Docker_project\vpf_dev\ProjectScripts\ProjectTextDocument\GateCountCsv'
+DEFAULT_ORI_JSON_PATH = str(PATHS.source_json_path)
+DEFAULT_GATE_LINE_JSON_PATH = str(PATHS.gate_line_json_path)
+DEFAULT_TRACKING_CSV_ROOT = str(PATHS.tracking_root)
+DEFAULT_COUNT_CSV_ROOT = str(PATHS.count_root)
 SEGMENT_NAME_RE = re.compile(r"^(?P<video>.+)_(?P<start>\d{2}_\d{2}_\d{2})__(?P<end>\d{2}_\d{2}_\d{2})$")
 SUMMARY_HEADER = [
     "segment_name",
@@ -766,6 +769,10 @@ def parse_args():
 
 
 def ensure_gate_line_json(gate_line_json_path, ori_json_path, skip_regenerate):
+    gate_line_dir = os.path.dirname(gate_line_json_path)
+    if gate_line_dir:
+        os.makedirs(gate_line_dir, exist_ok=True)
+
     if (not skip_regenerate) or (not os.path.exists(gate_line_json_path)):
         MakeGateLineJson(gate_line_json_path, ori_json_path)
 

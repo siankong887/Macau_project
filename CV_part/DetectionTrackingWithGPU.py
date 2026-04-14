@@ -30,8 +30,12 @@ import PyNvVideoCodec as nvc
 import threading, queue
 import shutil
 
+from cv_paths import CVPaths
+
+CV_PATHS = CVPaths.from_file(__file__)
+
 # HDD→SSD 临时缓存目录（为了克服机械硬盘随机读取极慢劣势，视频处理前先自动拷到 SSD）
-TEMP_VIDEO_DIR = r"D:\Docker_project\vpf_dev\temp_videos"
+TEMP_VIDEO_DIR = str(CV_PATHS.temp_video_dir)
 
 # 小幅通用加速: 启用 cuDNN 自动内核选择和利用 TF32 加速矩阵乘运算
 torch.backends.cudnn.benchmark = True
@@ -56,9 +60,28 @@ class _DetResult:
     __slots__ = ("conf", "xywh", "cls") # 固定内存插槽防止动态字典开销
 
     def __init__(self, conf, xywh, cls):
-        self.conf = conf # 置信度概率
-        self.xywh = xywh # 边界框位置坐标 (中心X, 中心Y, 宽度W, 高度H)
-        self.cls = cls   # 判定出的分类 ID
+        self.conf = np.atleast_1d(np.asarray(conf)) # 置信度概率
+        self.xywh = np.asarray(xywh)                # 边界框位置坐标 (中心X, 中心Y, 宽度W, 高度H)
+        self.cls = np.atleast_1d(np.asarray(cls))   # 判定出的分类 ID
+
+        # ByteTrack.update() 会对 results 做布尔切片；单元素索引时必须保持 2D/1D 形状不坍缩
+        if self.xywh.ndim == 1:
+            self.xywh = self.xywh[None, :]
+
+    def __len__(self):
+        return len(self.conf)
+
+    def __getitem__(self, idx):
+        conf = self.conf[idx]
+        xywh = self.xywh[idx]
+        cls = self.cls[idx]
+
+        if np.isscalar(conf):
+            conf = np.asarray([conf])
+            xywh = np.asarray([xywh])
+            cls = np.asarray([cls])
+
+        return _DetResult(conf=conf, xywh=xywh, cls=cls)
 
 
 class TRTModel:
@@ -189,6 +212,8 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
     writer.start()
 
     reset_count = 0 # ByteTrack 中的卡尔曼滤波器可能会矩阵异常导致抛错挂起，我们捕获重置它
+    tracking_input_frames = 0 # 统计真正送入跟踪器的有检测帧数量
+    written_rows = 0          # 统计最终成功写出的轨迹行数
 
     # 将汇总压缩好的数据序列重新拆解播放出来
     for frame_ids, big_np, counts in segment_dets:
@@ -209,6 +234,7 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
 
             # 使用轻量类对象包一层兼容 ultralytics 检测输出的形状模式，送去预测更新轨迹
             wrapped = _DetResult(conf=det_np[:, 4], xywh=xywh, cls=det_np[:, 5])
+            tracking_input_frames += 1
 
             # 安全触发 tracker 推理与异常恢复重建
             try:
@@ -240,10 +266,18 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
                     round(t[5], 3)                   # 当前融合确信度评分
                 ])
             if rows:
+                written_rows += len(rows)
                 writer.write_rows(rows)
 
     if reset_count > 0:
         print(f"    预警：跟踪器在此环节曾发生 {reset_count} 次重大数学重置故障: {os.path.basename(csv_path)}", flush=True)
+
+    if tracking_input_frames > 0 and written_rows == 0:
+        print(
+            f"    严重预警：本片段共有 {tracking_input_frames} 帧检测结果送入跟踪器，但最终没有写出任何轨迹行: "
+            f"{os.path.basename(csv_path)}",
+            flush=True,
+        )
 
     writer.close()
     return csv_path
@@ -536,17 +570,14 @@ def video_process(VideoInfo):
 
 
 if __name__ == "__main__":
-    # 找寻挂载硬盘内所在的各大核心储存根盘区位
-    VideoFolderPaths = [
-        "/data/encoded_1_fixed",   # 覆盖镜头范围路况(a1-g1)
-        "/data/encoded_2",          # 补充或次带路况范围(g2-r2)
-    ]
+    # 找寻挂载硬盘内所在的视频源目录
+    VideoFolderPaths = [str(path) for path in CV_PATHS.default_video_dirs]
     # 调用训练出来的巴赫主模型用于识别引擎启动路径设置
-    ModelPath = "ProjectScripts/ProjectTextDocument/bach2.engine"
+    ModelPath = str(CV_PATHS.model_engine_path)
     # 设置所要落地出数据的追踪目录表输出地址
-    CsvFolderPath = "ProjectScripts/ProjectTextDocument/DetactionTrackingCsv"
+    CsvFolderPath = str(CV_PATHS.tracking_root)
     # 获取各个标定机器位置对应的物理参照与摄像机对标时间的校准参考数据标
-    TimeLimitJsonPath = "ProjectScripts/ProjectTextDocument/time_limit.json"
+    TimeLimitJsonPath = str(CV_PATHS.time_limit_json_path)
 
     # 读取散落各地大分区的多方面目标源合批记录
     AllVideos = []

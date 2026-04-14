@@ -22,16 +22,15 @@ import sys
 import threading
 import time
 
+from cv_paths import CVPaths
 
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "512"))
 NUM_TRACK_WORKERS = int(os.getenv("TRACK_WORKERS", "12"))
 FLUSH_INTERVAL = 5
 FPS = 30.0
 GPU_ID = 0
-DEFAULT_VIDEO_DIRS = [
-    r"E:\encoded_1_fixed",
-    r"E:\encoded_2",
-]
+PATHS = CVPaths.from_file(__file__)
+DEFAULT_VIDEO_DIRS = [str(path) for path in PATHS.default_video_dirs]
 
 _pending_counter = None
 
@@ -91,10 +90,9 @@ def read_video_list(list_path):
 
 
 def parse_args():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    default_model_path = os.path.join(base_dir, "ProjectTextDocument", "bach2.engine")
-    default_time_limit_json = os.path.join(base_dir, "time_limit.json")
-    default_tracking_root = os.path.join(base_dir, "ProjectTextDocument", "DetactionTrackingCsv")
+    default_model_path = str(PATHS.model_engine_path)
+    default_time_limit_json = str(PATHS.time_limit_json_path)
+    default_tracking_root = str(PATHS.tracking_root)
     default_manifest_path = os.path.join(default_tracking_root, "segment_manifest.csv")
 
     parser = argparse.ArgumentParser(description="按整点锚点连续处理视频片段。")
