@@ -90,7 +90,7 @@ def read_video_list(list_path):
 
 
 def parse_args():
-    default_model_path = str(PATHS.model_engine_path)
+    default_model_path = str(PATHS.model_pt_path)
     default_time_limit_json = str(PATHS.time_limit_json_path)
     default_tracking_root = str(PATHS.tracking_root)
     default_manifest_path = os.path.join(default_tracking_root, "segment_manifest.csv")
@@ -115,7 +115,7 @@ def parse_args():
     parser.add_argument(
         "--model-path",
         default=default_model_path,
-        help="TensorRT engine 或 PyTorch 模型路径。",
+        help="PyTorch .pt 模型路径。",
     )
     parser.add_argument(
         "--tracking-root",
@@ -327,7 +327,6 @@ def load_runtime_dependencies():
         sys.path.insert(0, script_dir)
 
     from DetectionTrackingWithGPU import (
-        TRTModel,
         _decode_and_stack,
         non_max_suppression,
     )
@@ -337,7 +336,6 @@ def load_runtime_dependencies():
     return {
         "torch": torch,
         "nvc": nvc,
-        "TRTModel": TRTModel,
         "_decode_and_stack": _decode_and_stack,
         "non_max_suppression": non_max_suppression,
     }
@@ -345,20 +343,15 @@ def load_runtime_dependencies():
 
 def load_model(runtime, model_path):
     torch = runtime["torch"]
-    is_engine = model_path.endswith(".engine")
+    from ultralytics import YOLO
 
-    if is_engine:
-        model = runtime["TRTModel"](model_path, GPU_ID)
-    else:
-        from ultralytics import YOLO
-        yolo = YOLO(model_path)
-        yolo.to(f"cuda:{GPU_ID}")
-        model = yolo.model
-        model.eval()
-        if torch.cuda.is_available():
-            model.half()
-
-    return model, is_engine
+    yolo = YOLO(model_path)
+    yolo.to(f"cuda:{GPU_ID}")
+    model = yolo.model
+    model.eval()
+    if torch.cuda.is_available():
+        model.half()
+    return model
 
 
 def wait_for_backpressure(pending_counter):
@@ -411,7 +404,7 @@ def move_decoder_to_frame(decoder, current_frame, target_frame, can_seek):
     return current_frame, True
 
 
-def process_segment(decoder, runtime, model, is_engine, pool, pending_counter,
+def process_segment(decoder, runtime, model, pool, pending_counter,
                     current_frame, segment_row, can_seek):
     torch = runtime["torch"]
     decode_and_stack = runtime["_decode_and_stack"]
@@ -460,10 +453,8 @@ def process_segment(decoder, runtime, model, is_engine, pool, pending_counter,
             break
 
         batch, got = item
-        if is_engine:
-            input_batch = batch.to(dtype=torch.float32).div_(255.0)
-        else:
-            input_batch = batch.to(dtype=torch.float16).div_(255.0)
+        input_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+        input_batch = batch.to(dtype=input_dtype).div_(255.0)
 
         with torch.inference_mode():
             preds = model(input_batch)
@@ -529,7 +520,7 @@ def process_segment(decoder, runtime, model, is_engine, pool, pending_counter,
     return current_frame, process_count
 
 
-def process_video(video_path, video_rows, runtime, model, is_engine, pool, pending_counter):
+def process_video(video_path, video_rows, runtime, model, pool, pending_counter):
     nvc = runtime["nvc"]
     can_seek = "encoded_1_fixed" in video_path
     video_name = os.path.splitext(os.path.basename(video_path))[0]
@@ -563,7 +554,6 @@ def process_video(video_path, video_rows, runtime, model, is_engine, pool, pendi
             decoder,
             runtime,
             model,
-            is_engine,
             pool,
             pending_counter,
             current_frame,
@@ -631,8 +621,8 @@ def main():
         return
 
     runtime = load_runtime_dependencies()
-    model, is_engine = load_model(runtime, args.model_path)
-    print(f"检测模型加载完毕，使用体系: {'TensorRT' if is_engine else 'PyTorch'}")
+    model = load_model(runtime, args.model_path)
+    print("检测模型加载完毕，使用体系: PyTorch")
 
     ctx = mp.get_context("spawn")
     pending_counter = ctx.Value("i", 0)
@@ -658,7 +648,6 @@ def main():
                 video_segments[video_name],
                 runtime,
                 model,
-                is_engine,
                 pool,
                 pending_counter,
             )

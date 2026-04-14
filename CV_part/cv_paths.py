@@ -120,8 +120,6 @@ class CVPaths:
     crawler_log_path: Path
     model_stem: str
     model_pt_path: Path
-    model_onnx_path: Path
-    model_engine_path: Path
     time_limit_json_path: Path
     tracking_root: Path
     count_root: Path
@@ -179,16 +177,6 @@ class CVPaths:
             model_pt_path=_resolve_path(
                 os.getenv("CV_MODEL_PT_PATH"),
                 cv_part_dir / f"{model_stem}.pt",
-                cv_part_dir,
-            ),
-            model_onnx_path=_resolve_path(
-                os.getenv("CV_MODEL_ONNX_PATH"),
-                artifacts_dir / f"{model_stem}.onnx",
-                cv_part_dir,
-            ),
-            model_engine_path=_resolve_path(
-                os.getenv("CV_MODEL_ENGINE_PATH"),
-                artifacts_dir / f"{model_stem}.engine",
                 cv_part_dir,
             ),
             time_limit_json_path=_resolve_path(
@@ -250,8 +238,6 @@ class CVPaths:
             "crawler_log_path": str(self.crawler_log_path),
             "model_stem": self.model_stem,
             "model_pt_path": str(self.model_pt_path),
-            "model_onnx_path": str(self.model_onnx_path),
-            "model_engine_path": str(self.model_engine_path),
             "time_limit_json_path": str(self.time_limit_json_path),
             "tracking_root": str(self.tracking_root),
             "count_root": str(self.count_root),

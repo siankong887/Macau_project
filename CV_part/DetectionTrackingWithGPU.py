@@ -2,12 +2,12 @@
 
 核心功能说明:
 1. 此脚本提供了 GPU 目标检测与 CPU 多进程目标跟踪的基础架构模块。
-2. 封装了 TensorRT 和 YOLO 模型，以适应极速的视频目标智能检测需求。
+2. 封装了基于 PyTorch 的 YOLO 模型加载流程，以适应视频目标智能检测需求。
 3. 提供了解码 (PyNvVideoCodec)、检测推断、边界推断、SORT 追踪处理的流水线功能类和函数。
    它被其他主控脚本（如 run_peak_hours.py）调用来执行具体的分析任务。
 
 性能与架构设计:
-1. GIL 安全与并发：由 Python 多线程负责将 C++ 层面的 NV 解码操作释放 GIL 优势发挥出来，同时不阻塞主线程做 TensorRT 推演。
+1. GIL 安全与并发：由 Python 多线程负责将 C++ 层面的 NV 解码操作释放 GIL 优势发挥出来，同时不阻塞主线程做 YOLO 推演。
 2. 零拷贝思想：尝试使用 `torch.from_dlpack` 和直接指针操作在不引发 CPU 内存和 GPU 显存之间拷贝的情况下处理流式数据。
 3. 异步 CSV 写入机制：把耗时的硬盘 IO 独立成专门的守护线程和队列，保护高吞吐。
 """
@@ -82,58 +82,6 @@ class _DetResult:
             cls = np.asarray([cls])
 
         return _DetResult(conf=conf, xywh=xywh, cls=cls)
-
-
-class TRTModel:
-    """
-    TensorRT engine 的极速原生推理接口封装，用于直接利用序列化的引擎网络。
-    绕过了庞大复杂的 ultralytics 模型加载与前处理逻辑，以获得最少的 python 开销。
-    """
-    def __init__(self, engine_path, gpu_id=0):
-        import tensorrt as trt
-        device = torch.device(f"cuda:{gpu_id}")
-        logger = trt.Logger(trt.Logger.WARNING) # 仅显示警告以上信息
-
-        # 读取并反序列化 TRT 预编译引擎文件
-        with open(engine_path, "rb") as f:
-            self.engine = trt.Runtime(logger).deserialize_cuda_engine(f.read())
-
-        self.context = self.engine.create_execution_context()
-        self.device = device
-
-        # 申请独立的 CUDA 数据流加速异步命令队列
-        self.stream = torch.cuda.Stream(device=device)
-
-        # 获取输入端和输出端节点的挂载名称
-        self.input_name = self.engine.get_tensor_name(0)
-        self.output_name = self.engine.get_tensor_name(1)
-
-    def __call__(self, x):
-        """核心推理算子"""
-        bs, c, h, w = x.shape
-        # 设定输入张量体积尺寸
-        self.context.set_input_shape(self.input_name, (bs, c, h, w))
-
-        # 获取推断后的输出期望形状
-        out_shape = tuple(self.context.get_tensor_shape(self.output_name))
-        output = torch.empty(out_shape, dtype=torch.float32, device=self.device)
-
-        # TensorRT 要求 float32。如果是半精度先强转。如果是同一类型则发生零分配
-        x_fp32 = x.float() if x.dtype != torch.float32 else x
-
-        # 挂接输入输出张量在显存中的内存物理指针 (极致安全的高效方法)
-        self.context.set_tensor_address(self.input_name, x_fp32.data_ptr())
-        self.context.set_tensor_address(self.output_name, output.data_ptr())
-
-        # 在异步流下令硬件开启计算
-        self.context.execute_async_v3(self.stream.cuda_stream)
-        # 等待该独立流的结算完成返回
-        self.stream.synchronize()
-        return output
-
-    def eval(self):
-        """假装实现标准的 Pytorch 模块状态方法，方便兼容多态调用"""
-        return self
 
 
 class AsyncCSVWriter:
@@ -348,19 +296,14 @@ def video_process(VideoInfo):
     use_half = torch.cuda.is_available()
 
     # 初始化启动推理决策模型核心
-    is_engine = ModelPath.endswith(".engine")
-    if is_engine:
-        internal_model = TRTModel(ModelPath, gpu_id)
-    else:
-        yolo = YOLO(ModelPath)
-        yolo.to(device_str)
-        internal_model = yolo.model
-        internal_model.eval()
-        if use_half:
-            internal_model.half()
+    yolo = YOLO(ModelPath)
+    yolo.to(device_str)
+    internal_model = yolo.model
+    internal_model.eval()
+    if use_half:
+        internal_model.half()
 
-    backend = "TensorRT" if is_engine else "PyTorch"
-    print(f"启动新工位进程 | 处理的影视轨名称: {os.path.basename(VideoPath)} | 所配发核心硬件: {device_str} | 底层模型加速算法: {backend}")
+    print(f"启动新工位进程 | 处理的影视轨名称: {os.path.basename(VideoPath)} | 所配发核心硬件: {device_str} | 底层模型加速算法: PyTorch")
 
     # 便携辅助小函数
     def time_str_to_seconds(time_str):
@@ -480,9 +423,7 @@ def video_process(VideoInfo):
                 batch, got = item
 
                 # Pytorch张量类型分色洗点调整，将 [0-255] 大小的色度位映射缩放去至神经网络能看的懂读明白理解接受的 [0,1]。并调整其数值深度标准精度类型。
-                if is_engine:
-                    input_batch = batch.to(dtype=torch.float32).div_(255.0)
-                elif use_half:
+                if use_half:
                     input_batch = batch.to(dtype=torch.float16).div_(255.0)
                 else:
                     input_batch = batch.to(dtype=torch.float32).div_(255.0)
@@ -573,7 +514,7 @@ if __name__ == "__main__":
     # 找寻挂载硬盘内所在的视频源目录
     VideoFolderPaths = [str(path) for path in CV_PATHS.default_video_dirs]
     # 调用训练出来的巴赫主模型用于识别引擎启动路径设置
-    ModelPath = str(CV_PATHS.model_engine_path)
+    ModelPath = str(CV_PATHS.model_pt_path)
     # 设置所要落地出数据的追踪目录表输出地址
     CsvFolderPath = str(CV_PATHS.tracking_root)
     # 获取各个标定机器位置对应的物理参照与摄像机对标时间的校准参考数据标

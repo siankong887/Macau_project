@@ -15,7 +15,7 @@ Environment variables you can override:
   BATCH_SIZE=1024
   TRACK_WORKERS=20
   TIME_LIMIT_JSON=/abs/path/to/time_limit.json
-  MODEL_PATH=/abs/path/to/bach2.engine
+  MODEL_PATH=/abs/path/to/bach2.pt
   TRACKING_ROOT=/abs/path/to/DetactionTrackingCsv
   RUN_TAG=run_001
   EXTRA_ARGS="--plan-only"
@@ -35,7 +35,7 @@ fi
 BATCH_SIZE="${BATCH_SIZE:-1024}"
 TRACK_WORKERS="${TRACK_WORKERS:-20}"
 DEFAULT_TIME_LIMIT_JSON="$(${PYTHON_BIN} "${PATHS_PY}" time_limit_json_path)"
-DEFAULT_MODEL_PATH="$(${PYTHON_BIN} "${PATHS_PY}" model_engine_path)"
+DEFAULT_MODEL_PATH="$(${PYTHON_BIN} "${PATHS_PY}" model_pt_path)"
 DEFAULT_TRACKING_ROOT="$(${PYTHON_BIN} "${PATHS_PY}" tracking_root)"
 TIME_LIMIT_JSON="${TIME_LIMIT_JSON:-${DEFAULT_TIME_LIMIT_JSON}}"
 MODEL_PATH="${MODEL_PATH:-${DEFAULT_MODEL_PATH}}"
