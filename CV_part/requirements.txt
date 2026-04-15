@@ -1,0 +1,30 @@
+# Baseline Python dependencies captured from the current CV instance.
+# Scope: full detection -> tracking -> counting pipeline in CV_part.
+#
+# Recommended baseline:
+# - Python 3.12.x
+# - Linux + NVIDIA driver/CUDA compatible with the PyTorch cu128 wheels below
+# - ffmpeg / ffprobe installed at the system level
+
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128
+
+ultralytics==8.4.37
+ultralytics-thop==2.0.18
+
+numpy==2.2.6
+scipy==1.17.1
+lap==0.5.13
+
+pynvvideocodec==2.1.0
+
+opencv-python==4.13.0.92
+pillow==11.2.1
+matplotlib==3.10.3
+
+PyYAML==6.0.2
+requests==2.31.0
+psutil==7.0.0
+polars==1.39.3
