@@ -14,6 +14,7 @@ Usage:
 Environment variables you can override:
   BATCH_SIZE=1024
   TRACK_WORKERS=20
+  TRACKER_BACKEND=bytetrack|oasort
   TIME_LIMIT_JSON=/abs/path/to/time_limit.json
   MODEL_PATH=/abs/path/to/bach2.pt
   TRACKING_ROOT=/abs/path/to/DetactionTrackingCsv
@@ -34,6 +35,7 @@ fi
 
 BATCH_SIZE="${BATCH_SIZE:-1024}"
 TRACK_WORKERS="${TRACK_WORKERS:-20}"
+TRACKER_BACKEND="${TRACKER_BACKEND:-bytetrack}"
 DEFAULT_TIME_LIMIT_JSON="$(${PYTHON_BIN} "${PATHS_PY}" time_limit_json_path)"
 DEFAULT_MODEL_PATH="$(${PYTHON_BIN} "${PATHS_PY}" model_pt_path)"
 DEFAULT_TRACKING_ROOT="$(${PYTHON_BIN} "${PATHS_PY}" tracking_root)"
@@ -54,6 +56,9 @@ GPU0_LOG="${LOG_DIR}/gpu0.log"
 GPU1_LOG="${LOG_DIR}/gpu1.log"
 GPU0_MANIFEST="${WORK_DIR}/segment_manifest_gpu0.csv"
 GPU1_MANIFEST="${WORK_DIR}/segment_manifest_gpu1.csv"
+
+: > "${GPU0_LIST}"
+: > "${GPU1_LIST}"
 
 awk '
   BEGIN { idx = 0 }
@@ -79,6 +84,7 @@ echo "Model path     : ${MODEL_PATH}"
 echo "Time limit json: ${TIME_LIMIT_JSON}"
 echo "BATCH_SIZE     : ${BATCH_SIZE}"
 echo "TRACK_WORKERS  : ${TRACK_WORKERS}"
+echo "TRACKER_BACKEND: ${TRACKER_BACKEND}"
 echo "GPU0 videos    : ${GPU0_COUNT}"
 echo "GPU1 videos    : ${GPU1_COUNT}"
 echo "GPU0 log       : ${GPU0_LOG}"
@@ -94,6 +100,7 @@ if [[ -s "${GPU0_LIST}" ]]; then
     export NUMEXPR_NUM_THREADS=1
     export BATCH_SIZE
     export TRACK_WORKERS
+    export TRACKER_BACKEND
     cd "${REPO_ROOT}"
     set -x
     ${PYTHON_BIN} "${SCRIPT_DIR}/run_peak_hours.py" \
@@ -120,6 +127,7 @@ if [[ -s "${GPU1_LIST}" ]]; then
     export NUMEXPR_NUM_THREADS=1
     export BATCH_SIZE
     export TRACK_WORKERS
+    export TRACKER_BACKEND
     cd "${REPO_ROOT}"
     set -x
     ${PYTHON_BIN} "${SCRIPT_DIR}/run_peak_hours.py" \

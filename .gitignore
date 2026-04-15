@@ -23,6 +23,9 @@ reinforcement_learning_part/
 
 # CV pipeline generated artifacts / local-only files
 CV_part/__pycache__/
+CV_part/AB_test/__pycache__/
+CV_part/AB_test/runs/
+CV_part/full_runs/
 CV_part/ProjectScripts/
 CV_part/ProjectTextDocument/
 CV_part/*.log

@@ -17,8 +17,6 @@ try:
     from ultralytics.utils.ops import non_max_suppression
 except ImportError:
     from ultralytics.utils.nms import non_max_suppression
-from ultralytics.trackers.byte_tracker import BYTETracker
-from ultralytics.utils import IterableSimpleNamespace
 import multiprocessing as mp
 import os
 import csv
@@ -31,6 +29,7 @@ import threading, queue
 import shutil
 
 from cv_paths import CVPaths
+from tracker_backends import build_tracker_backend, get_configured_tracker_backend_name
 
 CV_PATHS = CVPaths.from_file(__file__)
 
@@ -40,49 +39,6 @@ TEMP_VIDEO_DIR = str(CV_PATHS.temp_video_dir)
 # 小幅通用加速: 启用 cuDNN 自动内核选择和利用 TF32 加速矩阵乘运算
 torch.backends.cudnn.benchmark = True
 torch.set_float32_matmul_precision("high")
-
-# ByteTrack 跟踪器配置（按当前项目实验设置直接写在代码中，避免额外读配置文件）
-_TRACKER_ARGS = IterableSimpleNamespace(
-    track_high_thresh=0.4,  # 高分检测框阈值：用于第一阶段关联
-    track_low_thresh=0.1,   # 允许维持追踪的最低置信度阈值 (ByteTrack 核心原理：兼顾低分段框)
-    new_track_thresh=0.4,   # 诞生新轨迹所需置信度
-    track_buffer=30,        # 轨迹中断缓冲保留帧数 (1秒钟/FPS=30)
-    match_thresh=0.8,       # 匈牙利算法等匹配框之间的最大IOU距离
-    fuse_score=True,        # 融合目标框得分与位置距离权重
-)
-
-
-class _DetResult:
-    """
-    轻量化的检测结果包装器。
-    用于绕过原 ultralytics 的厚重 Results 类，为其提供兼容 ByteTracker.update() 需要的最精简属性接口。
-    """
-    __slots__ = ("conf", "xywh", "cls") # 固定内存插槽防止动态字典开销
-
-    def __init__(self, conf, xywh, cls):
-        self.conf = np.atleast_1d(np.asarray(conf)) # 置信度概率
-        self.xywh = np.asarray(xywh)                # 边界框位置坐标 (中心X, 中心Y, 宽度W, 高度H)
-        self.cls = np.atleast_1d(np.asarray(cls))   # 判定出的分类 ID
-
-        # ByteTrack.update() 会对 results 做布尔切片；单元素索引时必须保持 2D/1D 形状不坍缩
-        if self.xywh.ndim == 1:
-            self.xywh = self.xywh[None, :]
-
-    def __len__(self):
-        return len(self.conf)
-
-    def __getitem__(self, idx):
-        conf = self.conf[idx]
-        xywh = self.xywh[idx]
-        cls = self.cls[idx]
-
-        if np.isscalar(conf):
-            conf = np.asarray([conf])
-            xywh = np.asarray([xywh])
-            cls = np.asarray([cls])
-
-        return _DetResult(conf=conf, xywh=xywh, cls=cls)
-
 
 class AsyncCSVWriter:
     """
@@ -143,7 +99,7 @@ class AsyncCSVWriter:
 def track_segment(segment_dets, csv_path, frame_rate=30):
     """
     多进程 Worker 池的封装主执行体（在一个 CPU 核心子进程上独立调用）：
-    拿到一个片段由 GPU 计算好的全部检测结果，通过纯 CPU 跑 ByteTrack 跟踪器，以分析出前后关联轨迹，末了写进 CSV。
+    拿到一个片段由 GPU 计算好的全部检测结果，通过统一 tracker backend 跑纯 CPU 跟踪，以分析出前后关联轨迹，末了写进 CSV。
 
     Args:
         segment_dets: list of (frame_ids, big_np, counts) 嵌套汇总的大数组
@@ -153,13 +109,14 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
         csv_path: 目标 CSV 存放物理路径
         frame_rate: 被监控路段对应流的帧速率，用于维持轨迹生存长短预测
     """
-    tracker = BYTETracker(args=_TRACKER_ARGS, frame_rate=frame_rate)
+    backend_name = get_configured_tracker_backend_name()
+    tracker_backend = build_tracker_backend(backend_name, frame_rate=frame_rate)
     header = ["frame_id", "track_id", "cls", "center_x", "center_y",
               "width", "height", "conf"]
     writer = AsyncCSVWriter(csv_path, header)
     writer.start()
 
-    reset_count = 0 # ByteTrack 中的卡尔曼滤波器可能会矩阵异常导致抛错挂起，我们捕获重置它
+    reset_count = 0 # 跟踪器内部出现可恢复异常时，重置 backend 后重试一次
     tracking_input_frames = 0 # 统计真正送入跟踪器的帧数量（包括无检测帧）
     written_rows = 0          # 统计最终成功写出的轨迹行数
 
@@ -171,28 +128,16 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
             det_np = big_np[offset:offset + count]
             offset += count
 
-            # 边框数学形态转换：将原数组的对角模型 [左上x, 左上y, 右下x, 右下y]
-            # 反算转换为 ByteTracker 和 Yolo 通用兼容期望的物理中心加体宽高的模型 (cx, cy, w, h)
-            xywh = np.column_stack([
-                (det_np[:, 0] + det_np[:, 2]) / 2,   # cx = (x1+x2)/2
-                (det_np[:, 1] + det_np[:, 3]) / 2,   # cy = (y1+y2)/2
-                det_np[:, 2] - det_np[:, 0],         # width = x2 - x1
-                det_np[:, 3] - det_np[:, 1],         # height = y2 - y1
-            ])
-
-            # 使用轻量类对象包一层兼容 ultralytics 检测输出的形状模式，送去预测更新轨迹
-            wrapped = _DetResult(conf=det_np[:, 4], xywh=xywh, cls=det_np[:, 5])
             tracking_input_frames += 1
 
             # 安全触发 tracker 推理与异常恢复重建
             try:
-                tracks = tracker.update(wrapped, None) # None 为附加保留参数不用理会
+                tracks = tracker_backend.update_frame(det_np)
             except Exception:
-                # 卡尔曼滤波器 (Kalman Filter) 的协方差矩阵有时碰到奇异点崩溃溢出 -> 销毁实例完全重置 tracker 再次尝试
-                tracker = BYTETracker(args=_TRACKER_ARGS, frame_rate=frame_rate)
+                tracker_backend.reset()
                 reset_count += 1
                 try:
-                    tracks = tracker.update(wrapped, None)
+                    tracks = tracker_backend.update_frame(det_np)
                 except Exception:
                     continue  # 若二次重试仍旧挽救不了产生不可抗拒之暴毙错，则跳过放弃该帧不再纠结
 
@@ -202,23 +147,26 @@ def track_segment(segment_dets, csv_path, frame_rate=30):
             # 解析完成出的具有上下文连贯 track_id 身份识别的目标信息存入 CSV 数组队列缓冲中
             rows = []
             for t in tracks:
-                # 记录：[x1, y1, x2, y2, track_id, conf, cls, info] // t 的具体内部形态索引
-                cx = (t[0] + t[2]) / 2
-                cy = (t[1] + t[3]) / 2
-                w = t[2] - t[0]
-                h = t[3] - t[1]
+                cx = (t.x1 + t.x2) / 2
+                cy = (t.y1 + t.y2) / 2
+                w = t.x2 - t.x1
+                h = t.y2 - t.y1
                 rows.append([
-                    frame_id, int(t[4]), int(t[6]),  # 帧编号, 身份标识追踪ID, 归属种类表
+                    frame_id, t.track_id, t.cls,      # 帧编号, 身份标识追踪ID, 归属种类表
                     round(cx, 2), round(cy, 2),      # X轴坐标点(2小数点后精度压缩存储), Y轴同上
                     round(w, 2), round(h, 2),        # 体型长度数据
-                    round(t[5], 3)                   # 当前融合确信度评分
+                    round(t.conf, 3)                 # 当前融合确信度评分
                 ])
             if rows:
                 written_rows += len(rows)
                 writer.write_rows(rows)
 
     if reset_count > 0:
-        print(f"    预警：跟踪器在此环节曾发生 {reset_count} 次重大数学重置故障: {os.path.basename(csv_path)}", flush=True)
+        print(
+            f"    预警：跟踪器后端 {backend_name} 在此环节曾发生 {reset_count} 次重大数学重置故障: "
+            f"{os.path.basename(csv_path)}",
+            flush=True,
+        )
 
     if tracking_input_frames > 0 and written_rows == 0:
         print(
@@ -519,6 +467,8 @@ def video_process(VideoInfo):
 
 
 if __name__ == "__main__":
+    tracker_backend = get_configured_tracker_backend_name()
+    print(f"当前跟踪后端配置: {tracker_backend}")
     # 找寻挂载硬盘内所在的视频源目录
     VideoFolderPaths = [str(path) for path in CV_PATHS.default_video_dirs]
     # 调用训练出来的巴赫主模型用于识别引擎启动路径设置

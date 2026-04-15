@@ -15,6 +15,7 @@ import csv
 import gc
 import json
 import multiprocessing as mp
+import numpy as np
 import os
 import queue
 import subprocess
@@ -341,6 +342,16 @@ def load_runtime_dependencies():
     }
 
 
+def resolve_tracker_backend_name():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    if script_dir not in sys.path:
+        sys.path.insert(0, script_dir)
+
+    from tracker_backends import get_configured_tracker_backend_name
+
+    return get_configured_tracker_backend_name()
+
+
 def load_model(runtime, model_path):
     torch = runtime["torch"]
     from ultralytics import YOLO
@@ -627,6 +638,9 @@ def main():
     if args.plan_only:
         print("当前为 --plan-only 模式，不执行检测追踪。")
         return
+
+    tracker_backend = resolve_tracker_backend_name()
+    print(f"跟踪后端配置: {tracker_backend}")
 
     runtime = load_runtime_dependencies()
     model = load_model(runtime, args.model_path)

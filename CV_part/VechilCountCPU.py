@@ -48,6 +48,9 @@ def CountVechil(CamInfo):
     point_list,point_list1,point_list2,gate_orientation,CsvFilePath,CountCsvFile=CamInfo
     TempCountCsvFile = f"{CountCsvFile}.part"
     DoneFlagFile = f"{CountCsvFile}.ok"
+    count_dir = os.path.dirname(CountCsvFile)
+    if count_dir:
+        os.makedirs(count_dir, exist_ok=True)
     #创建一个字典，用于存储每个id的历史轨迹
     track_history = defaultdict(lambda: [])
     #创建一个字典，用于存储每个id的触线记录，这个触线历史是临时的，也就是那一帧的触线记录
@@ -839,7 +842,9 @@ def build_segment_tasks(csv_root_path, count_root_path, gate_line_json_data):
     for dirpath, _, filenames in os.walk(csv_root_path):
         csv_files = sorted(
             f for f in filenames
-            if f.endswith(".csv") and "_Count" not in f and f != "segment_manifest.csv"
+            if f.endswith(".csv")
+            and "_Count" not in f
+            and not f.startswith("segment_manifest")
         )
 
         if not csv_files:

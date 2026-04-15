@@ -1,0 +1,16 @@
+[
+  {
+    "video_path": "/root/autodl-tmp/port_bridge/r_1.mp4",
+    "start_time": "00:36:15",
+    "end_time": "00:51:15",
+    "label": "r1_occlusion_focus",
+    "note": "r_1 early-window 15 minute clip for the previously observed heavy-occlusion / unstable-engine scene."
+  },
+  {
+    "video_path": "/root/autodl-tmp/port_bridge/m_1.mp4",
+    "start_time": "00:39:34",
+    "end_time": "00:54:34",
+    "label": "m1_control",
+    "note": "m_1 15 minute control clip for a normal A/B comparison against r_1."
+  }
+]
