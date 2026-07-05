@@ -1,7 +1,8 @@
-"""按整点锚点等分的分段批处理脚本。
+"""视频分段批处理脚本。
 
 核心能力：
-1. 读取 `time_limit.json` 中每个摄像头的整点锚点，按相邻锚点等分为 4 个片段。
+1. 新视频默认从文件开头开始，按固定时长切片。
+2. 兼容旧逻辑：读取 `time_limit.json` 中每个摄像头的整点锚点，按相邻锚点等分为 4 个片段。
 2. 同一视频按时间顺序连续处理；每完成一个片段就把检测结果提交给 CPU 多进程追踪。
 3. 支持 `--plan-only` dry-run，在没有 GPU 依赖的机器上也能生成分段清单与 manifest。
 
@@ -11,6 +12,7 @@
 """
 
 import argparse
+from collections import deque
 import csv
 import gc
 import json
@@ -18,6 +20,8 @@ import multiprocessing as mp
 import numpy as np
 import os
 import queue
+import shutil
+import site
 import subprocess
 import sys
 import threading
@@ -26,7 +30,11 @@ import time
 from cv_paths import CVPaths
 
 BATCH_SIZE = int(os.getenv("BATCH_SIZE", "512"))
-NUM_TRACK_WORKERS = int(os.getenv("TRACK_WORKERS", "12"))
+NUM_TRACK_WORKERS = int(os.getenv("TRACK_WORKERS", "14"))
+DEFAULT_SEGMENT_MODE = os.getenv("SEGMENT_MODE", "hourly-from-start")
+DEFAULT_SEGMENT_SECONDS = float(os.getenv("SEGMENT_SECONDS", "3600"))
+_expected_video_seconds = os.getenv("EXPECTED_VIDEO_SECONDS", "").strip()
+DEFAULT_EXPECTED_VIDEO_SECONDS = float(_expected_video_seconds) if _expected_video_seconds else None
 FLUSH_INTERVAL = 5
 FPS = 30.0
 GPU_ID = 0
@@ -34,6 +42,35 @@ PATHS = CVPaths.from_file(__file__)
 DEFAULT_VIDEO_DIRS = [str(path) for path in PATHS.default_video_dirs]
 
 _pending_counter = None
+
+
+def add_windows_video_codec_dll_dirs(torch_module=None):
+    if os.name != "nt" or not hasattr(os, "add_dll_directory"):
+        return
+
+    candidates = []
+    if torch_module is not None:
+        torch_file = getattr(torch_module, "__file__", "")
+        if torch_file:
+            candidates.append(os.path.join(os.path.dirname(torch_file), "lib"))
+
+    try:
+        site_packages = site.getsitepackages()
+    except Exception:
+        site_packages = []
+    for base in site_packages:
+        candidates.append(os.path.join(base, "PyNvVideoCodec"))
+
+    system_root = os.environ.get("SystemRoot", r"C:\Windows")
+    candidates.append(os.path.join(system_root, "System32"))
+
+    seen = set()
+    for path in candidates:
+        norm = os.path.abspath(path)
+        if norm in seen or not os.path.isdir(norm):
+            continue
+        seen.add(norm)
+        os.add_dll_directory(norm)
 
 
 def _init_worker(counter):
@@ -59,31 +96,70 @@ def time_str_to_label(time_str):
 
 
 def get_video_duration(video_path):
-    cmd = [
-        "ffprobe",
-        "-v",
-        "error",
-        "-show_entries",
-        "format=duration",
-        "-of",
-        "default=noprint_wrappers=1:nokey=1",
-        video_path,
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if result.returncode != 0:
-        return None
+    ffprobe = shutil.which("ffprobe")
+    if ffprobe:
+        cmd = [
+            ffprobe,
+            "-v",
+            "error",
+            "-show_entries",
+            "format=duration",
+            "-of",
+            "default=noprint_wrappers=1:nokey=1",
+            video_path,
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode == 0:
+            try:
+                duration = float(result.stdout.strip())
+                if duration > 0:
+                    return duration
+            except ValueError:
+                pass
+
     try:
-        duration = float(result.stdout.strip())
-    except ValueError:
-        return None
-    return duration if duration > 0 else None
+        import av
+
+        with av.open(video_path) as container:
+            if container.duration:
+                duration = float(container.duration / av.time_base)
+                if duration > 0:
+                    return duration
+            if container.streams.video:
+                stream = container.streams.video[0]
+                if stream.duration and stream.time_base:
+                    duration = float(stream.duration * stream.time_base)
+                    if duration > 0:
+                        return duration
+                if stream.frames and stream.average_rate:
+                    duration = float(stream.frames / stream.average_rate)
+                    if duration > 0:
+                        return duration
+    except Exception:
+        pass
+
+    try:
+        import cv2
+
+        cap = cv2.VideoCapture(video_path)
+        try:
+            fps = cap.get(cv2.CAP_PROP_FPS)
+            frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+        finally:
+            cap.release()
+        if fps and fps > 0 and frame_count and frame_count > 0:
+            return float(frame_count / fps)
+    except Exception:
+        pass
+
+    return None
 
 
 def read_video_list(list_path):
     videos = []
     with open(list_path, "r", encoding="utf-8") as f:
         for raw in f:
-            line = raw.strip()
+            line = raw.lstrip("\ufeff").strip()
             if not line or line.startswith("#"):
                 continue
             videos.append(os.path.abspath(line))
@@ -96,7 +172,7 @@ def parse_args():
     default_tracking_root = str(PATHS.tracking_root)
     default_manifest_path = os.path.join(default_tracking_root, "segment_manifest.csv")
 
-    parser = argparse.ArgumentParser(description="按整点锚点连续处理视频片段。")
+    parser = argparse.ArgumentParser(description="连续处理视频分段。")
     parser.add_argument("videos", nargs="*", help="直接指定要处理的视频路径。")
     parser.add_argument(
         "--video-list",
@@ -111,7 +187,25 @@ def parse_args():
     parser.add_argument(
         "--time-limit-json",
         default=default_time_limit_json,
-        help="time_limit.json 路径。",
+        help="time_limit.json 路径，仅 segment-mode=time-limit 时使用。",
+    )
+    parser.add_argument(
+        "--segment-mode",
+        choices=("hourly-from-start", "time-limit"),
+        default=DEFAULT_SEGMENT_MODE,
+        help="分段模式。hourly-from-start 从视频开头按固定时长切片；time-limit 使用旧 time_limit.json 锚点。",
+    )
+    parser.add_argument(
+        "--segment-seconds",
+        type=float,
+        default=DEFAULT_SEGMENT_SECONDS,
+        help="hourly-from-start 模式下每段秒数，默认 3600。",
+    )
+    parser.add_argument(
+        "--expected-video-seconds",
+        type=float,
+        default=DEFAULT_EXPECTED_VIDEO_SECONDS,
+        help="hourly-from-start 模式下的计划视频总时长。设置后不信任 TS 容器时长；实际读到 EOF 会自动停止。",
     )
     parser.add_argument(
         "--model-path",
@@ -152,7 +246,7 @@ def collect_videos(args):
                 print(f"警告: 视频目录不存在，跳过读取: {folder}")
                 continue
             for fn in sorted(os.listdir(folder)):
-                if fn.endswith((".mp4", ".avi")) and not fn.startswith("."):
+                if fn.endswith((".ts", ".mp4", ".avi")) and not fn.startswith("."):
                     all_videos.append(os.path.join(folder, fn))
 
     unique_videos = []
@@ -280,6 +374,38 @@ def build_segments_for_video(video_name, cam_key, video_path, entries, tracking_
     return rows
 
 
+def build_segments_from_start(video_name, cam_key, video_path, tracking_root, video_duration, segment_seconds):
+    rows = []
+    if video_duration is None or video_duration <= 0:
+        print(f"{video_name}: 无法读取视频时长，无法按固定时长分段。")
+        return rows
+    if segment_seconds <= 0:
+        raise ValueError("--segment-seconds 必须大于 0")
+
+    current = 0.0
+    while current < video_duration - 1e-6:
+        next_sec = min(current + segment_seconds, video_duration)
+        start_frame = int(round(current * FPS))
+        end_frame = int(round(next_sec * FPS))
+        is_tail = (next_sec >= video_duration - 1e-6) and ((next_sec - current) < segment_seconds - 1e-6)
+        append_segment(
+            rows,
+            video_name,
+            cam_key,
+            video_path,
+            tracking_root,
+            current,
+            next_sec,
+            start_frame,
+            end_frame,
+            is_tail=is_tail,
+            status="planned",
+        )
+        current = next_sec
+
+    return rows
+
+
 def write_manifest(manifest_path, rows):
     output_dir = os.path.dirname(manifest_path)
     if output_dir:
@@ -321,6 +447,8 @@ def print_plan_summary(video_segments):
 
 def load_runtime_dependencies():
     import torch
+
+    add_windows_video_codec_dll_dirs(torch)
     import PyNvVideoCodec as nvc
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -363,6 +491,63 @@ def load_model(runtime, model_path):
     if torch.cuda.is_available():
         model.half()
     return model
+
+
+class NvSequentialDecoder:
+    """Sequential NVDEC adapter that avoids SimpleDecoder's frame-index path."""
+
+    def __init__(self, nvc, video_path, gpu_id=0):
+        self.nvc = nvc
+        self.video_path = video_path
+        self.demuxer = nvc.CreateDemuxer(video_path)
+        self.packet_iter = iter(self.demuxer)
+        self.pending = deque()
+        self.exhausted = False
+        self.decoder = nvc.CreateDecoder(
+            gpuid=gpu_id,
+            codec=self.demuxer.GetNvCodecId(),
+            usedevicememory=True,
+            maxwidth=self.demuxer.Width(),
+            maxheight=self.demuxer.Height(),
+            outputColorType=nvc.OutputColorType.RGBP,
+            latency=nvc.DisplayDecodeLatencyType.LOW,
+        )
+
+    def get_batch_frames(self, batch_size):
+        out = []
+        while len(out) < batch_size:
+            while self.pending and len(out) < batch_size:
+                out.append(self.pending.popleft())
+            if len(out) >= batch_size or self.exhausted:
+                break
+
+            try:
+                packet = next(self.packet_iter)
+            except StopIteration:
+                self.exhausted = True
+                break
+
+            frames = self.decoder.Decode(packet)
+            if frames:
+                self.pending.extend(frames)
+
+        return out
+
+
+def create_decoder(runtime, video_path):
+    nvc = runtime["nvc"]
+    mode = os.getenv("NVDEC_DECODER_MODE", "demux").strip().lower()
+    if mode in ("simple", "indexed"):
+        decoder = nvc.SimpleDecoder(
+            enc_file_path=video_path,
+            gpu_id=GPU_ID,
+            use_device_memory=True,
+            output_color_type=nvc.OutputColorType.RGBP,
+        )
+        return decoder, ("encoded_1_fixed" in video_path), "simple"
+
+    decoder = NvSequentialDecoder(nvc, video_path, gpu_id=GPU_ID)
+    return decoder, False, "demux"
 
 
 def wait_for_backpressure(pending_counter):
@@ -540,17 +725,11 @@ def process_segment(decoder, runtime, model, pool, pending_counter,
 
 
 def process_video(video_path, video_rows, runtime, model, pool, pending_counter):
-    nvc = runtime["nvc"]
-    can_seek = "encoded_1_fixed" in video_path
     video_name = os.path.splitext(os.path.basename(video_path))[0]
 
     try:
-        decoder = nvc.SimpleDecoder(
-            enc_file_path=video_path,
-            gpu_id=GPU_ID,
-            use_device_memory=True,
-            output_color_type=nvc.OutputColorType.RGBP,
-        )
+        decoder, can_seek, decoder_mode = create_decoder(runtime, video_path)
+        print(f"[{video_name}] NVDEC 解码模式: {decoder_mode}")
     except Exception as exc:
         print(f"[{video_name}] 解码器初始化失败: {exc}")
         return False
@@ -589,8 +768,16 @@ def process_video(video_path, video_rows, runtime, model, pool, pending_counter)
 def main():
     args = parse_args()
 
-    with open(args.time_limit_json, "r", encoding="utf-8") as f:
-        time_limit_data = json.load(f)
+    print(f"分段模式: {args.segment_mode}")
+    if args.segment_mode == "hourly-from-start":
+        print(f"固定分段长度: {args.segment_seconds:g} 秒")
+        if args.expected_video_seconds and args.expected_video_seconds > 0:
+            print(f"计划视频总时长: {args.expected_video_seconds:g} 秒")
+
+    time_limit_data = {}
+    if args.segment_mode == "time-limit":
+        with open(args.time_limit_json, "r", encoding="utf-8") as f:
+            time_limit_data = json.load(f)
 
     all_videos = collect_videos(args)
     if not all_videos:
@@ -604,7 +791,7 @@ def main():
         video_name = os.path.splitext(os.path.basename(video_path))[0]
         cam_key = video_name_to_cam_key(video_name)
 
-        if cam_key not in time_limit_data:
+        if args.segment_mode == "time-limit" and cam_key not in time_limit_data:
             print(f"{video_name}: 缺少对应 time_limit 标定信息，跳过。")
             skipped += 1
             continue
@@ -615,14 +802,32 @@ def main():
             video_duration = None
             print(f"警告: 视频文件不存在，dry-run 仅基于文件名规划: {video_path}")
 
-        rows = build_segments_for_video(
-            video_name,
-            cam_key,
-            video_path,
-            time_limit_data[cam_key],
-            args.tracking_root,
-            video_duration=video_duration,
-        )
+        if args.segment_mode == "hourly-from-start":
+            planned_duration = video_duration
+            if args.expected_video_seconds and args.expected_video_seconds > 0:
+                planned_duration = args.expected_video_seconds
+                if video_duration and abs(video_duration - planned_duration) > args.segment_seconds:
+                    print(
+                        f"{video_name}: 容器时长 {seconds_to_time_str(video_duration)} "
+                        f"与计划时长 {seconds_to_time_str(planned_duration)} 差异较大，按计划时长分段。"
+                    )
+            rows = build_segments_from_start(
+                video_name,
+                cam_key,
+                video_path,
+                args.tracking_root,
+                video_duration=planned_duration,
+                segment_seconds=args.segment_seconds,
+            )
+        else:
+            rows = build_segments_for_video(
+                video_name,
+                cam_key,
+                video_path,
+                time_limit_data[cam_key],
+                args.tracking_root,
+                video_duration=video_duration,
+            )
         if not rows:
             print(f"{video_name}: 未生成任何片段，跳过。")
             skipped += 1

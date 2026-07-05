@@ -5,7 +5,12 @@ from dataclasses import asdict, dataclass
 import os
 
 import numpy as np
-from oa_sort_core import OASortConfig, OASortTracker
+try:
+    from oa_sort.core import OASortConfig, OASortTracker
+except ModuleNotFoundError as exc:
+    if exc.name != "oa_sort":
+        raise
+    from .oa_sort.core import OASortConfig, OASortTracker
 from ultralytics.trackers.byte_tracker import BYTETracker
 from ultralytics.utils import IterableSimpleNamespace
 

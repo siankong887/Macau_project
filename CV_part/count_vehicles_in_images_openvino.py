@@ -58,6 +58,16 @@ DEFAULT_OPENVINO_REID_MODEL = (
     / "vehicle-reid-0001.xml"
 )
 
+DEFAULT_ZONE = (0.10, 0.80)
+CAMERA_ZONE_DEFAULTS = {
+    "image1": (0.25, 0.99),
+    "image5": (0.01, 0.45),
+}
+
+
+def get_camera_zone_defaults(image_dir):
+    return CAMERA_ZONE_DEFAULTS.get(Path(image_dir).name.lower(), DEFAULT_ZONE)
+
 
 # ---------------------------------------------------------------------------
 # ReID feature extractor
@@ -280,7 +290,7 @@ def main():
                         # 这里说明默认模型是 yolov8n.pt。
                         help="YOLO model path. Default: yolov8n.pt")
     # 添加可选参数 --conf，表示 YOLO 检测框的置信度阈值。
-    parser.add_argument("--conf", type=float, default=0.25,
+    parser.add_argument("--conf", type=float, default=0.4,
                         # 如果检测置信度低于这个阈值，就会被 YOLO 过滤掉。
                         help="YOLO confidence threshold")
     # 添加可选参数 --output-csv，用来指定结果 CSV 文件保存到哪里。
@@ -301,13 +311,19 @@ def main():
     # 添加开关参数 --car-only；用户写了这个参数时，只统计 car 类别。
     parser.add_argument("--car-only", action="store_true")
     # 添加可选参数 --zone-y-min，表示统计区域顶部在图片高度中的比例位置。
-    parser.add_argument("--zone-y-min", type=float, default=0.10,
+    parser.add_argument("--zone-y-min", type=float, default=None,
                         # 默认从图片高度的 10% 位置开始统计。
-                        help="Zone top (fraction of height, default 0.10)")
+                        help=(
+                            "Zone top as fraction of image height. "
+                            "Default: image1=0.25, image5=0.01, otherwise 0.10."
+                        ))
     # 添加可选参数 --zone-y-max，表示统计区域底部在图片高度中的比例位置。
-    parser.add_argument("--zone-y-max", type=float, default=0.80,
+    parser.add_argument("--zone-y-max", type=float, default=None,
                         # 默认到图片高度的 80% 位置结束统计。
-                        help="Zone bottom (fraction of height, default 0.80)")
+                        help=(
+                            "Zone bottom as fraction of image height. "
+                            "Default: image1=0.99, image5=0.45, otherwise 0.80."
+                        ))
     # 添加可选参数 --reid-thresh，表示车辆外观相似度匹配阈值。
     parser.add_argument("--reid-thresh", type=float, default=0.50,
                         # 两辆车的 cosine similarity 大于该阈值时，才可能被认为是同一辆。
@@ -336,6 +352,12 @@ def main():
     if not image_dir.is_dir():
         # 如果路径不存在，或者不是文件夹，就抛出错误并停止程序。
         raise FileNotFoundError(f"Not found: {image_dir}")
+
+    default_zone_y_min, default_zone_y_max = get_camera_zone_defaults(image_dir)
+    if args.zone_y_min is None:
+        args.zone_y_min = default_zone_y_min
+    if args.zone_y_max is None:
+        args.zone_y_max = default_zone_y_max
 
     # 定义允许读取的图片后缀名集合。
     exts = {".jpg", ".jpeg", ".png", ".bmp"}

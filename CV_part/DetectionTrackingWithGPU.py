@@ -19,11 +19,43 @@ except ImportError:
     from ultralytics.utils.nms import non_max_suppression
 import multiprocessing as mp
 import os
+import site
 import csv
 import json
 import time
 import torch
 import numpy as np
+
+
+def add_windows_video_codec_dll_dirs():
+    if os.name != "nt" or not hasattr(os, "add_dll_directory"):
+        return
+
+    candidates = []
+    torch_file = getattr(torch, "__file__", "")
+    if torch_file:
+        candidates.append(os.path.join(os.path.dirname(torch_file), "lib"))
+
+    try:
+        site_packages = site.getsitepackages()
+    except Exception:
+        site_packages = []
+    for base in site_packages:
+        candidates.append(os.path.join(base, "PyNvVideoCodec"))
+
+    system_root = os.environ.get("SystemRoot", r"C:\Windows")
+    candidates.append(os.path.join(system_root, "System32"))
+
+    seen = set()
+    for path in candidates:
+        norm = os.path.abspath(path)
+        if norm in seen or not os.path.isdir(norm):
+            continue
+        seen.add(norm)
+        os.add_dll_directory(norm)
+
+
+add_windows_video_codec_dll_dirs()
 import PyNvVideoCodec as nvc
 import threading, queue
 import shutil
@@ -286,7 +318,7 @@ def video_process(VideoInfo):
 
     # 从系统 OS 环境量提取批处理定义大小和分核工蜂总数，默认留底策略
     BATCH_SIZE = int(os.getenv("BATCH_SIZE", "512"))
-    NUM_TRACK_WORKERS = int(os.getenv("TRACK_WORKERS", "16"))
+    NUM_TRACK_WORKERS = int(os.getenv("TRACK_WORKERS", "14"))
     FLUSH_INTERVAL = 5  # 定期清理 GPU Tensor 刷入 CPU 进程堆时间长度设置
 
     # 循环播放位置计数器 (为了当某些无法安全使用 seek 跳转命令操作的老录像破录像提供纯遍历解算的“人肉跳动法”依赖标志戳)
@@ -484,7 +516,7 @@ if __name__ == "__main__":
         AllVideos.extend(
             os.path.join(folder, f)
             for f in os.listdir(folder)
-            if f.endswith(('.mp4', '.avi')) and not f.startswith('.')
+            if f.endswith(('.ts', '.mp4', '.avi')) and not f.startswith('.')
         )
 
     with open(TimeLimitJsonPath, "r", encoding="utf-8") as f:

@@ -2,8 +2,8 @@
 
 The canonical runtime/artifact root remains the legacy-named
 `ProjectTextDocument` directory inside `CV_part`, but all scripts should reach
-it through this module instead of hard-coded strings. Static assets such as
-`bach2.pt`, `time_limit.json`, and `a1_copy_2_copy.json` stay in `CV_part/`.
+it through this module instead of hard-coded strings. Static assets are grouped
+under `CV_part/models/` where possible; pipeline JSON files stay in `CV_part/`.
 """
 
 from __future__ import annotations
@@ -24,6 +24,8 @@ _DEFAULT_VIDEO_DIR_CANDIDATES = (
     "E:/encoded_2",
 )
 _CRAWLER_DIRNAME = "crawler"
+_MODEL_DIRNAME = "models"
+_YOLO_MODEL_DIRNAME = "yolo"
 
 
 def _resolve_path(raw_value: str | None, default: Path, base_dir: Path) -> Path:
@@ -62,19 +64,19 @@ def _locate_cv_part_dir(file_path: str | Path) -> Path:
 
 
 @dataclass(frozen=True)
-class DualGPURunPaths:
+class PipelineRunPaths:
     run_dir: Path
     log_dir: Path
     list_dir: Path
-    gpu0_list: Path
-    gpu1_list: Path
-    gpu0_log: Path
-    gpu1_log: Path
-    gpu0_manifest: Path
-    gpu1_manifest: Path
+    worker0_list: Path
+    worker1_list: Path
+    worker0_log: Path
+    worker1_log: Path
+    worker0_manifest: Path
+    worker1_manifest: Path
 
     @classmethod
-    def from_tracking_root(cls, tracking_root: str | Path, run_tag: str) -> "DualGPURunPaths":
+    def from_tracking_root(cls, tracking_root: str | Path, run_tag: str) -> "PipelineRunPaths":
         tracking_root = Path(tracking_root).expanduser().resolve()
         run_dir = tracking_root / "runs" / run_tag
         log_dir = run_dir / "logs"
@@ -83,12 +85,12 @@ class DualGPURunPaths:
             run_dir=run_dir,
             log_dir=log_dir,
             list_dir=list_dir,
-            gpu0_list=list_dir / "gpu0_videos.txt",
-            gpu1_list=list_dir / "gpu1_videos.txt",
-            gpu0_log=log_dir / "gpu0.log",
-            gpu1_log=log_dir / "gpu1.log",
-            gpu0_manifest=run_dir / "segment_manifest_gpu0.csv",
-            gpu1_manifest=run_dir / "segment_manifest_gpu1.csv",
+            worker0_list=list_dir / "gpu0_videos.txt",
+            worker1_list=list_dir / "gpu1_videos.txt",
+            worker0_log=log_dir / "gpu0.log",
+            worker1_log=log_dir / "gpu1.log",
+            worker0_manifest=run_dir / "segment_manifest_gpu0.csv",
+            worker1_manifest=run_dir / "segment_manifest_gpu1.csv",
         )
 
     def as_dict(self) -> dict[str, str]:
@@ -96,12 +98,18 @@ class DualGPURunPaths:
             "run_dir": str(self.run_dir),
             "log_dir": str(self.log_dir),
             "list_dir": str(self.list_dir),
-            "gpu0_list": str(self.gpu0_list),
-            "gpu1_list": str(self.gpu1_list),
-            "gpu0_log": str(self.gpu0_log),
-            "gpu1_log": str(self.gpu1_log),
-            "gpu0_manifest": str(self.gpu0_manifest),
-            "gpu1_manifest": str(self.gpu1_manifest),
+            "worker0_list": str(self.worker0_list),
+            "worker1_list": str(self.worker1_list),
+            "worker0_log": str(self.worker0_log),
+            "worker1_log": str(self.worker1_log),
+            "worker0_manifest": str(self.worker0_manifest),
+            "worker1_manifest": str(self.worker1_manifest),
+            "gpu0_list": str(self.worker0_list),
+            "gpu1_list": str(self.worker1_list),
+            "gpu0_log": str(self.worker0_log),
+            "gpu1_log": str(self.worker1_log),
+            "gpu0_manifest": str(self.worker0_manifest),
+            "gpu1_manifest": str(self.worker1_manifest),
         }
 
 
@@ -132,7 +140,7 @@ class CVPaths:
     def from_cv_part_dir(cls, cv_part_dir: str | Path) -> "CVPaths":
         cv_part_dir = Path(cv_part_dir).expanduser().resolve()
         repo_root = cv_part_dir.parent
-        model_stem = os.getenv("CV_MODEL_STEM", "bach2").strip() or "bach2"
+        model_stem = os.getenv("CV_MODEL_STEM", "best").strip() or "best"
 
         artifacts_dir = _resolve_path(
             os.getenv("CV_ARTIFACTS_DIR"),
@@ -176,7 +184,7 @@ class CVPaths:
             model_stem=model_stem,
             model_pt_path=_resolve_path(
                 os.getenv("CV_MODEL_PT_PATH"),
-                cv_part_dir / f"{model_stem}.pt",
+                cv_part_dir / _MODEL_DIRNAME / _YOLO_MODEL_DIRNAME / f"{model_stem}.pt",
                 cv_part_dir,
             ),
             time_limit_json_path=_resolve_path(
@@ -220,8 +228,11 @@ class CVPaths:
     def current(cls) -> "CVPaths":
         return cls.from_file(__file__)
 
-    def dual_gpu_run(self, run_tag: str) -> DualGPURunPaths:
-        return DualGPURunPaths.from_tracking_root(self.tracking_root, run_tag)
+    def pipeline_run(self, run_tag: str) -> PipelineRunPaths:
+        return PipelineRunPaths.from_tracking_root(self.tracking_root, run_tag)
+
+    def dual_gpu_run(self, run_tag: str) -> PipelineRunPaths:
+        return self.pipeline_run(run_tag)
 
     def as_dict(self) -> dict[str, str]:
         return {
@@ -257,14 +268,14 @@ def main() -> None:
     )
     parser.add_argument(
         "--run-tag",
-        help="Include per-run paths for the provided dual-GPU run tag.",
+        help="Include per-run worker paths for the provided run tag.",
     )
     args = parser.parse_args()
 
     paths = CVPaths.current()
     values = paths.as_dict()
     if args.run_tag:
-        values.update(paths.dual_gpu_run(args.run_tag).as_dict())
+        values.update(paths.pipeline_run(args.run_tag).as_dict())
 
     if args.key:
         try:

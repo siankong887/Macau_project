@@ -1,6 +1,7 @@
 import logging
 import multiprocessing
 import os
+import argparse
 from pathlib import Path
 import requests
 from requests.adapters import HTTPAdapter
@@ -28,9 +29,10 @@ except ImportError:
 
 
 PATHS = CVPaths.from_file(__file__)
+DEFAULT_DURATION_SECONDS = 60 * 60
 
 
-def ts_process(url, queue, temp_dir, log_queue, video_name):
+def ts_process(url, queue, temp_dir, log_queue, video_name, duration):
     """
     该进程用于动态获取m3u8中的ts文件，存储队列，做简单ts去重检验后发送至frame_process进程
     进行具体的处理
@@ -41,7 +43,7 @@ def ts_process(url, queue, temp_dir, log_queue, video_name):
 
     m3u8_url = url
     start_time = time.time()
-    threshold = 60 * 60
+    threshold = None if duration <= 0 else duration
 
     session = requests.Session()
     headers = {
@@ -94,7 +96,7 @@ def ts_process(url, queue, temp_dir, log_queue, video_name):
                     continue
             new_ts_list = None
 
-        if time.time() - start_time > threshold:
+        if threshold is not None and time.time() - start_time > threshold:
             queue.put("exit")
             logger.info(f"{video_name}的抓取并下载ts视频段进程结束")
             return
@@ -102,7 +104,7 @@ def ts_process(url, queue, temp_dir, log_queue, video_name):
         time.sleep(1)
 
 
-def frame_process(queue, log_queue, video_name):
+def frame_process(queue, log_queue, video_name, per_video_dirs):
     """
     消费者进程：只负责将队列中的TS片段顺序追加为一个大型TS文件；编码/解码与时间戳修正在离线流程完成。
     """
@@ -111,6 +113,8 @@ def frame_process(queue, log_queue, video_name):
     logger.info(f"{video_name}的TS拼接进程开始")
 
     output_dir = PATHS.crawler_videos_dir
+    if per_video_dirs:
+        output_dir = output_dir / Path(video_name).stem
     output_dir.mkdir(parents=True, exist_ok=True)
     output_address = output_dir / video_name
 
@@ -158,7 +162,25 @@ def frame_process(queue, log_queue, video_name):
     logger.info(f"{video_name}的TS拼接进程结束，累计段数: {segment_index}, 总字节: {bytes_written}")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="爬取澳门交通摄像头TS视频段")
+    parser.add_argument(
+        "--duration",
+        type=int,
+        default=DEFAULT_DURATION_SECONDS,
+        help=f"总运行时长（秒），0=无限运行（默认: {DEFAULT_DURATION_SECONDS}）",
+    )
+    parser.add_argument(
+        "--per-video-dirs",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="是否为每个输出视频创建单独文件夹（默认: false）",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
+    args = parse_args()
     csv_address = PATHS.crawler_camera_csv_path
 
     PATHS.crawler_workspace_dir.mkdir(parents=True, exist_ok=True)
@@ -197,8 +219,14 @@ if __name__ == "__main__":
         video_temp_dir.mkdir(parents=True, exist_ok=True)
 
         queue = multiprocessing.Queue(maxsize=9999)
-        p_ts = multiprocessing.Process(target=ts_process, args=(url, queue, str(video_temp_dir), log_queue, video_names[idx]))
-        p_frame = multiprocessing.Process(target=frame_process, args=(queue, log_queue, video_names[idx]))
+        p_ts = multiprocessing.Process(
+            target=ts_process,
+            args=(url, queue, str(video_temp_dir), log_queue, video_names[idx], args.duration),
+        )
+        p_frame = multiprocessing.Process(
+            target=frame_process,
+            args=(queue, log_queue, video_names[idx], args.per_video_dirs),
+        )
         p_ts.start()
         p_frame.start()
         process_list.append(p_ts)

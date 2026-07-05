@@ -760,7 +760,7 @@ def parse_args():
     parser.add_argument(
         "--processes",
         type=int,
-        default=4,
+        default=18,
         help="Number of worker processes for counting.",
     )
     parser.add_argument(
